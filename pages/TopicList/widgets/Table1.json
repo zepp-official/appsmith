@@ -184,6 +184,9 @@
   "dynamicTriggerPathList": [
     {
       "key": "primaryColumns.customColumn1.onClick"
+    },
+    {
+      "key": "onPageChange"
     }
   ],
   "enableClientSideSearch": true,
@@ -207,7 +210,7 @@
   "mobileRightColumn": 38,
   "mobileTopRow": 20,
   "needsErrorInfo": false,
-  "onPageChange": "{{}}",
+  "onPageChange": "{{getTopicList.run()}}",
   "originalBottomRow": 58,
   "originalTopRow": 15,
   "parentColumnSpace": 15.765625,
