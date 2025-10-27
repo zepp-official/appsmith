@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "68edbca07f897134d9d213fe_734bec68-d669-4bcc-b0d1-ab4e3f31be7a",
+  "id": "UCHList_getUchMock",
+  "unpublishedCollection": {
+    "name": "getUchMock",
+    "pageId": "UCHList",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
