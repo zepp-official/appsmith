@@ -41,6 +41,10 @@
     {
       "id": "UCHDetail",
       "isDefault": false
+    },
+    {
+      "id": "RewardList",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
