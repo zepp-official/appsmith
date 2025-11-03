@@ -49,6 +49,14 @@
     {
       "id": "RewardDetail",
       "isDefault": false
+    },
+    {
+      "id": "ChallengeList",
+      "isDefault": false
+    },
+    {
+      "id": "ChallengeDetail",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
