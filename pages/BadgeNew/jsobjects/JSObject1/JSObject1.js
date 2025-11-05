@@ -167,9 +167,30 @@ export default {
 			"isMetric": true
 		}
 	],
+	operators: [
+		{ "name": ">","code": ">"},
+		{ "name": ">=","code": ">="},
+		{ "name": "<","code": "<"},
+		{ "name": "<=","code": "<="},
+		{ "name": "==", "code": "=="}
+	],
+	saveCondition () {
+		let condition = {};
+		condition.id = crypto.randomUUID();
+		condition.source = predicateSourceMetric.selectedOptionValue;
+		condition.operator = 	predicateOperator.selectedOptionValue;
+		condition.isMetric = predicateGoalType.selectedOptionValue === "Metric";
+		if (condition.isMetric) {
+			condition.goal = predicateGoalMetric.selectedOptionValue;
+		} else {
+			condition.goal = predicateGoalNumber.text;
+		}
+		this.conditions.unshift(condition);
+		
+		PredicateModalClose.setVisibility(false);
+	},
 	deleteCondition (index) {
 		//	write code here
-		//	this.myVar1 = [1,2,3]
 		this.conditions.splice(index, 1);
 	},
 }

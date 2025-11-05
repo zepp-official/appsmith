@@ -42,6 +42,10 @@
       {
         "name": "conditions",
         "value": "[{\n  \"id\": \"abc\",\n  \"source\": \"workouts_over_10min_current_week\",\n  \"operator\": \">=\",\n  \"goal\": 3,\n  \"isMetric\": false\n}, {\n  \"id\": \"def\",\n  \"source\": \"calories_burned_today_previous\",\n  \"operator\": \"<\",\n  \"goal\": \"calories_goal\",\n  \"isMetric\": true\n}]"
+      },
+      {
+        "name": "operators",
+        "value": "[{\n  \"name\": \">\",\n  \"code\": \">\"\n}, {\n  \"name\": \">=\",\n  \"code\": \">=\"\n}, {\n  \"name\": \"<\",\n  \"code\": \"<\"\n}, {\n  \"name\": \"<=\",\n  \"code\": \"<=\"\n}, {\n  \"name\": \"==\",\n  \"code\": \"==\"\n}]"
       }
     ]
   }
