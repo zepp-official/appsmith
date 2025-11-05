@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 5,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -11,45 +11,42 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1rem",
-  "fontStyle": "BOLD",
+  "fontSize": "0.875rem",
+  "fontStyle": "",
   "isLoading": false,
   "isVisible": true,
   "key": "8y51dpoicm",
-  "leftColumn": 22,
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 9,
-  "mobileLeftColumn": 22,
-  "mobileRightColumn": 38,
-  "mobileTopRow": 5,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 17,
+  "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "originalBottomRow": 9,
-  "originalTopRow": 5,
+  "originalBottomRow": 6,
+  "originalTopRow": 1,
   "overflow": "NONE",
-  "parentColumnSpace": 12.2998046875,
-  "parentId": "a37m6hv0gc",
+  "parentColumnSpace": 5.5020599365234375,
+  "parentId": "fzz1h6nru9",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 38,
+  "rightColumn": 22,
   "shouldTruncate": false,
-  "text": "{{JSObject1.challenge.id}}",
+  "text": "Badge Icon",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 0,
+  "topRow": 1,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "xemc3ndq1h",
-  "widgetName": "IDvalue"
+  "widgetId": "5m8oyqgbvp",
+  "widgetName": "Text3"
 }

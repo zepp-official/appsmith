@@ -2,18 +2,15 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 18,
+  "bottomRow": 53,
   "boxShadow": "none",
-  "defaultOptionValue": "STEPS",
+  "defaultOptionValue": "GREEN",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "sourceData"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -31,32 +28,32 @@
   "key": "0uwh2zdk3l",
   "labelAlignment": "left",
   "labelPosition": "Left",
-  "labelText": "Sport Type",
+  "labelText": "Progress",
   "labelTextSize": "0.875rem",
   "labelWidth": "15",
-  "leftColumn": 6,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 24,
-  "mobileLeftColumn": 6,
-  "mobileRightColumn": 26,
-  "mobileTopRow": 17,
+  "mobileBottomRow": 53,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 17,
+  "mobileTopRow": 46,
   "needsErrorInfo": false,
   "optionLabel": "name",
   "optionValue": "code",
-  "parentColumnSpace": 12.2998046875,
-  "parentId": "a37m6hv0gc",
+  "parentColumnSpace": 12.8603515625,
+  "parentId": "1hmuhfoxt3",
   "parentRowSpace": 10,
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 39,
+  "rightColumn": 37,
   "serverSideFiltering": false,
-  "sourceData": "{{JSObject1.sportType}}",
-  "topRow": 11,
+  "sourceData": "[\n  {\n    \"name\": \"Blue\",\n    \"code\": \"BLUE\"\n  },\n  {\n    \"name\": \"Green\",\n    \"code\": \"GREEN\"\n  },\n  {\n    \"name\": \"Red\",\n    \"code\": \"RED\"\n  }\n]",
+  "topRow": 46,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "x3o58b34ht",
-  "widgetName": "sportType"
+  "widgetId": "4gldnet3g5",
+  "widgetName": "progressExpression"
 }

@@ -2,18 +2,15 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 18,
+  "bottomRow": 80,
   "boxShadow": "none",
-  "defaultOptionValue": "STEPS",
+  "defaultOptionValue": "GREEN",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "sourceData"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -31,32 +28,34 @@
   "key": "0uwh2zdk3l",
   "labelAlignment": "left",
   "labelPosition": "Left",
-  "labelText": "Sport Type",
+  "labelText": "Action Type",
   "labelTextSize": "0.875rem",
   "labelWidth": "15",
-  "leftColumn": 6,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 24,
-  "mobileLeftColumn": 6,
-  "mobileRightColumn": 26,
-  "mobileTopRow": 17,
+  "mobileBottomRow": 95,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 19,
+  "mobileTopRow": 88,
   "needsErrorInfo": false,
   "optionLabel": "name",
   "optionValue": "code",
-  "parentColumnSpace": 12.2998046875,
-  "parentId": "a37m6hv0gc",
+  "originalBottomRow": 80,
+  "originalTopRow": 73,
+  "parentColumnSpace": 10.0576171875,
+  "parentId": "u2pm09m2lj",
   "parentRowSpace": 10,
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 39,
+  "rightColumn": 37,
   "serverSideFiltering": false,
-  "sourceData": "{{JSObject1.sportType}}",
-  "topRow": 11,
+  "sourceData": "[\n  {\n    \"name\": \"Blue\",\n    \"code\": \"BLUE\"\n  },\n  {\n    \"name\": \"Green\",\n    \"code\": \"GREEN\"\n  },\n  {\n    \"name\": \"Red\",\n    \"code\": \"RED\"\n  }\n]",
+  "topRow": 73,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "x3o58b34ht",
-  "widgetName": "sportType"
+  "widgetId": "7q4eviqgit",
+  "widgetName": "Select3"
 }

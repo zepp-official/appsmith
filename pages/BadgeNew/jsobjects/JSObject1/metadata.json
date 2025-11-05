@@ -1,9 +1,9 @@
 {
-  "gitSyncId": "68edbca07f897134d9d213fe_64386996-a0c4-4c5b-8312-58baac84f6d5",
-  "id": "ChallengeDetail_JSObject1",
+  "gitSyncId": "68edbca07f897134d9d213fe_ecf32825-16fe-4639-aac2-484925553ac6",
+  "id": "BadgeNew_JSObject1",
   "unpublishedCollection": {
     "name": "JSObject1",
-    "pageId": "ChallengeDetail",
+    "pageId": "BadgeNew",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "variables": [
@@ -17,19 +17,23 @@
       },
       {
         "name": "difficultyLevel",
-        "value": "[{\n  \"name\": \"Very Easy\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"Easy\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Medium\",\n  \"code\": \"3\"\n}, {\n  \"name\": \"Hard\",\n  \"code\": \"4\"\n}]"
+        "value": "[{\n  \"name\": \"Bronze\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"Silver\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"Gold\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Patinum\",\n  \"code\": \"3\"\n}]"
+      },
+      {
+        "name": "badgeType",
+        "value": "[{\n  \"name\": \"Lifetime\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"Seasonal\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"PB\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Seasonal\",\n  \"code\": \"3\"\n}]"
+      },
+      {
+        "name": "actionType",
+        "value": "[{\n  \"name\": \"RUN\"\n}]"
       },
       {
         "name": "repeatPeriod",
         "value": "[{\n  \"name\": \"None\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"Day\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"Week\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Month\",\n  \"code\": \"3\"\n}, {\n  \"name\": \"Infinity\",\n  \"code\": \"4\"\n}]"
       },
       {
-        "name": "myVar1",
-        "value": "[]"
-      },
-      {
-        "name": "myVar2",
-        "value": "{}"
+        "name": "conditions",
+        "value": "[{\n  \"progress\": \"workouts_over_10min_current_week\",\n  \"conditional\": \">=\",\n  \"goal\": 3\n}, {\n  \"progress\": \"workouts_over_10min_current_week_previous\",\n  \"conditional\": \"<\",\n  \"goal\": 3\n}]"
       }
     ]
   }

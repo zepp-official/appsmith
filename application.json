@@ -57,6 +57,10 @@
     {
       "id": "ChallengeDetail",
       "isDefault": false
+    },
+    {
+      "id": "BadgeNew",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

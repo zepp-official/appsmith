@@ -63,20 +63,43 @@ export default {
 	difficultyLevel:
 	[
 		{
-			"name": "Very Easy",
+			"name": "Bronze",
+			"code": "0"
+		},
+		{
+			"name": "Silver",
 			"code": "1"
 		},
 		{
-			"name": "Easy",
+			"name": "Gold",
 			"code": "2"
 		},
 		{
-			"name": "Medium",
+			"name": "Patinum",
 			"code": "3"
+		}
+	],
+	badgeType: [
+		{
+			"name": "Lifetime",
+			"code": "0"
 		},
 		{
-			"name": "Hard",
-			"code": "4"
+			"name": "Seasonal",
+			"code": "1"
+		},
+		{
+			"name": "PB",
+			"code": "2"
+		},
+		{
+			"name": "Seasonal",
+			"code": "3"
+		}
+	],
+	actionType: [
+		{
+			"name": "RUN"
 		}
 	],
 	repeatPeriod: [
@@ -101,14 +124,16 @@ export default {
 			"code": "4"
 		}
 	],
-	myVar1: [],
-	myVar2: {},
-	myFun1 () {
-		//	write code here
-		//	this.myVar1 = [1,2,3]
-	},
-	async myFun2 () {
-		//	use async-await or promises
-		//	await storeValue('varName', 'hello world')
-	}
+	conditions: [
+		{
+			"progress": "workouts_over_10min_current_week",
+			"conditional": ">=",
+			"goal": 3
+		},
+		{
+			"progress": "workouts_over_10min_current_week_previous",
+			"conditional": "<",
+			"goal": 3
+		}
+	]
 }

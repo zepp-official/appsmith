@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 11,
+  "bottomRow": 71,
   "boxShadow": "none",
-  "defaultText": "{{JSObject1.challenge.backendConfigTitle}}",
+  "defaultText": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,44 +14,50 @@
       "key": "borderRadius"
     },
     {
-      "key": "defaultText"
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "TEXT",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
+  "isVisible": "{{goalType.selectedOptionValue === \"Non-metric\"}}",
   "key": "0poeow8p2p",
-  "label": "Backend Config Title",
+  "label": "Input number for goal",
   "labelAlignment": "left",
   "labelPosition": "Left",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": "15",
-  "leftColumn": 6,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 18,
-  "mobileLeftColumn": 10,
-  "mobileRightColumn": 30,
-  "mobileTopRow": 11,
+  "mobileBottomRow": 71,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 13,
+  "mobileTopRow": 64,
   "needsErrorInfo": false,
-  "parentColumnSpace": 12.2998046875,
-  "parentId": "a37m6hv0gc",
+  "parentColumnSpace": 12.8603515625,
+  "parentId": "1hmuhfoxt3",
   "parentRowSpace": 10,
+  "regex": "^[1-9]\\d*$",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 39,
+  "rightColumn": 37,
   "showStepArrows": false,
-  "topRow": 4,
+  "topRow": 64,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "poube7goa0",
-  "widgetName": "backendConfigTitle"
+  "widgetId": "1f5dazp2m7",
+  "widgetName": "goalNumber"
 }

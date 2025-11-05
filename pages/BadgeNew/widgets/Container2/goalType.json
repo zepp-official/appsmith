@@ -1,0 +1,57 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignment": "left",
+  "animateLoading": true,
+  "bottomRow": 57,
+  "boxShadow": "none",
+  "defaultOptionValue": "Metric",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isDisabled": false,
+  "isInline": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "6baxn5yd28",
+  "label": "Goal",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "15",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 59,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 53,
+  "needsErrorInfo": false,
+  "options": [
+    {
+      "label": "Metric",
+      "value": "Metric"
+    },
+    {
+      "label": "Non-metric",
+      "value": "Non-metric"
+    }
+  ],
+  "originalBottomRow": 59,
+  "originalTopRow": 53,
+  "parentColumnSpace": 12.8603515625,
+  "parentId": "1hmuhfoxt3",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 37,
+  "topRow": 53,
+  "type": "RADIO_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "okh34bkxfc",
+  "widgetName": "goalType"
+}

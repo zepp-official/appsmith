@@ -1,12 +1,12 @@
 {
-  "gitSyncId": "68edbca07f897134d9d213fe_0649eca1-f87f-417c-abfe-28aa0ce2390f",
+  "gitSyncId": "68edbca07f897134d9d213fe_bf126220-51d6-4bc5-aadb-c73b8d770303",
   "unpublishedPage": {
     "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 1900,
+          "bottomRow": 2270,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -26,7 +26,7 @@
         }
       }
     ],
-    "name": "ChallengeDetail",
-    "slug": "challengedetail"
+    "name": "BadgeNew",
+    "slug": "badgenew"
   }
 }

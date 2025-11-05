@@ -3,18 +3,15 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 11,
+  "bottomRow": 32,
   "boxShadow": "none",
-  "defaultText": "{{JSObject1.challenge.backendConfigTitle}}",
+  "defaultText": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -26,7 +23,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "0poeow8p2p",
-  "label": "Backend Config Title",
+  "label": "Challenge Name",
   "labelAlignment": "left",
   "labelPosition": "Left",
   "labelStyle": "",
@@ -37,8 +34,8 @@
   "minDynamicHeight": 4,
   "minWidth": 450,
   "mobileBottomRow": 18,
-  "mobileLeftColumn": 10,
-  "mobileRightColumn": 30,
+  "mobileLeftColumn": 5,
+  "mobileRightColumn": 25,
   "mobileTopRow": 11,
   "needsErrorInfo": false,
   "parentColumnSpace": 12.2998046875,
@@ -49,9 +46,9 @@
   "responsiveBehavior": "fill",
   "rightColumn": 39,
   "showStepArrows": false,
-  "topRow": 4,
+  "topRow": 25,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "poube7goa0",
-  "widgetName": "backendConfigTitle"
+  "widgetId": "9op27tpzli",
+  "widgetName": "Input1"
 }

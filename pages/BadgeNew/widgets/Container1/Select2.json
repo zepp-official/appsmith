@@ -1,11 +1,10 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
-  "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 11,
+  "bottomRow": 32,
   "boxShadow": "none",
-  "defaultText": "{{JSObject1.challenge.backendConfigTitle}}",
+  "defaultOptionValue": "0",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,44 +13,50 @@
       "key": "borderRadius"
     },
     {
-      "key": "defaultText"
+      "key": "sourceData"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
   "dynamicTriggerPathList": [],
-  "iconAlign": "left",
-  "inputType": "TEXT",
   "isDisabled": false,
+  "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "0poeow8p2p",
-  "label": "Backend Config Title",
+  "key": "0uwh2zdk3l",
   "labelAlignment": "left",
   "labelPosition": "Left",
-  "labelStyle": "",
+  "labelText": "Badge Type",
   "labelTextSize": "0.875rem",
   "labelWidth": "15",
-  "leftColumn": 6,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 18,
-  "mobileLeftColumn": 10,
-  "mobileRightColumn": 30,
-  "mobileTopRow": 11,
+  "mobileBottomRow": 32,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 19,
+  "mobileTopRow": 25,
   "needsErrorInfo": false,
-  "parentColumnSpace": 12.2998046875,
-  "parentId": "a37m6hv0gc",
+  "optionLabel": "name",
+  "optionValue": "code",
+  "parentColumnSpace": 10.0576171875,
+  "parentId": "u2pm09m2lj",
   "parentRowSpace": 10,
+  "placeholderText": "Select option",
   "renderMode": "CANVAS",
-  "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 39,
-  "showStepArrows": false,
-  "topRow": 4,
-  "type": "INPUT_WIDGET_V2",
-  "version": 2,
-  "widgetId": "poube7goa0",
-  "widgetName": "backendConfigTitle"
+  "rightColumn": 37,
+  "serverSideFiltering": false,
+  "sourceData": "{{JSObject1.badgeType}}",
+  "topRow": 25,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "1463mwqtu0",
+  "widgetName": "Select2"
 }
