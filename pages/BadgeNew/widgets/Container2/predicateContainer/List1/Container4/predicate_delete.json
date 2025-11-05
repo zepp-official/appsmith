@@ -1,0 +1,51 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "SECONDARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "delete",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "2phztpp55k",
+  "leftColumn": 59,
+  "minWidth": 50,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 59,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "onClick": "{{JSObject1.deleteCondition(currentIndex)}}",
+  "parentColumnSpace": 12.1103515625,
+  "parentId": "yd1lip6yzc",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 63,
+  "topRow": 0,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "m0u7j1rblj",
+  "widgetName": "predicate_delete"
+}

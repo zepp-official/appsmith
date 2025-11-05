@@ -4,13 +4,16 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 80,
   "boxShadow": "none",
-  "defaultOptionValue": "GREEN",
+  "defaultOptionValue": "0",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -52,7 +55,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 37,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"Blue\",\n    \"code\": \"BLUE\"\n  },\n  {\n    \"name\": \"Green\",\n    \"code\": \"GREEN\"\n  },\n  {\n    \"name\": \"Red\",\n    \"code\": \"RED\"\n  }\n]",
+  "sourceData": "{{JSObject1.actionType}}",
   "topRow": 73,
   "type": "SELECT_WIDGET",
   "version": 1,

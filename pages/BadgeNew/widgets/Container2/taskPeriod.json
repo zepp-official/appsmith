@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 37,
   "boxShadow": "none",
-  "defaultOptionValue": "Task Period",
+  "defaultOptionValue": "0",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,6 +14,9 @@
     },
     {
       "key": "isVisible"
+    },
+    {
+      "key": "sourceData"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -56,7 +59,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 37,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"Blue\",\n    \"code\": \"BLUE\"\n  },\n  {\n    \"name\": \"Green\",\n    \"code\": \"GREEN\"\n  },\n  {\n    \"name\": \"Red\",\n    \"code\": \"RED\"\n  }\n]",
+  "sourceData": "{{JSObject1.repeatPeriod}}",
   "topRow": 30,
   "type": "SELECT_WIDGET",
   "version": 1,

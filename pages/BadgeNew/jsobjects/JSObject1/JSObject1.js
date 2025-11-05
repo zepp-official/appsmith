@@ -80,27 +80,54 @@ export default {
 		}
 	],
 	badgeType: [
-		{
-			"name": "Lifetime",
-			"code": "0"
-		},
-		{
-			"name": "Seasonal",
-			"code": "1"
-		},
-		{
-			"name": "PB",
-			"code": "2"
-		},
-		{
-			"name": "Seasonal",
-			"code": "3"
-		}
+		{ "name": "Lifetime", "code": "0" },
+		{ "name": "Seasonal", "code": "1" },
+		{ "name": "PB", "code": "2" },
+		{ "name": "Seasonal", "code": "3" }
 	],
 	actionType: [
-		{
-			"name": "RUN"
-		}
+		{ "name": "General Workout", "code": "0" },
+		{ "name": "Steps", "code": "1" },
+		{ "name": "Running", "code": "2" },
+		{ "name": "Cycling", "code": "3" },
+		{ "name": "Sleep", "code": "4" },
+		{ "name": "Food", "code": "5" },
+		{ "name": "Swimming", "code": "6" },
+		{ "name": "Jump Roap", "code": "7" },
+		{ "name": "Free Diving", "code": "8" },
+		{ "name": "Hiking", "code": "9" }
+	],
+	badgeLevel: [
+		{ "name": "Level 1", "code": "1" },
+		{ "name": "Level 2", "code": "2" },
+		{ "name": "Level 3", "code": "3" },
+		{ "name": "Level 4", "code": "4" },
+		{ "name": "Level 5", "code": "5" },
+		{ "name": "Level 6", "code": "6" },
+		{ "name": "Level 7", "code": "7" },
+		{ "name": "Level 8", "code": "8" },
+		{ "name": "Level 9", "code": "9" },
+		{ "name": "Level 10", "code": "10" },
+		{ "name": "Level 11", "code": "11" },
+		{ "name": "Level 12", "code": "12" },
+		{ "name": "Level 13", "code": "13" },
+		{ "name": "Level 14", "code": "14" },
+		{ "name": "Level 15", "code": "15" },
+		{ "name": "Level 16", "code": "16" },
+		{ "name": "Level 17", "code": "17" },
+		{ "name": "Level 18", "code": "18" },
+		{ "name": "Level 19", "code": "19" },
+		{ "name": "Level 20", "code": "20" }
+	],
+	unitOfMeasurement:[
+		{ "name": "Meter", "code": "0" },
+		{ "name": "KM", "code": "1" },
+		{ "name": "Yard", "code": "2" },
+		{ "name": "Inch", "code": "3" },
+		{ "name": "Mile", "code": "4" },
+		{ "name": "Number", "code": "5" },
+		{ "name": "Count", "code": "6" },
+		{ "name": "Second", "code": "7" }
 	],
 	repeatPeriod: [
 		{
@@ -126,14 +153,23 @@ export default {
 	],
 	conditions: [
 		{
-			"progress": "workouts_over_10min_current_week",
-			"conditional": ">=",
-			"goal": 3
+			"id": "abc",
+			"source": "workouts_over_10min_current_week",
+			"operator": ">=",
+			"goal": 3,
+			"isMetric": false
 		},
 		{
-			"progress": "workouts_over_10min_current_week_previous",
-			"conditional": "<",
-			"goal": 3
+			"id": "def",
+			"source": "calories_burned_today_previous",
+			"operator": "<",
+			"goal": "calories_goal",
+			"isMetric": true
 		}
-	]
+	],
+	deleteCondition (index) {
+		//	write code here
+		//	this.myVar1 = [1,2,3]
+		this.conditions.splice(index, 1);
+	},
 }

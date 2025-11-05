@@ -24,7 +24,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "uhcy3tvvc4",
-  "label": "Start Time",
+  "label": "Available Time - start",
   "labelAlignment": "left",
   "labelPosition": "Left",
   "labelTextSize": "0.875rem",
