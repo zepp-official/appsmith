@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "68edbca07f897134d9d213fe_99645307-a7dd-40cf-8e8c-55a9ae103674",
+  "id": "BadgeList_getAppToken",
+  "unpublishedCollection": {
+    "name": "getAppToken",
+    "pageId": "BadgeList",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

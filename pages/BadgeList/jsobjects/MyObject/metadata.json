@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "68edbca07f897134d9d213fe_1e17a1e1-3df0-457a-a61e-18012440e5a3",
+  "id": "BadgeList_MyObject",
+  "unpublishedCollection": {
+    "name": "MyObject",
+    "pageId": "BadgeList",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "rewardList",
+        "value": "[{\n  \"id\": 1,\n  \"parentId\": 0,\n  \"appname\": \"com.midong.huami\",\n  \"contents\": {\n    \"badge_title\": \"title_key1\",\n    \"badge_description\": \"description_key1\",\n    \"badge_tag_challenge\": [\"tag_key1\", \"tag_key2\"]\n  },\n  \"assets\": {\n    \"icon\": \"badges/running_active.png\"\n  },\n  \"predictExpression\": \"distance >= 1000\",\n  \"type\": 0,\n  \"actiontype\": 1,\n  \"goalExpression\": \"1000\",\n  \"progressExpression\": \"distance\",\n  \"showPredict\": \"version>10.0.0\",\n  \"mark\": 1,\n  \"visibilityStartTime\": \"2023-10-01 10:00:00\",\n  \"visibilityEndTime\": \"2023-10-01 10:00:00\",\n  \"availabilityStartTime\": \"2023-10-01 10:00:00\",\n  \"availabilityEndTime\": \"2023-10-01 10:00:00\",\n  \"level\": 1,\n  \"difficulty\": 1,\n  \"repeatReriod\": 1,\n  \"isRepeatable\": 1,\n  \"createdTime\": \"2023-10-01 10:00:00\",\n  \"updatedTime\": \"2023-10-01 10:00:00\",\n  \"createBy\": \"zhangtao1@zepp.com\",\n  \"updateBy\": \"zhangtao1@zepp.com\",\n  \"status\": 1,\n  \"groupId\": \"xxxxxxx\",\n  \"badgeStatus\": 1,\n  \"isDelete\": 1\n}, {\n  \"id\": 2,\n  \"parentId\": 0,\n  \"appname\": \"com.midong.huami\",\n  \"contents\": {\n    \"badge_title\": \"title_key1\",\n    \"badge_description\": \"description_key1\",\n    \"badge_tag_challenge\": [\"tag_key1\", \"tag_key2\"]\n  },\n  \"assets\": {\n    \"icon\": \"badges/running_active.png\"\n  },\n  \"predictExpression\": \"distance >= 1000\",\n  \"type\": 0,\n  \"actiontype\": 1,\n  \"goalExpression\": \"1000\",\n  \"progressExpression\": \"distance\",\n  \"showPredict\": \"version>10.0.0\",\n  \"mark\": 1,\n  \"visibilityStartTime\": \"2023-10-01 10:00:00\",\n  \"visibilityEndTime\": \"2023-10-01 10:00:00\",\n  \"availabilityStartTime\": \"2023-10-01 10:00:00\",\n  \"availabilityEndTime\": \"2023-10-01 10:00:00\",\n  \"level\": 1,\n  \"difficulty\": 1,\n  \"repeatReriod\": 1,\n  \"isRepeatable\": 1,\n  \"createdTime\": \"2023-10-01 10:00:00\",\n  \"updatedTime\": \"2023-10-01 10:00:00\",\n  \"createBy\": \"zhangtao1@zepp.com\",\n  \"updateBy\": \"zhangtao1@zepp.com\",\n  \"status\": 1,\n  \"groupId\": \"xxxxxxx\",\n  \"badgeStatus\": 1,\n  \"isDelete\": 1\n}]"
+      }
+    ]
+  }
+}

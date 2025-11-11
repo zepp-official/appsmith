@@ -1,0 +1,68 @@
+{
+  "gitSyncId": "68edbca07f897134d9d213fe_ecf32825-16fe-4639-aac2-484925553ac6",
+  "id": "BadgeDetail_JSObject1",
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "BadgeDetail",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "challenge",
+        "value": "{\n  \"id\": 1,\n  \"type\": \"STEPS\",\n  \"backendConfigTitle\": \"ABC\",\n  \"ctype\": 1,\n  \"appname\": \"com.huami.midong\",\n  \"difficulty\": 2,\n  \"contents\": {\n    \"badge_title\": \"每日万步挑战\",\n    \"badge_description\": \"完成每日10000步目标\"\n  },\n  \"assets\": {\n    \"bgActive\": \"https://assets.challenge_active.png\",\n    \"bgInactive\": \"https://assets.challenge_inactive.png\",\n    \"icon\": \"https://assets.challenge_icon.png\"\n  },\n  \"repeatPeriod\": 0,\n  \"order\": 1,\n  \"startDate\": 1698765432,\n  \"endDate\": 1701357432,\n  \"onlineDate\": 1698679032,\n  \"offlineDate\": 1701443832\n}"
+      },
+      {
+        "name": "sportType",
+        "value": "[{\n  \"name\": \"STEPS\",\n  \"code\": \"STEPS\"\n}, {\n  \"name\": \"RUN\",\n  \"code\": \"RUN\"\n}, {\n  \"name\": \"RECOVERY\",\n  \"code\": \"RECOVERY\"\n}]"
+      },
+      {
+        "name": "difficultyLevel",
+        "value": "[{\n  \"name\": \"Bronze\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"Silver\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"Gold\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Patinum\",\n  \"code\": \"3\"\n}]"
+      },
+      {
+        "name": "badgeType",
+        "value": "[{\n  \"name\": \"Lifetime\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"Seasonal\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"PB\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Seasonal\",\n  \"code\": \"3\"\n}]"
+      },
+      {
+        "name": "actionType",
+        "value": "[{\n  \"name\": \"General Workout\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"Steps\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"Running\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Cycling\",\n  \"code\": \"3\"\n}, {\n  \"name\": \"Sleep\",\n  \"code\": \"4\"\n}, {\n  \"name\": \"Food\",\n  \"code\": \"5\"\n}, {\n  \"name\": \"Swimming\",\n  \"code\": \"6\"\n}, {\n  \"name\": \"Jump Roap\",\n  \"code\": \"7\"\n}, {\n  \"name\": \"Free Diving\",\n  \"code\": \"8\"\n}, {\n  \"name\": \"Hiking\",\n  \"code\": \"9\"\n}]"
+      },
+      {
+        "name": "badgeLevel",
+        "value": "[{\n  \"name\": \"Level 1\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"Level 2\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Level 3\",\n  \"code\": \"3\"\n}, {\n  \"name\": \"Level 4\",\n  \"code\": \"4\"\n}, {\n  \"name\": \"Level 5\",\n  \"code\": \"5\"\n}, {\n  \"name\": \"Level 6\",\n  \"code\": \"6\"\n}, {\n  \"name\": \"Level 7\",\n  \"code\": \"7\"\n}, {\n  \"name\": \"Level 8\",\n  \"code\": \"8\"\n}, {\n  \"name\": \"Level 9\",\n  \"code\": \"9\"\n}, {\n  \"name\": \"Level 10\",\n  \"code\": \"10\"\n}, {\n  \"name\": \"Level 11\",\n  \"code\": \"11\"\n}, {\n  \"name\": \"Level 12\",\n  \"code\": \"12\"\n}, {\n  \"name\": \"Level 13\",\n  \"code\": \"13\"\n}, {\n  \"name\": \"Level 14\",\n  \"code\": \"14\"\n}, {\n  \"name\": \"Level 15\",\n  \"code\": \"15\"\n}, {\n  \"name\": \"Level 16\",\n  \"code\": \"16\"\n}, {\n  \"name\": \"Level 17\",\n  \"code\": \"17\"\n}, {\n  \"name\": \"Level 18\",\n  \"code\": \"18\"\n}, {\n  \"name\": \"Level 19\",\n  \"code\": \"19\"\n}, {\n  \"name\": \"Level 20\",\n  \"code\": \"20\"\n}]"
+      },
+      {
+        "name": "unitOfMeasurement",
+        "value": "[{\n  \"name\": \"Meter\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"KM\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"Yard\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Inch\",\n  \"code\": \"3\"\n}, {\n  \"name\": \"Mile\",\n  \"code\": \"4\"\n}, {\n  \"name\": \"Number\",\n  \"code\": \"5\"\n}, {\n  \"name\": \"Count\",\n  \"code\": \"6\"\n}, {\n  \"name\": \"Second\",\n  \"code\": \"7\"\n}]"
+      },
+      {
+        "name": "repeatPeriod",
+        "value": "[{\n  \"name\": \"None\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"Day\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"Week\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Month\",\n  \"code\": \"3\"\n}, {\n  \"name\": \"Infinity\",\n  \"code\": \"4\"\n}]"
+      },
+      {
+        "name": "metricList",
+        "value": "[{\n  \"code\": \"workouts_over_10min_current_week\",\n  \"description\": \"workouts over 10min current week\"\n}, {\n  \"code\": \"calories_burned_today_previous\",\n  \"description\": \"calories burned today previous\"\n}, {\n  \"code\": \"calories_goal\",\n  \"description\": \"calories goal\"\n}]"
+      },
+      {
+        "name": "conditions",
+        "value": "[{\n  \"source\": \"workouts_over_10min_current_week\",\n  \"operator\": \">=\",\n  \"goal\": 3,\n  \"isMetric\": false\n}, {\n  \"source\": \"calories_burned_today_previous\",\n  \"operator\": \"<\",\n  \"goal\": \"calories_goal\",\n  \"isMetric\": true\n}]"
+      },
+      {
+        "name": "operators",
+        "value": "[{\n  \"name\": \">\",\n  \"code\": \">\"\n}, {\n  \"name\": \">=\",\n  \"code\": \">=\"\n}, {\n  \"name\": \"<\",\n  \"code\": \"<\"\n}, {\n  \"name\": \"<=\",\n  \"code\": \"<=\"\n}, {\n  \"name\": \"==\",\n  \"code\": \"==\"\n}]"
+      },
+      {
+        "name": "newPredicateModalmode",
+        "value": "\"new\""
+      },
+      {
+        "name": "tempPredicate",
+        "value": "{}"
+      },
+      {
+        "name": "tags",
+        "value": "[]"
+      }
+    ]
+  }
+}

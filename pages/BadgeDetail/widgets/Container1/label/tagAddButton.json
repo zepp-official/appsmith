@@ -1,0 +1,50 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 9,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "SECONDARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "plus",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "5xnvdxdqno",
+  "leftColumn": 52,
+  "minWidth": 50,
+  "mobileBottomRow": 12,
+  "mobileLeftColumn": 22,
+  "mobileRightColumn": 26,
+  "mobileTopRow": 8,
+  "needsErrorInfo": false,
+  "onClick": "{{JSObject1.addTag()}}",
+  "parentColumnSpace": 7.1223907470703125,
+  "parentId": "cx9qbpifpl",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 56,
+  "topRow": 5,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "7aop78yvq2",
+  "widgetName": "tagAddButton"
+}

@@ -1,0 +1,51 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 7,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "SECONDARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "delete",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "5xnvdxdqno",
+  "leftColumn": 54,
+  "minWidth": 50,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 28,
+  "mobileRightColumn": 32,
+  "mobileTopRow": 3,
+  "needsErrorInfo": false,
+  "onClick": "{{JSObject1.deleteTag(currentIndex)}}",
+  "parentColumnSpace": 6.573603391647339,
+  "parentId": "v2nylxcs2o",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 58,
+  "topRow": 3,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "e8hi5x0165",
+  "widgetName": "tagDeleteBtn"
+}

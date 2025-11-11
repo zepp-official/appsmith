@@ -27,14 +27,6 @@
   "icon": "bag",
   "pages": [
     {
-      "id": "TopicList",
-      "isDefault": true
-    },
-    {
-      "id": "TopicDetail",
-      "isDefault": false
-    },
-    {
       "id": "UCHList",
       "isDefault": false
     },
@@ -59,8 +51,12 @@
       "isDefault": false
     },
     {
-      "id": "BadgeNew",
+      "id": "BadgeDetail",
       "isDefault": false
+    },
+    {
+      "id": "BadgeList",
+      "isDefault": true
     }
   ],
   "unpublishedAppLayout": {
