@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "68edbca07f897134d9d213fe_79228ef5-5943-40ea-ae4f-2d9c2e692413",
+  "id": "BadgeDetail_PageLogic",
+  "unpublishedCollection": {
+    "name": "PageLogic",
+    "pageId": "BadgeDetail",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "currentBadge",
+        "value": "{}"
+      },
+      {
+        "name": "defaultBadge",
+        "value": "{\n  \"name\": \"\",\n  \"description\": \"\",\n  \"points\": 0,\n  \"iconUrl\": \"\"\n}"
+      }
+    ]
+  }
+}

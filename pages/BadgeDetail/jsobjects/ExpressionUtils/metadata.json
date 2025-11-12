@@ -1,8 +1,8 @@
 {
   "gitSyncId": "68edbca07f897134d9d213fe_7013d2fc-b076-4f09-afa0-e437b0a356a9",
-  "id": "BadgeDetail_Utils",
+  "id": "BadgeDetail_ExpressionUtils",
   "unpublishedCollection": {
-    "name": "Utils",
+    "name": "ExpressionUtils",
     "pageId": "BadgeDetail",
     "pluginId": "js-plugin",
     "pluginType": "JS",

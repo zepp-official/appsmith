@@ -11,6 +11,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -30,6 +33,8 @@
   "mobileRightColumn": 22,
   "mobileTopRow": 9,
   "needsErrorInfo": false,
+  "originalBottomRow": 14,
+  "originalTopRow": 10,
   "overflow": "NONE",
   "parentColumnSpace": 17.9375,
   "parentId": "0",
@@ -38,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 22,
   "shouldTruncate": false,
-  "text": "New Challenge",
+  "text": "{{appsmith.URL.queryParams.mode === \"new\" ? \"New Reward\" : \"Edit Reward\"}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 10,

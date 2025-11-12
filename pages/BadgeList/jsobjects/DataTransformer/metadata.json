@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "68edbca07f897134d9d213fe_c5a1274c-efb9-4609-a58a-5e41d139f36e",
+  "id": "BadgeList_DataTransformer",
+  "unpublishedCollection": {
+    "name": "DataTransformer",
+    "pageId": "BadgeList",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "badgeType",
+        "value": "[{\n  \"name\": \"Lifetime\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"Seasonal\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"PB\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Seasonal\",\n  \"code\": \"3\"\n}]"
+      },
+      {
+        "name": "badgeStatus",
+        "value": "[{\n  \"name\": \"Active\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"Pending\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"Expired\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Draft\",\n  \"code\": \"3\"\n}]"
+      }
+    ]
+  }
+}

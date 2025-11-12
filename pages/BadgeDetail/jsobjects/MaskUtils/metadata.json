@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "68edbca07f897134d9d213fe_52b2b4e5-7b5c-472e-ab9f-0e869aeb2081",
+  "id": "BadgeDetail_MaskUtils",
+  "unpublishedCollection": {
+    "name": "MaskUtils",
+    "pageId": "BadgeDetail",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "MASK_MAP",
+        "value": "{\n  \"0x01\": 1,\n  \"0x02\": 2,\n  \"0x04\": 4\n}"
+      },
+      {
+        "name": "REVERSE_MASK_MAP",
+        "value": "{\n  1: \"0x01\",\n  2: \"0x02\",\n  4: \"0x04\"\n}"
+      }
+    ]
+  }
+}

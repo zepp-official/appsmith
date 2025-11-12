@@ -1,4 +1,6 @@
 export default {
+
+	
 	challenge: {
 		"id": 1,
 		"type": "STEPS",
@@ -36,6 +38,17 @@ export default {
 			"name": "RECOVERY",
 			"code": "RECOVERY"
 		}
+	],
+	badgeStatus:
+	[
+		{
+			"name": "Offline",
+			"code": "0"
+		},
+		{
+			"name": "Online",
+			"code": "1"
+		},
 	],
 	difficultyLevel:
 	[

@@ -16,6 +16,10 @@
         "value": "[{\n  \"name\": \"STEPS\",\n  \"code\": \"STEPS\"\n}, {\n  \"name\": \"RUN\",\n  \"code\": \"RUN\"\n}, {\n  \"name\": \"RECOVERY\",\n  \"code\": \"RECOVERY\"\n}]"
       },
       {
+        "name": "badgeStatus",
+        "value": "[{\n  \"name\": \"Offline\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"Online\",\n  \"code\": \"1\"\n}]"
+      },
+      {
         "name": "difficultyLevel",
         "value": "[{\n  \"name\": \"Bronze\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"Silver\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"Gold\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Patinum\",\n  \"code\": \"3\"\n}]"
       },

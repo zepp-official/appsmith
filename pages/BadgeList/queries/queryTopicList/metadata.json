@@ -1,6 +1,6 @@
 {
   "gitSyncId": "68edbca07f897134d9d213fe_82b1f7ea-af63-4834-bc05-52d5b00619f9",
-  "id": "BadgeList_getTopicList",
+  "id": "BadgeList_queryTopicList",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -104,7 +104,7 @@
       "name": "https://api-admin-staging-us.huami.com",
       "pluginId": "restapi-plugin"
     },
-    "name": "getTopicList",
+    "name": "queryTopicList",
     "pageId": "BadgeList",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

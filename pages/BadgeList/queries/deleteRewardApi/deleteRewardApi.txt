@@ -1,0 +1,9 @@
+{
+    "rewards": {
+      "rewardType": 1,
+      "badge": {
+        "id": {{ rewardTable.triggeredRow.id }},
+        "isDelete": 0
+      }
+    }
+}
