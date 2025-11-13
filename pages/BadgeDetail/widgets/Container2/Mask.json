@@ -2,12 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 20,
+  "bottomRow": 46,
   "boxShadow": "none",
-  "closeOnSelection": true,
-  "dateFormat": "YYYY-MM-DD HH:mm:ss",
-  "datePickerType": "DATE_PICKER",
-  "defaultDate": "{{PageLogic.currentBadge.availabilityEndTime}}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( \nMaskUtils.intMaskToArray(PageLogic.currentBadge.mark)\n))(Mask.options, Mask.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -16,52 +13,53 @@
       "key": "borderRadius"
     },
     {
-      "key": "defaultDate"
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
-      "key": "dateFormat"
-    },
-    {
-      "key": "defaultDate"
+      "key": "sourceData"
     }
   ],
   "dynamicTriggerPathList": [],
-  "firstDayOfWeek": 0,
   "isDisabled": false,
+  "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "uhcy3tvvc4",
-  "label": "Task Duration(end)",
+  "key": "q9bgkaeizr",
   "labelAlignment": "left",
   "labelPosition": "Left",
+  "labelText": "Mask",
   "labelTextSize": "0.875rem",
   "labelWidth": "15",
   "leftColumn": 0,
-  "maxDate": "2121-12-31T18:29:00.000Z",
   "maxDynamicHeight": 9000,
-  "minDate": "1920-12-31T18:30:00.000Z",
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 33,
+  "mobileBottomRow": 53,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 14,
-  "mobileTopRow": 26,
+  "mobileRightColumn": 9,
+  "mobileTopRow": 46,
   "needsErrorInfo": false,
-  "parentColumnSpace": 10.0576171875,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "parentColumnSpace": 12.8603515625,
   "parentId": "1hmuhfoxt3",
   "parentRowSpace": 10,
+  "placeholderText": "Select option(s)",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 37,
-  "shortcuts": false,
-  "timePrecision": "minute",
-  "topRow": 13,
-  "type": "DATE_PICKER_WIDGET2",
-  "version": 2,
-  "widgetId": "xjs1tc3vdk",
-  "widgetName": "DatePicker4"
+  "serverSideFiltering": false,
+  "sourceData": "{{MaskUtils.MASK_ARRAY}}",
+  "topRow": 39,
+  "type": "MULTI_SELECT_WIDGET_V2",
+  "version": 1,
+  "widgetId": "hyzzgv1h1f",
+  "widgetName": "Mask"
 }

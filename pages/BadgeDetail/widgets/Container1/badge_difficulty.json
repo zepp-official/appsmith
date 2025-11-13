@@ -56,7 +56,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 37,
   "serverSideFiltering": false,
-  "sourceData": "{{JSObject1.difficultyLevel}}",
+  "sourceData": "{{Enums.difficultyLevel}}",
   "topRow": 18,
   "type": "SELECT_WIDGET",
   "version": 1,

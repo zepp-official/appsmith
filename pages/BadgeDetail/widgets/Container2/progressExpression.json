@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 53,
+  "bottomRow": 54,
   "boxShadow": "none",
-  "defaultOptionValue": "",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( PageLogic.currentBadge.progressExpression))(progressExpression.options, progressExpression.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,6 +14,9 @@
     },
     {
       "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -53,10 +56,10 @@
   "responsiveBehavior": "fill",
   "rightColumn": 37,
   "serverSideFiltering": false,
-  "sourceData": "{{JSObject1.metricList}}",
-  "topRow": 46,
+  "sourceData": "{{Enums.metricList}}",
+  "topRow": 47,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "4gldnet3g5",
+  "widgetId": "m14ewywknt",
   "widgetName": "progressExpression"
 }

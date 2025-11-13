@@ -1,8 +1,8 @@
 {
   "gitSyncId": "68edbca07f897134d9d213fe_ecf32825-16fe-4639-aac2-484925553ac6",
-  "id": "BadgeDetail_JSObject1",
+  "id": "BadgeDetail_Enums",
   "unpublishedCollection": {
-    "name": "JSObject1",
+    "name": "Enums",
     "pageId": "BadgeDetail",
     "pluginId": "js-plugin",
     "pluginType": "JS",
@@ -41,7 +41,7 @@
       },
       {
         "name": "repeatPeriod",
-        "value": "[{\n  \"name\": \"None\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"Day\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"Week\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Month\",\n  \"code\": \"3\"\n}, {\n  \"name\": \"Infinity\",\n  \"code\": \"4\"\n}]"
+        "value": "[{\n  \"name\": \"Day\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"Week\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Month\",\n  \"code\": \"3\"\n}]"
       },
       {
         "name": "metricList",

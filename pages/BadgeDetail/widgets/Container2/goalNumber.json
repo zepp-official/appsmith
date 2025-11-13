@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 71,
+  "bottomRow": 74,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{PageLogic.currentBadge.goalExpression}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -15,6 +15,9 @@
     },
     {
       "key": "isVisible"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -46,8 +49,8 @@
   "mobileRightColumn": 13,
   "mobileTopRow": 64,
   "needsErrorInfo": false,
-  "originalBottomRow": 71,
-  "originalTopRow": 64,
+  "originalBottomRow": 78,
+  "originalTopRow": 71,
   "parentColumnSpace": 12.8603515625,
   "parentId": "1hmuhfoxt3",
   "parentRowSpace": 10,
@@ -57,7 +60,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 37,
   "showStepArrows": false,
-  "topRow": 64,
+  "topRow": 67,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "1f5dazp2m7",

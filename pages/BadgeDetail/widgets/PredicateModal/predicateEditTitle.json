@@ -39,7 +39,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 41,
   "shouldTruncate": false,
-  "text": "Predicate {{JSObject1.newPredicateModalmode === \"new\" ? \"New\" : \"Edit\"}}",
+  "text": "Predicate {{Enums.newPredicateModalmode === \"new\" ? \"New\" : \"Edit\"}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 1,

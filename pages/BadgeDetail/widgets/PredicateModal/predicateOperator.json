@@ -53,7 +53,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 54,
   "serverSideFiltering": false,
-  "sourceData": "{{JSObject1.operators}}",
+  "sourceData": "{{Enums.operators}}",
   "topRow": 12,
   "type": "SELECT_WIDGET",
   "version": 1,

@@ -56,7 +56,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 37,
   "serverSideFiltering": false,
-  "sourceData": "{{JSObject1.badgeType}}",
+  "sourceData": "{{Enums.badgeType}}",
   "topRow": 25,
   "type": "SELECT_WIDGET",
   "version": 1,

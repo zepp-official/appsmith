@@ -1,6 +1,5 @@
 export default {
 
-	
 	challenge: {
 		"id": 1,
 		"type": "STEPS",
@@ -24,6 +23,8 @@ export default {
 		"onlineDate": 1698679032,
 		"offlineDate": 1701443832,
 	},
+	
+	
 	sportType:
 	[
 		{
@@ -121,10 +122,6 @@ export default {
 	],
 	repeatPeriod: [
 		{
-			"name": "None",
-			"code": "0"
-		},
-		{
 			"name": "Day",
 			"code": "1"
 		},
@@ -135,10 +132,6 @@ export default {
 		{
 			"name": "Month",
 			"code": "3"
-		},
-		{
-			"name": "Infinity",
-			"code": "4"
 		}
 	],
 	metricList: [

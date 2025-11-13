@@ -7,7 +7,7 @@
   "closeOnSelection": true,
   "dateFormat": "YYYY-MM-DD HH:mm:ss",
   "datePickerType": "DATE_PICKER",
-  "defaultDate": "{{PageLogic.currentBadge.availabilityEndTime}}",
+  "defaultDate": "{{PageLogic.currentBadge.visibilityEndTime}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -35,7 +35,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "uhcy3tvvc4",
-  "label": "Available Time - end",
+  "label": "Visible Time - end",
   "labelAlignment": "left",
   "labelPosition": "Left",
   "labelTextSize": "0.875rem",

@@ -36,7 +36,7 @@
   "mobileRightColumn": 54,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onClick": "{{\nJSObject1.tempPredicate = JSON.parse(JSON.stringify(currentItem));\nshowModal(PredicateModal.name);}}",
+  "onClick": "{{\nEnums.tempPredicate = JSON.parse(JSON.stringify(currentItem));\nshowModal(PredicateModal.name);}}",
   "parentColumnSpace": 12.1103515625,
   "parentId": "yd1lip6yzc",
   "parentRowSpace": 10,

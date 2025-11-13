@@ -59,7 +59,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 54,
   "serverSideFiltering": false,
-  "sourceData": "{{JSObject1.metricList}}",
+  "sourceData": "{{Enums.metricList}}",
   "topRow": 23,
   "type": "SELECT_WIDGET",
   "version": 1,

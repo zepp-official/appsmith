@@ -2,21 +2,32 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 18,
+  "bottomRow": 13,
   "boxShadow": "none",
   "closeOnSelection": true,
-  "dateFormat": "YYYY-MM-DD HH:mm",
+  "dateFormat": "YYYY-MM-DD HH:mm:ss",
   "datePickerType": "DATE_PICKER",
-  "defaultDate": "2025-10-30T06:25:15.240Z",
+  "defaultDate": "{{PageLogic.currentBadge.availabilityStartTime}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultDate"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "dateFormat"
+    },
+    {
+      "key": "defaultDate"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "firstDayOfWeek": 0,
   "isDisabled": false,
@@ -48,7 +59,7 @@
   "rightColumn": 37,
   "shortcuts": false,
   "timePrecision": "minute",
-  "topRow": 11,
+  "topRow": 8,
   "type": "DATE_PICKER_WIDGET2",
   "version": 2,
   "widgetId": "thyyeim6re",

@@ -1,5 +1,19 @@
 export default {
 	// --- Properties ---
+	MASK_ARRAY:[
+		{
+			"name": "0x01: Steps, Calories, Sleep",
+			"code": "0x01"
+		}, 
+		{
+			"name": "0x02: Workout (Running, Swimming, Climbing, etc.)",
+			"code": "0x02"
+		},
+		{
+			"name": "0x04: Food log related",
+			"code": "0x04"
+		}
+	],
 
 	/**
 	 * Base Mask Map:

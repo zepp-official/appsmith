@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 37,
+  "bottomRow": 31,
   "boxShadow": "none",
-  "defaultOptionValue": "0",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( PageLogic.currentBadge.repeatPeriod.toString()))(taskPeriod.options, taskPeriod.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -17,6 +17,9 @@
     },
     {
       "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -59,8 +62,8 @@
   "responsiveBehavior": "fill",
   "rightColumn": 37,
   "serverSideFiltering": false,
-  "sourceData": "{{JSObject1.repeatPeriod}}",
-  "topRow": 30,
+  "sourceData": "{{Enums.repeatPeriod}}",
+  "topRow": 24,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "ztwdy9z01s",

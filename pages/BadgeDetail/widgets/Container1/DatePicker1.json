@@ -7,7 +7,7 @@
   "closeOnSelection": true,
   "dateFormat": "YYYY-MM-DD HH:mm:ss",
   "datePickerType": "DATE_PICKER",
-  "defaultDate": "{{PageLogic.currentBadge.availabilityStartTime}}",
+  "defaultDate": "{{PageLogic.currentBadge.visibilityStartTime}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -35,7 +35,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "uhcy3tvvc4",
-  "label": "Available Time - start",
+  "label": "Visible Time - start",
   "labelAlignment": "left",
   "labelPosition": "Left",
   "labelTextSize": "0.875rem",

@@ -8,6 +8,10 @@
     "pluginType": "JS",
     "variables": [
       {
+        "name": "MASK_ARRAY",
+        "value": "[{\n  \"name\": \"0x01: Steps, Calories, Sleep\",\n  \"code\": \"0x01\"\n}, {\n  \"name\": \"0x02: Workout (Running, Swimming, Climbing, etc.)\",\n  \"code\": \"0x02\"\n}, {\n  \"name\": \"0x04: Food log related\",\n  \"code\": \"0x04\"\n}]"
+      },
+      {
         "name": "MASK_MAP",
         "value": "{\n  \"0x01\": 1,\n  \"0x02\": 2,\n  \"0x04\": 4\n}"
       },

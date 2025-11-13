@@ -96,6 +96,47 @@ export default {
 		}
 	},
 
+	// Save a badge configuration
+	async saveBadge() {
+		const reward = {
+			rewardType: 1,
+			badge: this.defaultBadge
+		};
+
+		delete reward.badge.id;
+
+		try {
+			await addBadge.run({ body: reward });
+			showAlert('Badge created successfully!', 'success');
+			return;
+		} catch (error) {
+			console.error("API call failed:", error);
+			showAlert('Failed to create user: ' + error.message, 'error');
+		}
+
+		// let fetch_url = "";
+		// if (appsmith.URL.queryParams.mode === "new" || appsmith.URL.queryParams.mode === "copy") {
+		// fetch_url = "http://api-admin-staging-us.huami.com/admin/rewards/add";
+		// delete reward.badge.id;
+		// } else {
+		// fetch_url = "http://api-admin-staging-us.huami.com/admin/rewards/update";
+		// }
+		// 
+		// fetch(fetch_url, {
+		// method: "POST",
+		// headers: {
+		// "Content-Type": "application/json",
+		// },
+		// body: JSON.stringify(reward),
+		// }).then((response) => {
+		// console.log("Success:", response.json());
+		// showAlert('Created a new badge template.', 'info');
+		// }).catch((error) => {
+		// console.error("Error:", error);
+		// showAlert('Error when creating a new badge template.', 'warning');
+		// });
+	},
+
 	// Add a new tag
 	addTag () {
 		const tagInput = tagInput_Widget.text;
