@@ -203,33 +203,4 @@ export default {
 		this.conditions.splice(index, 1);
 	},
 
-	// Tags array for label management
-	tags: [],
-	// Add a new tag
-	addTag () {
-		const tagInput = tagInput_Widget.text;
-		if (!tagInput || tagInput.trim() === "") {
-			showAlert("Please enter a tag", "warning");
-			return;
-		}
-
-		// Check for duplicates
-		if (this.tags.includes(tagInput.trim())) {
-			showAlert("Tag already exists", "warning");
-			return;
-		}
-
-		// Add tag to array
-		this.tags.push(tagInput.trim());
-
-		// Clear input
-		resetWidget("tagInput_Widget");
-		showAlert("Tag added successfully", "success");
-	},
-
-	// Delete a tag by index
-	deleteTag (index) {
-		this.tags.splice(index, 1);
-		showAlert("Tag deleted", "success");
-	},
 }

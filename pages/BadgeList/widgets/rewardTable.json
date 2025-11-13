@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 64,
+  "bottomRow": 77,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "cachedTableData": {},
   "canFreezeColumn": true,
@@ -115,6 +115,9 @@
     },
     {
       "key": "primaryColumns.customColumn1.menuItems.menuItemgbwuk0gmv8.isVisible"
+    },
+    {
+      "key": "onPageChange"
     }
   ],
   "dynamicTriggerPathList": [
@@ -126,6 +129,12 @@
     },
     {
       "key": "primaryColumns.customColumn1.menuItems.menuItemgbwuk0gmv8.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItemp79jgaaalz.onClick"
+    },
+    {
+      "key": "onPageChange"
     }
   ],
   "enableClientSideSearch": false,
@@ -150,6 +159,7 @@
   "mobileRightColumn": 30,
   "mobileTopRow": 21,
   "needsErrorInfo": false,
+  "onPageChange": "{{queryRewardsApi.run()}}",
   "onSearchTextChanged": "{{queryRewardsApi.run()}}",
   "parentColumnSpace": 17.9375,
   "parentId": "0",
@@ -282,9 +292,10 @@
         "menuItemp79jgaaalz": {
           "id": "menuItemp79jgaaalz",
           "index": 1,
-          "isDisabled": true,
+          "isDisabled": false,
           "isVisible": true,
           "label": "Copy",
+          "onClick": "{{navigateTo('RewardDetail', {\n  \"id\": rewardTable.triggeredRow.id,\n\t\"mode\": \"copy\"\n}, 'SAME_WINDOW');}}",
           "widgetId": "hbg2vxs88k"
         },
         "menuItemtewv5gingu": {
@@ -293,7 +304,7 @@
           "isDisabled": false,
           "isVisible": true,
           "label": "Edit",
-          "onClick": "{{navigateTo('BadgeDetail', {\n  \"id\": rewardTable.triggeredRow.id\n}, 'SAME_WINDOW');}}",
+          "onClick": "{{navigateTo('BadgeDetail', {\n  \"id\": rewardTable.triggeredRow.id,\n\t\"mode\": \"edit\"\n}, 'SAME_WINDOW');}}",
           "widgetId": "9p61dkpb6j"
         }
       },

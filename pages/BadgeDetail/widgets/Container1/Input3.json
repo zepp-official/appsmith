@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 39,
   "boxShadow": "none",
-  "defaultText": "{{JSObject1.challenge.contents.badge_description}}",
+  "defaultText": "{{PageLogic.currentBadge.contents.badge_description}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

@@ -62,10 +62,6 @@
       {
         "name": "tempPredicate",
         "value": "{}"
-      },
-      {
-        "name": "tags",
-        "value": "[]"
       }
     ]
   }

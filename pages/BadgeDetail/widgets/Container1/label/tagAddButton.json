@@ -35,7 +35,7 @@
   "mobileRightColumn": 26,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
-  "onClick": "{{JSObject1.addTag()}}",
+  "onClick": "{{PageLogic.addTag()}}",
   "parentColumnSpace": 7.1223907470703125,
   "parentId": "cx9qbpifpl",
   "parentRowSpace": 10,

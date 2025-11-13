@@ -97,7 +97,7 @@
   "itemSpacing": 8,
   "key": "jhpb94c74q",
   "leftColumn": 0,
-  "listData": "{{JSObject1.tags.map((tag, index) => ({id: index, name: tag}))}}",
+  "listData": "{{PageLogic.currentBadge.contents.badge_tags.map((tag, index) => ({id: index, name: tag}))}}",
   "mainCanvasId": "e0we9qgzm2",
   "mainContainerId": "l2t3vmy2my",
   "minWidth": 450,

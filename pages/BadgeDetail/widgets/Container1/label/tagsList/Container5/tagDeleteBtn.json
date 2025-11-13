@@ -36,7 +36,7 @@
   "mobileRightColumn": 32,
   "mobileTopRow": 3,
   "needsErrorInfo": false,
-  "onClick": "{{JSObject1.deleteTag(currentIndex)}}",
+  "onClick": "{{PageLogic.deleteTag(currentIndex)}}",
   "parentColumnSpace": 6.573603391647339,
   "parentId": "v2nylxcs2o",
   "parentRowSpace": 10,
