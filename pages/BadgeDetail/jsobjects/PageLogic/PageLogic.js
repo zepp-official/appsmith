@@ -102,13 +102,13 @@ export default {
 
 	// Save a badge configuration
 	async saveBadge() {
-		this.defaultBadge.predictExpression = ExpressionUtils.conditionsToExpression(this.defaultBadge.predictDetails);
-		delete this.defaultBadge.predictDetails;
+		this.currentBadge.predictExpression = ExpressionUtils.conditionsToExpression(this.currentBadge.predictDetails);
+		delete this.currentBadge.predictDetails;
 
 		const reward = {
 			"rewards": {
 				rewardType: 1,
-				badge: this.defaultBadge
+				badge: this.currentBadge
 			}
 		};
 
