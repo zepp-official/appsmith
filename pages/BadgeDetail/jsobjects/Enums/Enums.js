@@ -136,16 +136,28 @@ export default {
 	],
 	metricList: [
 		{
-			"code": "workouts_over_10min_current_week",
-			"description": "workouts over 10min current week"
+			"field_name": "workouts_over_10min_current_week",
+			"field_desc": "workouts over 10min current week"
 		},
 		{
-			"code": "calories_burned_today_previous",
-			"description": "calories burned today previous"
+			"field_name": "calories_burned_today_previous",
+			"field_desc": "calories burned today previous"
 		},
 		{
-			"code": "calories_goal",
-			"description": "calories goal"
+			"field_name": "calories_goal",
+			"field_desc": "calories goal"
+		},
+		{
+			"field_name": "currentTotalCyclingDistance",
+			"field_desc": "calories goal"
+		},
+		{
+			"field_name": "totalCyclingDistance",
+			"field_desc": "calories goal"
+		},
+		{
+			"field_name": "distance",
+			"field_desc": "distance goal"
 		}
 	],
 	
@@ -175,7 +187,12 @@ export default {
 	},
 	
 	newPredicateModalmode: "new",
-	tempPredicate: {},
+	tempPredicate: {			
+		"source": "",
+		"operator": "",
+		"goal": 0,
+		"isMetric": false
+	},
 	async saveCondition () {
 		let condition = {};
 		condition.id = crypto.randomUUID();

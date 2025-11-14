@@ -13,8 +13,6 @@ export default {
 			"badge_title": "",
 			"badge_description": "",
 			"badge_tags": [
-				"",
-				""
 			]
 		},
 		"assets": {
@@ -23,21 +21,22 @@ export default {
 		"status": 1,
 		"type": 0,
 		"actionType": 2,
-		"predictExpression": "distance >= 1000",
-		"goalExpression": "1000",
-		"progressExpression": "distance",
+		"predictExpression": "",
+		"predictDetails": [],
+		"goalExpression": "",
+		"progressExpression": "",
 		"level": 1,
 		"difficulty": 0,
 		"isRepeatable": 1,
 		"repeatPeriod": 0,
-		"visibilityStartTime": "2024-01-01 00:00:00",
-		"visibilityEndTime": "2025-12-31 23:59:59",
-		"availabilityStartTime": "2024-01-01 00:00:00",
-		"availabilityEndTime": "2025-12-31 23:59:59",
+		"visibilityStartTime": "",
+		"visibilityEndTime": "",
+		"availabilityStartTime": "",
+		"availabilityEndTime": "",
 		"unit": 1,
 		"mark": 1,
 		"showPredict": "version>10.0.0",
-		"backendConfigTitle": "Running Expert - Level 1",
+		"backendConfigTitle": "",
 		"badgeStatus": 0,
 		"createBy": "admin@zepp.com",
 		"updateBy": "admin@zepp.com",
@@ -53,7 +52,7 @@ export default {
 		const mode = appsmith.URL.queryParams.mode;
 
 		showAlert('current mode:' + mode, 'info');
-		if (mode === "edit") {
+		if (mode === "edit" || mode === "clone") {
 			// --- EDIT MODE ---
 			// 2. Get the 'id' from the URL
 			const badgeId = appsmith.URL.queryParams.id;
@@ -74,7 +73,11 @@ export default {
 				// For example, if your data is at badgeData.data, use:
 				// this.currentBadge = badgeData.data;
 				this.currentBadge = badgeData.data.items[0].badge;
+				this.currentBadge.predictDetails = ExpressionUtils.expressionToConditions(this.currentBadge.predictExpression);
 
+				console.log("begin transform predictExpression to predictDetails");
+				console.dir(this.currentBadge.predictExpression);
+				console.dir(this.currentBadge.predictDetails);
 				showAlert('Badge data loaded.', 'success');
 
 			} catch (error) {
@@ -106,35 +109,18 @@ export default {
 		delete reward.badge.id;
 
 		try {
-			await addBadge.run({ body: reward });
-			showAlert('Badge created successfully!', 'success');
+			if (appsmith.URL.queryParams.mode === "new" || appsmith.URL.queryParams.mode === "copy") {
+				await addBadge.run({ body: reward });
+				showAlert('Badge created successfully!', 'success');
+			} else {
+				await updateBadge.run({ body: reward });
+				showAlert('Badge created successfully!', 'success');
+			}
 			return;
 		} catch (error) {
 			console.error("API call failed:", error);
-			showAlert('Failed to create user: ' + error.message, 'error');
+			showAlert('Failed to create badge template: ' + error.message, 'error');
 		}
-
-		// let fetch_url = "";
-		// if (appsmith.URL.queryParams.mode === "new" || appsmith.URL.queryParams.mode === "copy") {
-		// fetch_url = "http://api-admin-staging-us.huami.com/admin/rewards/add";
-		// delete reward.badge.id;
-		// } else {
-		// fetch_url = "http://api-admin-staging-us.huami.com/admin/rewards/update";
-		// }
-		// 
-		// fetch(fetch_url, {
-		// method: "POST",
-		// headers: {
-		// "Content-Type": "application/json",
-		// },
-		// body: JSON.stringify(reward),
-		// }).then((response) => {
-		// console.log("Success:", response.json());
-		// showAlert('Created a new badge template.', 'info');
-		// }).catch((error) => {
-		// console.error("Error:", error);
-		// showAlert('Error when creating a new badge template.', 'warning');
-		// });
 	},
 
 	// Add a new tag

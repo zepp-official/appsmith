@@ -45,7 +45,7 @@
       },
       {
         "name": "metricList",
-        "value": "[{\n  \"code\": \"workouts_over_10min_current_week\",\n  \"description\": \"workouts over 10min current week\"\n}, {\n  \"code\": \"calories_burned_today_previous\",\n  \"description\": \"calories burned today previous\"\n}, {\n  \"code\": \"calories_goal\",\n  \"description\": \"calories goal\"\n}]"
+        "value": "[{\n  \"field_name\": \"workouts_over_10min_current_week\",\n  \"field_desc\": \"workouts over 10min current week\"\n}, {\n  \"field_name\": \"calories_burned_today_previous\",\n  \"field_desc\": \"calories burned today previous\"\n}, {\n  \"field_name\": \"calories_goal\",\n  \"field_desc\": \"calories goal\"\n}, {\n  \"field_name\": \"currentTotalCyclingDistance\",\n  \"field_desc\": \"calories goal\"\n}, {\n  \"field_name\": \"totalCyclingDistance\",\n  \"field_desc\": \"calories goal\"\n}, {\n  \"field_name\": \"distance\",\n  \"field_desc\": \"distance goal\"\n}]"
       },
       {
         "name": "conditions",
@@ -61,7 +61,7 @@
       },
       {
         "name": "tempPredicate",
-        "value": "{}"
+        "value": "{\n  \"source\": \"\",\n  \"operator\": \"\",\n  \"goal\": 0,\n  \"isMetric\": false\n}"
       }
     ]
   }

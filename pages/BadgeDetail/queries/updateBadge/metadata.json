@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "",
+      "body": "{{ this.params.body }}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
@@ -39,7 +39,11 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "name": "updateBadge",
     "pageId": "BadgeDetail",
     "runBehaviour": "MANUAL",
