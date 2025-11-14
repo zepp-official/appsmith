@@ -4,13 +4,21 @@
   "animateLoading": true,
   "bottomRow": 23,
   "boxShadow": "none",
-  "defaultOptionValue": "Metric",
+  "defaultOptionValue": "{{PageLogic.tempPredicate.isMetric ? \"Metric\" : \"Non-metric\"}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "options"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "flexVerticalAlignment": "start",
   "isDisabled": false,
@@ -32,16 +40,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 19,
   "needsErrorInfo": false,
-  "options": [
-    {
-      "label": "Metric",
-      "value": "Metric"
-    },
-    {
-      "label": "Non-metric",
-      "value": "Non-metric"
-    }
-  ],
+  "options": "[\n  {\n    \"label\": \"Metric\",\n    \"value\": \"Metric\"\n  },\n  {\n    \"label\": \"Non-metric\",\n    \"value\": \"Non-metric\"\n  }\n]",
   "originalBottomRow": 25,
   "originalTopRow": 19,
   "parentColumnSpace": 6.9375,

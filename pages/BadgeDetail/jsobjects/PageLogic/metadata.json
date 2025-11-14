@@ -20,8 +20,16 @@
         "value": "\"new\""
       },
       {
+        "name": "defaultPredicate",
+        "value": "{\n  \"source\": \"\",\n  \"operator\": \"\",\n  \"goal\": \"\",\n  \"isMetric\": true\n}"
+      },
+      {
         "name": "tempPredicate",
-        "value": "{\n  \"source\": \"\",\n  \"operator\": \"\",\n  \"goal\": 0,\n  \"isMetric\": false\n}"
+        "value": "{}"
+      },
+      {
+        "name": "currentPredicateIndex",
+        "value": "0"
       }
     ]
   }

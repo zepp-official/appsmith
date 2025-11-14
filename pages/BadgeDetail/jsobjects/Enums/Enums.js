@@ -1,28 +1,28 @@
 export default {
 
-	challenge: {
-		"id": 1,
-		"type": "STEPS",
-		"backendConfigTitle":"ABC",
-		"ctype": 1,
-		"appname": "com.huami.midong",
-		"difficulty": 2,
-		"contents": {
-			"badge_title": "每日万步挑战",
-			"badge_description": "完成每日10000步目标"
-		},
-		"assets": {
-			"bgActive": "https://assets.challenge_active.png",
-			"bgInactive": "https://assets.challenge_inactive.png",
-			"icon": "https://assets.challenge_icon.png"
-		},
-		"repeatPeriod": 0,
-		"order": 1,
-		"startDate": 1698765432,
-		"endDate": 1701357432,
-		"onlineDate": 1698679032,
-		"offlineDate": 1701443832,
-	},
+	// challenge: {
+		// "id": 1,
+		// "type": "STEPS",
+		// "backendConfigTitle":"ABC",
+		// "ctype": 1,
+		// "appname": "com.huami.midong",
+		// "difficulty": 2,
+		// "contents": {
+			// "badge_title": "每日万步挑战",
+			// "badge_description": "完成每日10000步目标"
+		// },
+		// "assets": {
+			// "bgActive": "https://assets.challenge_active.png",
+			// "bgInactive": "https://assets.challenge_inactive.png",
+			// "icon": "https://assets.challenge_icon.png"
+		// },
+		// "repeatPeriod": 0,
+		// "order": 1,
+		// "startDate": 1698765432,
+		// "endDate": 1701357432,
+		// "onlineDate": 1698679032,
+		// "offlineDate": 1701443832,
+	// },
 	
 	
 	sportType:
@@ -161,20 +161,20 @@ export default {
 		}
 	],
 	
-	conditions: [
-		{
-			"source": "workouts_over_10min_current_week",
-			"operator": ">=",
-			"goal": 3,
-			"isMetric": false
-		},
-		{
-			"source": "calories_burned_today_previous",
-			"operator": "<",
-			"goal": "calories_goal",
-			"isMetric": true
-		}
-	],
+	// conditions: [
+		// {
+			// "source": "workouts_over_10min_current_week",
+			// "operator": ">=",
+			// "goal": 3,
+			// "isMetric": false
+		// },
+		// {
+			// "source": "calories_burned_today_previous",
+			// "operator": "<",
+			// "goal": "calories_goal",
+			// "isMetric": true
+		// }
+	// ],
 	operators: [
 		{ "name": ">","code": ">"},
 		{ "name": ">=","code": ">="},
@@ -182,10 +182,8 @@ export default {
 		{ "name": "<=","code": "<="},
 		{ "name": "==", "code": "=="}
 	],
-	transformCondition() {
-		
-	},
-	
-
+	// transformCondition() {
+		// 
+	// }
 
 }

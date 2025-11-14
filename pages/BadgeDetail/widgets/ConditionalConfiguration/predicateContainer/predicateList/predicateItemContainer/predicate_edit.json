@@ -36,7 +36,7 @@
   "mobileRightColumn": 54,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onClick": "{{\nEnums.tempPredicate = JSON.parse(JSON.stringify(currentItem));\nshowModal(PredicateModal.name);}}",
+  "onClick": "{{\nPageLogic.newPredicateModalmode = \"edit\";\nPageLogic.currentPredicateIndex = currentIndex;\nPageLogic.tempPredicate = JSON.parse(JSON.stringify(currentItem));\nshowModal(PredicateModal.name);}}",
   "parentColumnSpace": 12.1103515625,
   "parentId": "yd1lip6yzc",
   "parentRowSpace": 10,

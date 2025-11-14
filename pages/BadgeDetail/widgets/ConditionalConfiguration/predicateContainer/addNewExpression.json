@@ -36,7 +36,7 @@
   "mobileRightColumn": 58,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onClick": "{{\nEnums.newPredicateModalmode = \"new\";\nshowModal(PredicateModal.name);\n}}",
+  "onClick": "{{\nPageLogic.newPredicateModalmode = \"new\";\nPageLogic.tempPredicate = JSON.parse(JSON.stringify(PageLogic.defaultPredicate));\nshowModal(PredicateModal.name);\n}}",
   "parentColumnSpace": 12.5478515625,
   "parentId": "89cj2dpo3f",
   "parentRowSpace": 10,

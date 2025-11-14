@@ -70,9 +70,6 @@
       "key": "triggeredItemView"
     },
     {
-      "key": "primaryKeys"
-    },
-    {
       "key": "accentColor"
     },
     {
@@ -83,6 +80,9 @@
     },
     {
       "key": "listData"
+    },
+    {
+      "key": "primaryKeys"
     }
   ],
   "dynamicPropertyPathList": [

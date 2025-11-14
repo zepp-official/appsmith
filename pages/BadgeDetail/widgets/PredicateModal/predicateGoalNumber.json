@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 38,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{\n!PageLogic.tempPredicate.isMetric ? PageLogic.tempPredicate.goal : 0}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -15,6 +15,9 @@
     },
     {
       "key": "isVisible"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -29,7 +32,7 @@
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{predicateGoalType.selectedOptionValue === \"Non-metric\"}}",
+  "isVisible": "{{!predicateGoalType.selectedOptionValue === \"Non-metric\"}}",
   "key": "p5tziitjpj",
   "label": "Goal Metric",
   "labelAlignment": "left",

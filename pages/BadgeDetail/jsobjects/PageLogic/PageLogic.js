@@ -98,6 +98,8 @@ export default {
 			showAlert('Page mode is not set. Defaulting to new.', 'warning');
 			this.currentBadge = this.defaultBadge;
 		}
+		
+		this.tempPredicate = this.defaultPredicate;
 	},
 
 	// Save a badge configuration
@@ -111,6 +113,9 @@ export default {
 				badge: this.currentBadge
 			}
 		};
+		
+		//temporary change valueExpression to int type
+		reward.rewards.badge.valueExpression = 0;
 
 		try {
 			if (appsmith.URL.queryParams.mode === "new" || appsmith.URL.queryParams.mode === "copy") {
@@ -157,32 +162,40 @@ export default {
 	},
 
 	newPredicateModalmode: "new",
-	tempPredicate: {			
+	defaultPredicate: {			
 		"source": "",
 		"operator": "",
-		"goal": 0,
-		"isMetric": false
+		"goal": "",
+		"isMetric": true
 	},
+	tempPredicate: {
+	},
+	currentPredicateIndex: 0,
 	async saveCondition () {
-		let condition = {};
-		condition.id = crypto.randomUUID();
-		condition.source = predicateSourceMetric.selectedOptionValue;
-		condition.operator = 	predicateOperator.selectedOptionValue;
-		condition.isMetric = predicateGoalType.selectedOptionValue === "Metric";
-		if (condition.isMetric) {
-			condition.goal = predicateGoalMetric.selectedOptionValue;
+		this.tempPredicate.source = predicateSourceMetric.selectedOptionValue;
+		this.tempPredicate.operator = predicateOperator.selectedOptionValue;
+		this.tempPredicate.isMetric = predicateGoalType.selectedOptionValue === "Metric" ? true : false;
+		if (this.tempPredicate.isMetric) {
+			this.tempPredicate.goal = predicateGoalMetric.selectedOptionValue;
 		} else {
-			condition.goal = predicateGoalNumber.text;
+			this.tempPredicate.goal = parseInt(predicateGoalNumber.text);
 		}
-		this.currentBadge.predictDetails.unshift(condition);
+		
+		console.log(this.newPredicateModalmode);
+		console.log(this.currentPredicateIndex)
+		if (this.newPredicateModalmode = "new") {
+			// this.tempPredicate.id = crypto.randomUUID();
+			this.currentBadge.predictDetails.unshift(this.tempPredicate);
+		} else {
+			// const index = this.currentBadge.predictDetails.findIndex((element) => element.id == this.tempPredicate.id);
+			this.currentBadge.predictDetails[this.currentPredicateIndex] = this.tempPredicate;
+		}
 
 		resetWidget(predicateSourceMetric);
 		resetWidget(predicateOperator);
 		resetWidget(predicateGoalType)
 		resetWidget(predicateGoalMetric)
 		resetWidget(predicateGoalNumber)
-
-		closeModal(PredicateModalClose);
 	},
 	async deleteCondition (index) {
 		//	write code here

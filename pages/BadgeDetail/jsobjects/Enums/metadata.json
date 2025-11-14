@@ -8,10 +8,6 @@
     "pluginType": "JS",
     "variables": [
       {
-        "name": "challenge",
-        "value": "{\n  \"id\": 1,\n  \"type\": \"STEPS\",\n  \"backendConfigTitle\": \"ABC\",\n  \"ctype\": 1,\n  \"appname\": \"com.huami.midong\",\n  \"difficulty\": 2,\n  \"contents\": {\n    \"badge_title\": \"每日万步挑战\",\n    \"badge_description\": \"完成每日10000步目标\"\n  },\n  \"assets\": {\n    \"bgActive\": \"https://assets.challenge_active.png\",\n    \"bgInactive\": \"https://assets.challenge_inactive.png\",\n    \"icon\": \"https://assets.challenge_icon.png\"\n  },\n  \"repeatPeriod\": 0,\n  \"order\": 1,\n  \"startDate\": 1698765432,\n  \"endDate\": 1701357432,\n  \"onlineDate\": 1698679032,\n  \"offlineDate\": 1701443832\n}"
-      },
-      {
         "name": "sportType",
         "value": "[{\n  \"name\": \"STEPS\",\n  \"code\": \"STEPS\"\n}, {\n  \"name\": \"RUN\",\n  \"code\": \"RUN\"\n}, {\n  \"name\": \"RECOVERY\",\n  \"code\": \"RECOVERY\"\n}]"
       },
@@ -46,10 +42,6 @@
       {
         "name": "metricList",
         "value": "[{\n  \"field_name\": \"workouts_over_10min_current_week\",\n  \"field_desc\": \"workouts over 10min current week\"\n}, {\n  \"field_name\": \"calories_burned_today_previous\",\n  \"field_desc\": \"calories burned today previous\"\n}, {\n  \"field_name\": \"calories_goal\",\n  \"field_desc\": \"calories goal\"\n}, {\n  \"field_name\": \"currentTotalCyclingDistance\",\n  \"field_desc\": \"calories goal\"\n}, {\n  \"field_name\": \"totalCyclingDistance\",\n  \"field_desc\": \"calories goal\"\n}, {\n  \"field_name\": \"distance\",\n  \"field_desc\": \"distance goal\"\n}]"
-      },
-      {
-        "name": "conditions",
-        "value": "[{\n  \"source\": \"workouts_over_10min_current_week\",\n  \"operator\": \">=\",\n  \"goal\": 3,\n  \"isMetric\": false\n}, {\n  \"source\": \"calories_burned_today_previous\",\n  \"operator\": \"<\",\n  \"goal\": \"calories_goal\",\n  \"isMetric\": true\n}]"
       },
       {
         "name": "operators",
