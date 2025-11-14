@@ -36,7 +36,7 @@
   "mobileRightColumn": 37,
   "mobileTopRow": 40,
   "needsErrorInfo": false,
-  "onClick": "{{Enums.saveCondition().then(() => { closeModal(PredicateModal.name);\n}).catch(() => {});}}",
+  "onClick": "{{PageLogic.saveCondition().then(() => { closeModal(PredicateModal.name);\n}).catch(() => {});}}",
   "parentColumnSpace": 6.9375,
   "parentId": "uidz9zw05l",
   "parentRowSpace": 10,

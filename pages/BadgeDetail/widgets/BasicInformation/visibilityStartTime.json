@@ -1,11 +1,13 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
-  "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 18,
+  "bottomRow": 50,
   "boxShadow": "none",
-  "defaultText": "{{PageLogic.currentBadge.contents.badge_title}}",
+  "closeOnSelection": true,
+  "dateFormat": "YYYY-MM-DD HH:mm:ss",
+  "datePickerType": "DATE_PICKER",
+  "defaultDate": "{{PageLogic.currentBadge.visibilityStartTime}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,44 +16,54 @@
       "key": "borderRadius"
     },
     {
-      "key": "defaultText"
+      "key": "defaultDate"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "dateFormat"
+    },
+    {
+      "key": "defaultDate"
+    }
+  ],
   "dynamicTriggerPathList": [],
-  "iconAlign": "left",
-  "inputType": "TEXT",
+  "firstDayOfWeek": 0,
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "0poeow8p2p",
-  "label": "Badge Name",
+  "key": "uhcy3tvvc4",
+  "label": "Visible Time - start",
   "labelAlignment": "left",
   "labelPosition": "Left",
-  "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": "15",
   "leftColumn": 0,
+  "maxDate": "2121-12-31T18:29:00.000Z",
   "maxDynamicHeight": 9000,
+  "minDate": "1920-12-31T18:30:00.000Z",
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 18,
+  "mobileBottomRow": 69,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 17,
-  "mobileTopRow": 11,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 62,
   "needsErrorInfo": false,
+  "originalBottomRow": 50,
+  "originalTopRow": 43,
   "parentColumnSpace": 10.0576171875,
   "parentId": "u2pm09m2lj",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 37,
-  "showStepArrows": false,
-  "topRow": 11,
-  "type": "INPUT_WIDGET_V2",
+  "shortcuts": false,
+  "timePrecision": "minute",
+  "topRow": 43,
+  "type": "DATE_PICKER_WIDGET2",
   "version": 2,
-  "widgetId": "eonrksxjbf",
-  "widgetName": "badge_title"
+  "widgetId": "6iin6bnan2",
+  "widgetName": "visibilityStartTime"
 }

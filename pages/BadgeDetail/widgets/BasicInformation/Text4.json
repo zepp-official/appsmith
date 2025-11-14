@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 14,
+  "bottomRow": 116,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -11,45 +11,42 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1.25rem",
-  "fontStyle": "BOLD",
+  "fontSize": "0.875rem",
+  "fontStyle": "",
   "isLoading": false,
   "isVisible": true,
   "key": "8y51dpoicm",
-  "leftColumn": 6,
+  "leftColumn": 38,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 13,
-  "mobileLeftColumn": 6,
-  "mobileRightColumn": 22,
-  "mobileTopRow": 9,
+  "mobileBottomRow": 109,
+  "mobileLeftColumn": 19,
+  "mobileRightColumn": 35,
+  "mobileTopRow": 105,
   "needsErrorInfo": false,
-  "originalBottomRow": 14,
-  "originalTopRow": 10,
+  "originalBottomRow": 121,
+  "originalTopRow": 117,
   "overflow": "NONE",
-  "parentColumnSpace": 17.9375,
-  "parentId": "0",
+  "parentColumnSpace": 10.0576171875,
+  "parentId": "u2pm09m2lj",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 22,
+  "rightColumn": 59,
   "shouldTruncate": false,
-  "text": "{{appsmith.URL.queryParams.mode === \"new\" ? \"New Reward\" : \"Edit Reward\"}}",
+  "text": "Attention: Not apply only to PB badges",
   "textAlign": "LEFT",
-  "textColor": "#231F20",
-  "topRow": 10,
+  "textColor": "#fca5a5",
+  "topRow": 112,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "68x6fvir90",
-  "widgetName": "Title"
+  "widgetId": "hqz5xxiemq",
+  "widgetName": "Text4"
 }

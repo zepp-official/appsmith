@@ -2,9 +2,12 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 131,
+  "bottomRow": 13,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( PageLogic.currentBadge.level.toString()))(Select4.options, Select4.serverSideFiltering) }}",
+  "closeOnSelection": true,
+  "dateFormat": "YYYY-MM-DD HH:mm:ss",
+  "datePickerType": "DATE_PICKER",
+  "defaultDate": "{{PageLogic.currentBadge.availabilityStartTime}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -13,55 +16,52 @@
       "key": "borderRadius"
     },
     {
-      "key": "sourceData"
-    },
-    {
-      "key": "defaultOptionValue"
+      "key": "defaultDate"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
-      "key": "sourceData"
+      "key": "dateFormat"
+    },
+    {
+      "key": "defaultDate"
     }
   ],
   "dynamicTriggerPathList": [],
+  "firstDayOfWeek": 0,
   "isDisabled": false,
-  "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "0uwh2zdk3l",
+  "key": "uhcy3tvvc4",
+  "label": "Task Duration(start)",
   "labelAlignment": "left",
   "labelPosition": "Left",
-  "labelText": "Badge Level",
   "labelTextSize": "0.875rem",
   "labelWidth": "15",
   "leftColumn": 0,
+  "maxDate": "2121-12-31T18:29:00.000Z",
   "maxDynamicHeight": 9000,
+  "minDate": "1920-12-31T18:30:00.000Z",
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 87,
+  "mobileBottomRow": 26,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 19,
-  "mobileTopRow": 80,
+  "mobileRightColumn": 12,
+  "mobileTopRow": 19,
   "needsErrorInfo": false,
-  "optionLabel": "name",
-  "optionValue": "code",
-  "originalBottomRow": 131,
-  "originalTopRow": 124,
   "parentColumnSpace": 10.0576171875,
-  "parentId": "u2pm09m2lj",
+  "parentId": "1hmuhfoxt3",
   "parentRowSpace": 10,
-  "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 37,
-  "serverSideFiltering": false,
-  "sourceData": "{{Enums.badgeLevel}}",
-  "topRow": 124,
-  "type": "SELECT_WIDGET",
-  "version": 1,
-  "widgetId": "pm3xnaemmy",
-  "widgetName": "Select4"
+  "shortcuts": false,
+  "timePrecision": "minute",
+  "topRow": 8,
+  "type": "DATE_PICKER_WIDGET2",
+  "version": 2,
+  "widgetId": "thyyeim6re",
+  "widgetName": "availabilityEndTime"
 }

@@ -2,18 +2,15 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 73,
+  "bottomRow": 62,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( PageLogic.currentBadge.goalExpression))(goalMetric.options, goalMetric.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( PageLogic.currentBadge.valueExpression))(valueExpression.options, valueExpression.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "isVisible"
     },
     {
       "key": "sourceData"
@@ -26,9 +23,6 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [],
@@ -36,26 +30,24 @@
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{goalType.selectedOptionValue === \"Metric\"}}",
+  "isVisible": true,
   "key": "0uwh2zdk3l",
   "labelAlignment": "left",
   "labelPosition": "Left",
-  "labelText": "Select metric for goal",
+  "labelText": "Value",
   "labelTextSize": "0.875rem",
   "labelWidth": "15",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 64,
-  "mobileLeftColumn": 15,
-  "mobileRightColumn": 35,
-  "mobileTopRow": 57,
+  "mobileBottomRow": 53,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 17,
+  "mobileTopRow": 46,
   "needsErrorInfo": false,
   "optionLabel": "field_name",
   "optionValue": "field_name",
-  "originalBottomRow": 64,
-  "originalTopRow": 57,
   "parentColumnSpace": 12.8603515625,
   "parentId": "1hmuhfoxt3",
   "parentRowSpace": 10,
@@ -65,9 +57,9 @@
   "rightColumn": 37,
   "serverSideFiltering": false,
   "sourceData": "{{Enums.metricList}}",
-  "topRow": 66,
+  "topRow": 55,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "5yvujlrcei",
-  "widgetName": "goalMetric"
+  "widgetId": "umhaz564la",
+  "widgetName": "valueExpression"
 }

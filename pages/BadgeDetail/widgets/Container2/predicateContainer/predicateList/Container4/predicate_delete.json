@@ -36,7 +36,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onClick": "{{Enums.deleteCondition(currentIndex)}}",
+  "onClick": "{{PageLogic.deleteCondition(currentIndex)}}",
   "parentColumnSpace": 12.1103515625,
   "parentId": "yd1lip6yzc",
   "parentRowSpace": 10,

@@ -1,13 +1,11 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
+  "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 13,
+  "bottomRow": 17,
   "boxShadow": "none",
-  "closeOnSelection": true,
-  "dateFormat": "YYYY-MM-DD HH:mm:ss",
-  "datePickerType": "DATE_PICKER",
-  "defaultDate": "{{PageLogic.currentBadge.availabilityStartTime}}",
+  "defaultText": "{{PageLogic.currentBadge.contents.badge_description}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -16,52 +14,44 @@
       "key": "borderRadius"
     },
     {
-      "key": "defaultDate"
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "dateFormat"
-    },
-    {
-      "key": "defaultDate"
-    }
-  ],
   "dynamicTriggerPathList": [],
-  "firstDayOfWeek": 0,
+  "iconAlign": "left",
+  "inputType": "TEXT",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "uhcy3tvvc4",
-  "label": "Task Duration(start)",
+  "key": "0poeow8p2p",
+  "label": "Badge Description",
   "labelAlignment": "left",
   "labelPosition": "Left",
+  "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": "15",
   "leftColumn": 0,
-  "maxDate": "2121-12-31T18:29:00.000Z",
   "maxDynamicHeight": 9000,
-  "minDate": "1920-12-31T18:30:00.000Z",
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 26,
+  "mobileBottomRow": 39,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 12,
-  "mobileTopRow": 19,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 32,
   "needsErrorInfo": false,
   "parentColumnSpace": 10.0576171875,
-  "parentId": "1hmuhfoxt3",
+  "parentId": "u2pm09m2lj",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
+  "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 37,
-  "shortcuts": false,
-  "timePrecision": "minute",
-  "topRow": 8,
-  "type": "DATE_PICKER_WIDGET2",
+  "showStepArrows": false,
+  "topRow": 12,
+  "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "thyyeim6re",
-  "widgetName": "DatePicker3"
+  "widgetId": "66h80pg57x",
+  "widgetName": "badge_description"
 }

@@ -2,12 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 56,
+  "bottomRow": 33,
   "boxShadow": "none",
-  "closeOnSelection": true,
-  "dateFormat": "YYYY-MM-DD HH:mm:ss",
-  "datePickerType": "DATE_PICKER",
-  "defaultDate": "{{PageLogic.currentBadge.visibilityStartTime}}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( PageLogic.currentBadge.type.toString()))(type.options, type.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -16,54 +13,53 @@
       "key": "borderRadius"
     },
     {
-      "key": "defaultDate"
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
-      "key": "dateFormat"
-    },
-    {
-      "key": "defaultDate"
+      "key": "sourceData"
     }
   ],
   "dynamicTriggerPathList": [],
-  "firstDayOfWeek": 0,
   "isDisabled": false,
+  "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "uhcy3tvvc4",
-  "label": "Visible Time - start",
+  "key": "0uwh2zdk3l",
   "labelAlignment": "left",
   "labelPosition": "Left",
+  "labelText": "Badge Type",
   "labelTextSize": "0.875rem",
   "labelWidth": "15",
   "leftColumn": 0,
-  "maxDate": "2121-12-31T18:29:00.000Z",
   "maxDynamicHeight": 9000,
-  "minDate": "1920-12-31T18:30:00.000Z",
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 69,
+  "mobileBottomRow": 32,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 20,
-  "mobileTopRow": 62,
+  "mobileRightColumn": 19,
+  "mobileTopRow": 25,
   "needsErrorInfo": false,
-  "originalBottomRow": 56,
-  "originalTopRow": 49,
+  "optionLabel": "name",
+  "optionValue": "code",
   "parentColumnSpace": 10.0576171875,
   "parentId": "u2pm09m2lj",
   "parentRowSpace": 10,
+  "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 37,
-  "shortcuts": false,
-  "timePrecision": "minute",
-  "topRow": 49,
-  "type": "DATE_PICKER_WIDGET2",
-  "version": 2,
-  "widgetId": "6iin6bnan2",
-  "widgetName": "DatePicker1"
+  "serverSideFiltering": false,
+  "sourceData": "{{Enums.badgeType}}",
+  "topRow": 26,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "1463mwqtu0",
+  "widgetName": "type"
 }

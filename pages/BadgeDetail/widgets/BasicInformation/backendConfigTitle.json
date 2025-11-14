@@ -1,13 +1,11 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
+  "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 20,
+  "bottomRow": 8,
   "boxShadow": "none",
-  "closeOnSelection": true,
-  "dateFormat": "YYYY-MM-DD HH:mm:ss",
-  "datePickerType": "DATE_PICKER",
-  "defaultDate": "{{PageLogic.currentBadge.availabilityEndTime}}",
+  "defaultText": "{{PageLogic.currentBadge.backendConfigTitle}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -16,52 +14,44 @@
       "key": "borderRadius"
     },
     {
-      "key": "defaultDate"
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "dateFormat"
-    },
-    {
-      "key": "defaultDate"
-    }
-  ],
   "dynamicTriggerPathList": [],
-  "firstDayOfWeek": 0,
+  "iconAlign": "left",
+  "inputType": "TEXT",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "uhcy3tvvc4",
-  "label": "Task Duration(end)",
+  "key": "0poeow8p2p",
+  "label": "Backend Config Title",
   "labelAlignment": "left",
   "labelPosition": "Left",
+  "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": "15",
   "leftColumn": 0,
-  "maxDate": "2121-12-31T18:29:00.000Z",
   "maxDynamicHeight": 9000,
-  "minDate": "1920-12-31T18:30:00.000Z",
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 33,
+  "mobileBottomRow": 11,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 14,
-  "mobileTopRow": 26,
+  "mobileRightColumn": 19,
+  "mobileTopRow": 4,
   "needsErrorInfo": false,
-  "parentColumnSpace": 10.0576171875,
-  "parentId": "1hmuhfoxt3",
+  "parentColumnSpace": 7.2548828125,
+  "parentId": "u2pm09m2lj",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
+  "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 37,
-  "shortcuts": false,
-  "timePrecision": "minute",
-  "topRow": 13,
-  "type": "DATE_PICKER_WIDGET2",
+  "showStepArrows": false,
+  "topRow": 4,
+  "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "xjs1tc3vdk",
-  "widgetName": "DatePicker4"
+  "widgetId": "j9tc1sa45p",
+  "widgetName": "backendConfigTitle"
 }

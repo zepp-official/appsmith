@@ -186,31 +186,6 @@ export default {
 		
 	},
 	
-	newPredicateModalmode: "new",
-	tempPredicate: {			
-		"source": "",
-		"operator": "",
-		"goal": 0,
-		"isMetric": false
-	},
-	async saveCondition () {
-		let condition = {};
-		condition.id = crypto.randomUUID();
-		condition.source = predicateSourceMetric.selectedOptionValue;
-		condition.operator = 	predicateOperator.selectedOptionValue;
-		condition.isMetric = predicateGoalType.selectedOptionValue === "Metric";
-		if (condition.isMetric) {
-			condition.goal = predicateGoalMetric.selectedOptionValue;
-		} else {
-			condition.goal = predicateGoalNumber.text;
-		}
-		this.conditions.unshift(condition);
 
-		closeModal(PredicateModalClose);
-	},
-	async deleteCondition (index) {
-		//	write code here
-		this.conditions.splice(index, 1);
-	},
 
 }

@@ -25,6 +25,7 @@ export default {
 		"predictDetails": [],
 		"goalExpression": "",
 		"progressExpression": "",
+		"valueExpression": "",
 		"level": 1,
 		"difficulty": 0,
 		"isRepeatable": 1,
@@ -101,6 +102,9 @@ export default {
 
 	// Save a badge configuration
 	async saveBadge() {
+		this.defaultBadge.predictExpression = ExpressionUtils.conditionsToExpression(this.defaultBadge.predictDetails);
+		delete this.defaultBadge.predictDetails;
+
 		const reward = {
 			"rewards": {
 				rewardType: 1,
@@ -108,10 +112,9 @@ export default {
 			}
 		};
 
-		delete reward.rewards.badge.id;
-
 		try {
 			if (appsmith.URL.queryParams.mode === "new" || appsmith.URL.queryParams.mode === "copy") {
+				delete reward.rewards.badge.id;
 				await addBadge.run({ body: reward });
 				showAlert('Badge created successfully!', 'success');
 			} else {
@@ -151,5 +154,38 @@ export default {
 	deleteTag (index) {
 		this.currentBadge.contents.badge_tags.splice(index, 1);
 		showAlert("Tag deleted", "success");
+	},
+
+	newPredicateModalmode: "new",
+	tempPredicate: {			
+		"source": "",
+		"operator": "",
+		"goal": 0,
+		"isMetric": false
+	},
+	async saveCondition () {
+		let condition = {};
+		condition.id = crypto.randomUUID();
+		condition.source = predicateSourceMetric.selectedOptionValue;
+		condition.operator = 	predicateOperator.selectedOptionValue;
+		condition.isMetric = predicateGoalType.selectedOptionValue === "Metric";
+		if (condition.isMetric) {
+			condition.goal = predicateGoalMetric.selectedOptionValue;
+		} else {
+			condition.goal = predicateGoalNumber.text;
+		}
+		this.currentBadge.predictDetails.unshift(condition);
+
+		resetWidget(predicateSourceMetric);
+		resetWidget(predicateOperator);
+		resetWidget(predicateGoalType)
+		resetWidget(predicateGoalMetric)
+		resetWidget(predicateGoalNumber)
+
+		closeModal(PredicateModalClose);
+	},
+	async deleteCondition (index) {
+		//	write code here
+		this.currentBadge.predictDetails.splice(index, 1);
 	},
 }
