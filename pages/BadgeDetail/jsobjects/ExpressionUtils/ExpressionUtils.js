@@ -1,6 +1,6 @@
 export default {
 	// Usage:
-	// JSObject.conditionsToExpression(conditionsArray, '&&')
+	// JSObject.conditionsToExpression(conditionsArray)
 	// JSObject.expressionToConditions("a >= 1 && b < c")
 	
   // Helpers (kept internal)
@@ -63,10 +63,9 @@ export default {
   /**
    * Convert Type1 (array of condition objects) -> Type2 (expression string)
    * - conditions: array of { source, operator, goal, isMetric }
-   * - joiner: '&&' or '||' (default '&&')
+   * - Always joins with '&&'
    */
-  conditionsToExpression: function(conditions, joiner) {
-    joiner = joiner || '&&';
+  conditionsToExpression: function(conditions) {
     if (!Array.isArray(conditions)) {
       throw new Error('conditions must be an array');
     }
@@ -96,13 +95,13 @@ export default {
       return left + ' ' + op + ' ' + rightStr;
     }.bind(this));
 
-    return parts.join(' ' + joiner + ' ');
+    return parts.join(' && ');
   },
 
   /**
    * Convert Type2 (expression string) -> Type1 (array of condition objects)
-   * Returns { conditions: [...], joiner: '&&'|'||' }
-   * - handles flat expressions joined by top-level && or || (respects parentheses/quotes while splitting)
+   * Returns array of condition objects
+   * - handles flat expressions joined by top-level && (respects parentheses/quotes while splitting)
    */
   expressionToConditions: function(expression) {
     if (typeof expression !== 'string') {
@@ -110,20 +109,12 @@ export default {
     }
 
     var trimmed = expression.trim();
-
-    var joiner = null;
     var parts = null;
 
-    // Determine joiner by first occurrence of top level && or ||
-    // Prefer && if both present at top-level (we check presence only; splitTopLevel is robust)
+    // Only '&&' joiner is supported
     if (trimmed.indexOf('&&') !== -1) {
-      joiner = '&&';
       parts = this._splitTopLevel(trimmed, '&&');
-    } else if (trimmed.indexOf('||') !== -1) {
-      joiner = '||';
-      parts = this._splitTopLevel(trimmed, '||');
     } else {
-      joiner = '&&';
       parts = [trimmed];
     }
 
@@ -164,6 +155,6 @@ export default {
       };
     }.bind(this));
 
-    return { conditions: conditions, joiner: joiner };
+    return conditions;
   }
 };

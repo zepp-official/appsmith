@@ -9,9 +9,6 @@
       "jsArguments": [
         {
           "name": "conditions"
-        },
-        {
-          "name": "joiner"
         }
       ],
       "paginationType": "NONE",

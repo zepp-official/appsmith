@@ -102,7 +102,7 @@
   "itemSpacing": 8,
   "key": "8azcimu9o9",
   "leftColumn": 0,
-  "listData": "{{PageLogic.currentBadge.predictDetails.conditions}}",
+  "listData": "{{PageLogic.currentBadge.predictDetails}}",
   "mainCanvasId": "eyrxxqwb5h",
   "mainContainerId": "uqm558sb97",
   "minWidth": 450,

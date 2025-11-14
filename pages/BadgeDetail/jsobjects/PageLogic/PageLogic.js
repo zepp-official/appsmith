@@ -102,11 +102,13 @@ export default {
 	// Save a badge configuration
 	async saveBadge() {
 		const reward = {
-			rewardType: 1,
-			badge: this.defaultBadge
+			"rewards": {
+				rewardType: 1,
+				badge: this.defaultBadge
+			}
 		};
 
-		delete reward.badge.id;
+		delete reward.rewards.badge.id;
 
 		try {
 			if (appsmith.URL.queryParams.mode === "new" || appsmith.URL.queryParams.mode === "copy") {
