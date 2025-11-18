@@ -182,8 +182,5 @@ export default {
 		{ "name": "<=","code": "<="},
 		{ "name": "==", "code": "=="}
 	],
-	// transformCondition() {
-		// 
-	// }
 
 }

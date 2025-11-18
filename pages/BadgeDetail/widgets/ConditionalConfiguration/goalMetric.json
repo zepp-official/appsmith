@@ -29,9 +29,16 @@
     },
     {
       "key": "isVisible"
+    },
+    {
+      "key": "onDropdownClose"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onDropdownClose"
+    }
+  ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
@@ -52,6 +59,7 @@
   "mobileRightColumn": 35,
   "mobileTopRow": 57,
   "needsErrorInfo": false,
+  "onDropdownClose": "{{\nPageLogic.updateGoalExpression()\n}}\n\n\n",
   "optionLabel": "field_name",
   "optionValue": "field_name",
   "originalBottomRow": 64,

@@ -18,7 +18,16 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onBlur"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onBlur"
+    }
+  ],
   "iconAlign": "left",
   "inputType": "TEXT",
   "isDisabled": false,
@@ -41,6 +50,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 32,
   "needsErrorInfo": false,
+  "onBlur": "{{PageLogic.currentBadge.contents.badge_description = badge_description.text}}",
   "parentColumnSpace": 10.0576171875,
   "parentId": "u2pm09m2lj",
   "parentRowSpace": 10,

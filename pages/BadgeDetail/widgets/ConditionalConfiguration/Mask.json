@@ -23,9 +23,16 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "onDropdownClose"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onDropdownClose"
+    }
+  ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
@@ -46,6 +53,7 @@
   "mobileRightColumn": 9,
   "mobileTopRow": 46,
   "needsErrorInfo": false,
+  "onDropdownClose": "{{\nPageLogic.currentBadge.mark = MaskUtils.arrayToIntMask(Mask.selectedOptionValues);\n}}",
   "optionLabel": "name",
   "optionValue": "code",
   "parentColumnSpace": 12.8603515625,

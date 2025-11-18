@@ -11,7 +11,16 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicTriggerPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onSelectionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onSelectionChange"
+    }
+  ],
   "flexVerticalAlignment": "start",
   "isDisabled": false,
   "isInline": true,
@@ -32,6 +41,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 53,
   "needsErrorInfo": false,
+  "onSelectionChange": "{{\nPageLogic.currentBadge.goalExpression = \"\";\n}}",
   "options": [
     {
       "label": "Metric",

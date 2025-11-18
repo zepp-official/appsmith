@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 119,
+  "bottomRow": 127,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( PageLogic.currentBadge.actionType.toString()))(Select3.options, Select3.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( PageLogic.currentBadge.level.toString()))(badgeLevel.options, badgeLevel.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -23,9 +23,16 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "onDropdownClose"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onDropdownClose"
+    }
+  ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
@@ -34,22 +41,23 @@
   "key": "0uwh2zdk3l",
   "labelAlignment": "left",
   "labelPosition": "Left",
-  "labelText": "Action Type",
+  "labelText": "Badge Level",
   "labelTextSize": "0.875rem",
   "labelWidth": "15",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 95,
+  "mobileBottomRow": 87,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 19,
-  "mobileTopRow": 88,
+  "mobileTopRow": 80,
   "needsErrorInfo": false,
+  "onDropdownClose": "{{PageLogic.currentBadge.level = parseInt(badgeLevel.selectedOptionValue)}}",
   "optionLabel": "name",
   "optionValue": "code",
-  "originalBottomRow": 119,
-  "originalTopRow": 112,
+  "originalBottomRow": 127,
+  "originalTopRow": 120,
   "parentColumnSpace": 10.0576171875,
   "parentId": "u2pm09m2lj",
   "parentRowSpace": 10,
@@ -58,10 +66,10 @@
   "responsiveBehavior": "fill",
   "rightColumn": 37,
   "serverSideFiltering": false,
-  "sourceData": "{{Enums.actionType}}",
-  "topRow": 112,
+  "sourceData": "{{Enums.badgeLevel}}",
+  "topRow": 120,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "7q4eviqgit",
-  "widgetName": "Select3"
+  "widgetId": "pm3xnaemmy",
+  "widgetName": "badgeLevel"
 }

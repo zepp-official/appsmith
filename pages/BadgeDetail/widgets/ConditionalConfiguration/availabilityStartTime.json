@@ -2,12 +2,12 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 20,
+  "bottomRow": 13,
   "boxShadow": "none",
   "closeOnSelection": true,
   "dateFormat": "YYYY-MM-DD HH:mm:ss",
   "datePickerType": "DATE_PICKER",
-  "defaultDate": "{{PageLogic.currentBadge.availabilityEndTime}}",
+  "defaultDate": "{{PageLogic.currentBadge.availabilityStartTime}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -26,16 +26,23 @@
     },
     {
       "key": "defaultDate"
+    },
+    {
+      "key": "onBlur"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onBlur"
+    }
+  ],
   "firstDayOfWeek": 0,
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
   "key": "uhcy3tvvc4",
-  "label": "Task Duration(end)",
+  "label": "Task Duration(start)",
   "labelAlignment": "left",
   "labelPosition": "Left",
   "labelTextSize": "0.875rem",
@@ -46,11 +53,12 @@
   "minDate": "1920-12-31T18:30:00.000Z",
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 33,
+  "mobileBottomRow": 26,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 14,
-  "mobileTopRow": 26,
+  "mobileRightColumn": 12,
+  "mobileTopRow": 19,
   "needsErrorInfo": false,
+  "onBlur": "{{PageLogic.currentBadge.availabilityStartTime = availabilityStartTime.formattedDate}}",
   "parentColumnSpace": 10.0576171875,
   "parentId": "1hmuhfoxt3",
   "parentRowSpace": 10,
@@ -59,9 +67,9 @@
   "rightColumn": 37,
   "shortcuts": false,
   "timePrecision": "minute",
-  "topRow": 13,
+  "topRow": 8,
   "type": "DATE_PICKER_WIDGET2",
   "version": 2,
-  "widgetId": "xjs1tc3vdk",
+  "widgetId": "thyyeim6re",
   "widgetName": "availabilityStartTime"
 }

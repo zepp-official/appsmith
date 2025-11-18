@@ -18,7 +18,22 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onBlur"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    },
+    {
+      "key": "onSubmit"
+    },
+    {
+      "key": "onBlur"
+    }
+  ],
   "iconAlign": "left",
   "inputType": "TEXT",
   "isDisabled": false,
@@ -41,6 +56,10 @@
   "mobileRightColumn": 19,
   "mobileTopRow": 4,
   "needsErrorInfo": false,
+  "onBlur": "{{PageLogic.currentBadge.backendConfigTitle = backendConfigTitle.text}}",
+  "onFocus": "{{}}",
+  "onSubmit": "",
+  "onTextChanged": "",
   "parentColumnSpace": 7.2548828125,
   "parentId": "u2pm09m2lj",
   "parentRowSpace": 10,

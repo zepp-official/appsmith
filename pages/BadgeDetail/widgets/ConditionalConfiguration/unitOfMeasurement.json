@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 127,
+  "bottomRow": 8,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( PageLogic.currentBadge.level.toString()))(Select4.options, Select4.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( PageLogic.currentBadge.unit.toString()))(unitOfMeasurement.options, unitOfMeasurement.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -23,9 +23,16 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "onDropdownClose"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onDropdownClose"
+    }
+  ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
@@ -34,34 +41,33 @@
   "key": "0uwh2zdk3l",
   "labelAlignment": "left",
   "labelPosition": "Left",
-  "labelText": "Badge Level",
+  "labelText": "Unit of measurement",
   "labelTextSize": "0.875rem",
   "labelWidth": "15",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 87,
+  "mobileBottomRow": 12,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 19,
-  "mobileTopRow": 80,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 5,
   "needsErrorInfo": false,
+  "onDropdownClose": "{{PageLogic.currentBadge.unit = parseInt(unitOfMeasurement.selectedOptionValue)}}",
   "optionLabel": "name",
   "optionValue": "code",
-  "originalBottomRow": 127,
-  "originalTopRow": 120,
   "parentColumnSpace": 10.0576171875,
-  "parentId": "u2pm09m2lj",
+  "parentId": "1hmuhfoxt3",
   "parentRowSpace": 10,
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 37,
   "serverSideFiltering": false,
-  "sourceData": "{{Enums.badgeLevel}}",
-  "topRow": 120,
+  "sourceData": "{{Enums.unitOfMeasurement}}",
+  "topRow": 4,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "pm3xnaemmy",
-  "widgetName": "Select4"
+  "widgetId": "dfveezh3bi",
+  "widgetName": "unitOfMeasurement"
 }

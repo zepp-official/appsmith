@@ -23,9 +23,16 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "onDropdownClose"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onDropdownClose"
+    }
+  ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
@@ -46,6 +53,7 @@
   "mobileRightColumn": 19,
   "mobileTopRow": 25,
   "needsErrorInfo": false,
+  "onDropdownClose": "{{PageLogic.currentBadge.type = parseInt(type.selectedOptionValue)}}",
   "optionLabel": "name",
   "optionValue": "code",
   "parentColumnSpace": 10.0576171875,

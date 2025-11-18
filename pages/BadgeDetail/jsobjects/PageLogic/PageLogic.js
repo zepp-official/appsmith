@@ -113,9 +113,6 @@ export default {
 				badge: this.currentBadge
 			}
 		};
-		
-		//temporary change valueExpression to int type
-		reward.rewards.badge.valueExpression = 0;
 
 		try {
 			if (appsmith.URL.queryParams.mode === "new" || appsmith.URL.queryParams.mode === "copy") {
@@ -126,6 +123,7 @@ export default {
 				await updateBadge.run({ body: reward });
 				showAlert('Badge created successfully!', 'success');
 			}
+			navigateTo("BadgeList")
 			return;
 		} catch (error) {
 			console.error("API call failed:", error);
@@ -183,7 +181,7 @@ export default {
 		
 		console.log(this.newPredicateModalmode);
 		console.log(this.currentPredicateIndex)
-		if (this.newPredicateModalmode = "new") {
+		if (this.newPredicateModalmode === "new") {
 			// this.tempPredicate.id = crypto.randomUUID();
 			this.currentBadge.predictDetails.unshift(this.tempPredicate);
 		} else {
@@ -201,4 +199,12 @@ export default {
 		//	write code here
 		this.currentBadge.predictDetails.splice(index, 1);
 	},
+	
+	updateGoalExpression() {
+    if (goalType.selectedOptionValue === "Metric") {
+      this.currentBadge.goalExpression = goalMetric.selectedOptionValue;
+    } else {
+			this.currentBadge.goalExpression = goalNumber.text;
+		}
+  }
 }

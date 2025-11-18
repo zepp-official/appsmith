@@ -29,14 +29,21 @@
     },
     {
       "key": "isVisible"
+    },
+    {
+      "key": "onDropdownClose"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onDropdownClose"
+    }
+  ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{repeatable.selectedOptionValue === \"Y\"}}",
+  "isVisible": "{{repeatable.selectedOptionValue === \"1\"}}",
   "key": "0uwh2zdk3l",
   "labelAlignment": "left",
   "labelPosition": "Left",
@@ -52,6 +59,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 38,
   "needsErrorInfo": false,
+  "onDropdownClose": "{{PageLogic.currentBadge.repeatPeriod = parseInt(taskPeriod.selectedOptionValue)}}",
   "optionLabel": "name",
   "optionValue": "code",
   "parentColumnSpace": 10.0576171875,

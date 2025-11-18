@@ -24,9 +24,16 @@
   "dynamicPropertyPathList": [
     {
       "key": "isVisible"
+    },
+    {
+      "key": "onBlur"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onBlur"
+    }
+  ],
   "iconAlign": "left",
   "inputType": "TEXT",
   "isDisabled": false,
@@ -49,6 +56,7 @@
   "mobileRightColumn": 13,
   "mobileTopRow": 64,
   "needsErrorInfo": false,
+  "onBlur": "{{\nPageLogic.updateGoalExpression()\n}}",
   "originalBottomRow": 78,
   "originalTopRow": 71,
   "parentColumnSpace": 12.8603515625,
