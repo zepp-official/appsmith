@@ -18,7 +18,7 @@ export default {
 		"assets": {
 			"icon": ""
 		},
-		"status": 1,
+		"status": 0,
 		"type": 0,
 		"actionType": 2,
 		"predictExpression": "",
@@ -38,7 +38,6 @@ export default {
 		"mark": 1,
 		"showPredict": "version>10.0.0",
 		"backendConfigTitle": "",
-		"badgeStatus": 0,
 		"createBy": "admin@zepp.com",
 		"updateBy": "admin@zepp.com",
 		"createdTime": "",
@@ -53,7 +52,7 @@ export default {
 		const mode = appsmith.URL.queryParams.mode;
 
 		showAlert('current mode:' + mode, 'info');
-		if (mode === "edit" || mode === "clone") {
+		if (mode === "edit" || mode === "copy") {
 			// --- EDIT MODE ---
 			// 2. Get the 'id' from the URL
 			const badgeId = appsmith.URL.queryParams.id;
@@ -76,11 +75,7 @@ export default {
 				this.currentBadge = badgeData.data.items[0].badge;
 				this.currentBadge.predictDetails = ExpressionUtils.expressionToConditions(this.currentBadge.predictExpression);
 
-				console.log("begin transform predictExpression to predictDetails");
-				console.dir(this.currentBadge.predictExpression);
-				console.dir(this.currentBadge.predictDetails);
 				showAlert('Badge data loaded.', 'success');
-
 			} catch (error) {
 				// Handle any errors during the API call
 				showAlert('Failed to load badge data.', 'error');
@@ -123,7 +118,8 @@ export default {
 				await updateBadge.run({ body: reward });
 				showAlert('Badge created successfully!', 'success');
 			}
-			navigateTo("BadgeList")
+
+			// navigateTo("BadgeList")
 			return;
 		} catch (error) {
 			console.error("API call failed:", error);

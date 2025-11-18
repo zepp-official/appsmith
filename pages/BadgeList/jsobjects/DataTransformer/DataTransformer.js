@@ -1,4 +1,7 @@
 export default {
+	// data source of the table
+	rewardList: [],
+	
 	// 1. Store your type mapping here
 	badgeType: [
 		{ "name": "Lifetime", "code": "0" },
@@ -52,17 +55,18 @@ export default {
 		return code; // Fallback
 	},
 
-	transformRewards: () => {
+	async transformRewards() {
 		// Safely access the items array from the API response
-		const items = queryRewardsApi.data?.data?.items;
+		const items = await queryRewardsApi.data?.data?.items;
 
 		// If items is not an array (e.g., API hasn't run or returned an error), return an empty array
 		if (!Array.isArray(items)) {
+			this.rewardList = [];
 			return [];
 		}
 
 		// Use .map() to transform the array into the desired structure
-		return items.map(item => {
+		const tempRewardList = items.map(item => {
 			// The data we need is nested inside the 'badge' object
 			const badge = item.badge;
 
@@ -70,12 +74,15 @@ export default {
 				id: badge.id,
 				// Get type name
 				type: this.getTypeName(badge.type),
-				backendConfigTitle: badge.backendConfigTitle,
+				title: badge.contents.badge_title,
 				// Get status name
 				status: this.getStatusName(badge.badgeStatus),
 				createBy: badge.createBy,
 				updatedTime: badge.updatedTime
 			};
 		});
+		
+		this.rewardList = tempRewardList;
+		return tempRewardList;
 	}
 }

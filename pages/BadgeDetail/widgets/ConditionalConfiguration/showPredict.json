@@ -1,0 +1,71 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 88,
+  "boxShadow": "none",
+  "defaultText": "{{PageLogic.currentBadge.showPredict}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onBlur"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onBlur"
+    }
+  ],
+  "iconAlign": "left",
+  "inputType": "TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": false,
+  "key": "0poeow8p2p",
+  "label": "showPredict",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelStyle": "",
+  "labelTextColor": "#231f20",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "15",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 71,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 13,
+  "mobileTopRow": 64,
+  "needsErrorInfo": false,
+  "onBlur": "{{PageLogic.currentBadge.showPredict = showPredict.text}}",
+  "originalBottomRow": 78,
+  "originalTopRow": 71,
+  "parentColumnSpace": 12.8603515625,
+  "parentId": "1hmuhfoxt3",
+  "parentRowSpace": 10,
+  "regex": "^[1-9]\\d*$",
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 37,
+  "showStepArrows": false,
+  "topRow": 81,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "97yout9b0v",
+  "widgetName": "showPredict"
+}

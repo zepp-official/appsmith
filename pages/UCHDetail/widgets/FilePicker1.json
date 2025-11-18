@@ -37,7 +37,7 @@
   "mobileRightColumn": 19,
   "mobileTopRow": 50,
   "needsErrorInfo": false,
-  "onFilesSelected": "{{FileUpload1.run()}}",
+  "onFilesSelected": "{{FileUpload1.run().then(() => {\n  storeValue(\"\", \"\");\n});}}",
   "parentColumnSpace": 19.078125,
   "parentId": "0",
   "parentRowSpace": 10,

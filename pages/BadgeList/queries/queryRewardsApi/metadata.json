@@ -17,7 +17,7 @@
           "value": "Badge"
         },
         {
-          "key": "backendConfigTitle",
+          "key": "title",
           "value": "{{InputSearch.text}}"
         },
         {
@@ -42,13 +42,16 @@
     },
     "dynamicBindingPathList": [
       {
+        "key": "path"
+      },
+      {
+        "key": "queryParameters[1].value"
+      },
+      {
         "key": "queryParameters[2].value"
       },
       {
         "key": "queryParameters[3].value"
-      },
-      {
-        "key": "queryParameters[1].value"
       }
     ],
     "name": "queryRewardsApi",

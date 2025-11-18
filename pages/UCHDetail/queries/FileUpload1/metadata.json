@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n\t\"base64\": {{FilePicker1.files[0].data}},\n\t\"name\": {{FilePicker1.files[0].name}},\n\t\"mime_type\": {{FilePicker1.files[0].type.split('/')[1]}},\n\t\"prefix\":\"appsmith\"\n}",
+      "body": "{\n\t\"base64\": {{FilePicker1.files[0].data}},\n\t\"name\": {{FilePicker1.files[0].name.split('.')[0]}},\n\t\"mime_type\": {{FilePicker1.files[0].type.split('/')[1]}},\n\t\"prefix\":\"appsmith\"\n}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
@@ -46,7 +46,7 @@
     ],
     "name": "FileUpload1",
     "pageId": "UCHDetail",
-    "runBehaviour": "MANUAL",
+    "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": false
   }
 }

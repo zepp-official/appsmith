@@ -1,6 +1,6 @@
 {
 	"base64": {{FilePicker1.files[0].data}},
-	"name": {{FilePicker1.files[0].name}},
+	"name": {{FilePicker1.files[0].name.split('.')[0]}},
 	"mime_type": {{FilePicker1.files[0].type.split('/')[1]}},
 	"prefix":"appsmith"
 }

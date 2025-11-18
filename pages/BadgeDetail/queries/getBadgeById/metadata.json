@@ -14,7 +14,7 @@
       "queryParameters": [
         {
           "key": "id",
-          "value": "{{ this.params.id }}"
+          "value": "{{appsmith.URL.queryParams.id}}"
         }
       ],
       "timeoutInMillisecond": 10000
@@ -29,6 +29,9 @@
       "pluginId": "restapi-plugin"
     },
     "dynamicBindingPathList": [
+      {
+        "key": "path"
+      },
       {
         "key": "queryParameters[0].value"
       }

@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "68edbca07f897134d9d213fe_a8626297-7c7c-41d5-8013-dfbdc8e7e384",
+  "gitSyncId": "68edbca07f897134d9d213fe_634f002b-78e6-4cba-8a77-6b88827a7989",
   "id": "BadgeList_DataTransformer.transformRewards",
   "pluginId": "js-plugin",
   "pluginType": "JS",
@@ -25,7 +25,7 @@
     "fullyQualifiedName": "DataTransformer.transformRewards",
     "name": "transformRewards",
     "pageId": "BadgeList",
-    "runBehaviour": "MANUAL",
-    "userSetOnLoad": false
+    "runBehaviour": "ON_PAGE_LOAD",
+    "userSetOnLoad": true
   }
 }

@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "68edbca07f897134d9d213fe_c5a1274c-efb9-4609-a58a-5e41d139f36e",
+  "gitSyncId": "68edbca07f897134d9d213fe_78bedddb-4507-4799-b133-ff8d1119ef34",
   "id": "BadgeList_DataTransformer",
   "unpublishedCollection": {
     "name": "DataTransformer",
@@ -7,6 +7,10 @@
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "variables": [
+      {
+        "name": "rewardList",
+        "value": "[]"
+      },
       {
         "name": "badgeType",
         "value": "[{\n  \"name\": \"Lifetime\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"Seasonal\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"PB\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Seasonal\",\n  \"code\": \"3\"\n}]"
