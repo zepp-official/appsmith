@@ -35,19 +35,19 @@
   "columnOrder": [
     "id",
     "type",
-    "backendConfigTitle",
     "status",
     "createBy",
     "updatedTime",
     "title",
     "customColumn1"
   ],
-  "columnUpdatedAt": 1763459808441,
+  "columnUpdatedAt": 1763536004020,
   "columnWidthMap": {
     "backendConfigTitle": 130,
+    "createBy": 187,
     "id": 72,
-    "status": 88,
-    "type": 87
+    "status": 136,
+    "type": 143
   },
   "customIsLoading": false,
   "customIsLoadingValue": "",
@@ -72,9 +72,6 @@
     },
     {
       "key": "primaryColumns.type.computedValue"
-    },
-    {
-      "key": "primaryColumns.backendConfigTitle.computedValue"
     },
     {
       "key": "primaryColumns.status.computedValue"
@@ -148,15 +145,15 @@
   "endOfData": false,
   "flexVerticalAlignment": "start",
   "horizontalAlignment": "LEFT",
-  "infiniteScrollEnabled": true,
+  "infiniteScrollEnabled": false,
   "inlineEditingSaveOption": "ROW_LEVEL",
   "isLoading": false,
   "isSortable": false,
   "isVisible": true,
-  "isVisibleDownload": true,
-  "isVisibleFilters": false,
+  "isVisibleDownload": false,
+  "isVisibleFilters": true,
   "isVisiblePagination": true,
-  "isVisibleSearch": false,
+  "isVisibleSearch": true,
   "key": "g2lhimecbx",
   "label": "Data",
   "leftColumn": 3,
@@ -171,42 +168,8 @@
   "parentColumnSpace": 17.9375,
   "parentId": "0",
   "parentRowSpace": 10,
+  "primaryColumnId": "id",
   "primaryColumns": {
-    "Actions": {
-      "isCellEditable": false,
-      "isEditable": false
-    },
-    "backendConfigTitle": {
-      "alias": "backendConfigTitle",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = rewardTable.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"title\"])) : currentRow[\"title\"] })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "backendConfigTitle",
-      "index": 2,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "Title",
-      "notation": "standard",
-      "originalId": "backendConfigTitle",
-      "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "createBy": {
       "alias": "createBy",
       "allowCellWrapping": false,
@@ -405,12 +368,12 @@
       "horizontalAlignment": "LEFT",
       "id": "title",
       "index": 5,
-      "isCellEditable": false,
+      "isCellEditable": true,
       "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
-      "isEditable": false,
+      "isEditable": true,
       "isSaveVisible": true,
       "isVisible": false,
       "label": "title",
@@ -454,11 +417,6 @@
       "validation": {},
       "verticalAlignment": "CENTER",
       "width": 150
-    },
-    "undefined": {
-      "isCellEditable": false,
-      "isEditable": false,
-      "isVisible": false
     },
     "updatedTime": {
       "alias": "updatedTime",

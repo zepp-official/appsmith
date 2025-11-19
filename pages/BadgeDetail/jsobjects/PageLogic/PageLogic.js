@@ -18,7 +18,6 @@ export default {
 		"assets": {
 			"icon": ""
 		},
-		"status": 0,
 		"type": 0,
 		"actionType": 2,
 		"predictExpression": "",

@@ -58,8 +58,6 @@ export default {
 	},
 
 	async transformRewards() {
-		console.log("abcdef");
-		
 		// let params = { 
 			// reward_type: "Badge",
 			// title: InputSearch.text,
@@ -111,7 +109,7 @@ export default {
 			};
 		});
 		
-		this.rewardList.push(...tempRewardList);
+		this.rewardList = tempRewardList;
 		return tempRewardList;
 	}
 }
