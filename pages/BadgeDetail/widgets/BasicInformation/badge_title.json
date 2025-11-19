@@ -15,6 +15,9 @@
     },
     {
       "key": "defaultText"
+    },
+    {
+      "key": "validation"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -28,11 +31,12 @@
       "key": "onBlur"
     }
   ],
+  "errorMessage": "Not a valid value!",
   "iconAlign": "left",
   "inputType": "TEXT",
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": false,
+  "isRequired": true,
   "isVisible": true,
   "key": "0poeow8p2p",
   "label": "Badge Name",
@@ -62,6 +66,7 @@
   "showStepArrows": false,
   "topRow": 5,
   "type": "INPUT_WIDGET_V2",
+  "validation": "{{badge_title.text.length > 0}}",
   "version": 2,
   "widgetId": "eonrksxjbf",
   "widgetName": "badge_title"

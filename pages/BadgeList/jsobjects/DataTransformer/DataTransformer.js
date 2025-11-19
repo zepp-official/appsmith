@@ -80,7 +80,9 @@ export default {
 			// next: this.next
 		// })
 		
-		const queryResult = await queryRewardsApi.run()
+		await EnvSetup.setEnvironment();
+		
+		const queryResult = await queryRewardsApi.run();
 		
 		const items = queryResult.data?.items;
 
