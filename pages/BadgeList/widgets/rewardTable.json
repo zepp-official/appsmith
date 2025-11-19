@@ -452,7 +452,7 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 60,
+  "rightColumn": 52,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "tableData": "{{DataTransformer.rewardList}}",
