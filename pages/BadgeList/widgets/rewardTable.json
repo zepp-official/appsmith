@@ -42,7 +42,7 @@
     "title",
     "customColumn1"
   ],
-  "columnUpdatedAt": 1763455306746,
+  "columnUpdatedAt": 1763459808441,
   "columnWidthMap": {
     "backendConfigTitle": 130,
     "id": 72,
@@ -166,7 +166,7 @@
   "mobileRightColumn": 30,
   "mobileTopRow": 21,
   "needsErrorInfo": false,
-  "onPageChange": "{{queryRewardsApi.run()}}",
+  "onPageChange": "{{DataTransformer.transformRewards()}}",
   "onSearchTextChanged": "{{queryRewardsApi.run()}}",
   "parentColumnSpace": 17.9375,
   "parentId": "0",
@@ -494,7 +494,7 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 54,
+  "rightColumn": 60,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "tableData": "{{DataTransformer.rewardList}}",

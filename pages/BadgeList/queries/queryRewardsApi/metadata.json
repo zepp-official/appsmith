@@ -11,24 +11,7 @@
       "httpMethod": "GET",
       "paginationType": "NONE",
       "path": "/admin/rewards/query",
-      "queryParameters": [
-        {
-          "key": "reward_type",
-          "value": "Badge"
-        },
-        {
-          "key": "title",
-          "value": "{{InputSearch.text}}"
-        },
-        {
-          "key": "pageSize",
-          "value": "{{rewardTable.pageSize}}"
-        },
-        {
-          "key": "next",
-          "value": "{{(rewardTable.pageNo - 1) * rewardTable.pageSize}}"
-        }
-      ],
+      "queryParameters": [],
       "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
@@ -42,16 +25,10 @@
     },
     "dynamicBindingPathList": [
       {
-        "key": "path"
-      },
-      {
         "key": "queryParameters[1].value"
       },
       {
         "key": "queryParameters[2].value"
-      },
-      {
-        "key": "queryParameters[3].value"
       }
     ],
     "name": "queryRewardsApi",

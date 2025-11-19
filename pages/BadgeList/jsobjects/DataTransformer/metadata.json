@@ -12,6 +12,10 @@
         "value": "[]"
       },
       {
+        "name": "next",
+        "value": "-1"
+      },
+      {
         "name": "badgeType",
         "value": "[{\n  \"name\": \"Lifetime\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"Seasonal\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"PB\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Seasonal\",\n  \"code\": \"3\"\n}]"
       },
