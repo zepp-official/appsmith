@@ -2,7 +2,7 @@ export default {
 	// data source of the table
 	rewardList: [],
 	
-	next: -1,
+	next: 0,
 	
 	// 1. Store your type mapping here
 	badgeType: [
@@ -60,20 +60,29 @@ export default {
 	async transformRewards() {
 		console.log("abcdef");
 		
-		let params = { 
-			reward_type: "Badge",
-			title: InputSearch.text,
-			pageSize: 20
-		};
-		
-		if (this.next > 0) {
-			params.next = this.next;
-		}
+		// let params = { 
+			// reward_type: "Badge",
+			// title: InputSearch.text,
+			// pageSize: 20
+		// };
+		// 
+		// if (this.next > 0) {
+			// params.next = this.next;
+		// }
+		// const toPrint = JSON.stringify(params);
+		// console.log(toPrint);
 		
 		// Safely access the items array from the API response
 		// reward_type=Badge&title={{InputSearch.text}}&pageSize={{rewardTable.pageSize}}
 		
-		const queryResult = await queryRewardsApi.run(params)
+		// const queryResult = await queryRewardsApi.run({
+			// reward_type: 1,
+			// title: InputSearch.text,
+			// pageSize: 20,
+			// next: this.next
+		// })
+		
+		const queryResult = await queryRewardsApi.run()
 		
 		const items = queryResult.data?.items;
 
@@ -84,6 +93,7 @@ export default {
 		}
 
 		this.next = queryResult.data.next;
+		
 		// Use .map() to transform the array into the desired structure
 		const tempRewardList = items.map(item => {
 			// The data we need is nested inside the 'badge' object

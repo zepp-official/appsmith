@@ -37,7 +37,6 @@ export default {
 		"unit": 1,
 		"mark": 1,
 		"showPredict": "version>10.0.0",
-		"backendConfigTitle": "",
 		"createBy": "admin@zepp.com",
 		"updateBy": "admin@zepp.com",
 		"createdTime": "",
@@ -202,5 +201,9 @@ export default {
     } else {
 			this.currentBadge.goalExpression = goalNumber.text;
 		}
-  }
+  },
+	
+	saveIcon() {
+		this.currentBadge.assets.icon = uploadFile.data.url;
+	}
 }

@@ -12,14 +12,18 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onFilesSelected"
+    }
+  ],
   "dynamicTyping": true,
   "fileDataType": "Base64",
   "files": [],
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": false,
+  "isRequired": true,
   "isVisible": true,
   "key": "mhqrivlcds",
   "label": "Select Files",
@@ -32,6 +36,7 @@
   "mobileRightColumn": 43,
   "mobileTopRow": 3,
   "needsErrorInfo": false,
+  "onFilesSelected": "{{uploadFile.run().then(() => {\n  PageLogic.saveIcon();\n});}}",
   "parentColumnSpace": 5.5020599365234375,
   "parentId": "fzz1h6nru9",
   "parentRowSpace": 10,
@@ -43,5 +48,5 @@
   "type": "FILE_PICKER_WIDGET_V2",
   "version": 1,
   "widgetId": "467nubh6wi",
-  "widgetName": "FilePicker1"
+  "widgetName": "iconFilePicker"
 }

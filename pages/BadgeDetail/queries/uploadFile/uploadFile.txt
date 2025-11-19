@@ -1,0 +1,6 @@
+{
+	"base64": {{iconFilePicker.files[0].data}},
+	"name": {{iconFilePicker.files[0].name.split('.')[0]}},
+	"mime_type": {{iconFilePicker.files[0].type.split('/')[1]}},
+	"prefix":"appsmith"
+}

@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 116,
+  "bottomRow": 126,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -30,8 +30,8 @@
   "mobileRightColumn": 35,
   "mobileTopRow": 105,
   "needsErrorInfo": false,
-  "originalBottomRow": 116,
-  "originalTopRow": 112,
+  "originalBottomRow": 126,
+  "originalTopRow": 122,
   "overflow": "NONE",
   "parentColumnSpace": 10.0576171875,
   "parentId": "u2pm09m2lj",
@@ -43,7 +43,7 @@
   "text": "Attention: Not apply only to PB badges",
   "textAlign": "LEFT",
   "textColor": "#fca5a5",
-  "topRow": 112,
+  "topRow": 122,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
