@@ -207,6 +207,7 @@ export default {
   },
 	
 	saveIcon() {
+		showAlert("Saved icon url:" + uploadFile.data.url, 'success')
 		this.currentBadge.assets.icon = uploadFile.data.url;
 	},
 	
