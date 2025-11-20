@@ -31,7 +31,7 @@
   "isDisabled": false,
   "isInline": true,
   "isLoading": false,
-  "isRequired": false,
+  "isRequired": true,
   "isVisible": true,
   "key": "6baxn5yd28",
   "label": "Repeatable",

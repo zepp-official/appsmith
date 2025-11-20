@@ -100,6 +100,10 @@ export default {
 	async saveBadge() {
 		let savingBadge = JSON.parse(JSON.stringify(this.currentBadge));
 		
+		if (savingBadge.predictDetails.length === 0){
+			showAlert('Predicate expression is requied.', 'error');
+			return;
+		}
 		savingBadge.predictExpression = ExpressionUtils.conditionsToExpression(savingBadge.predictDetails);
 		delete savingBadge.predictDetails;
 
