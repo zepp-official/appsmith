@@ -1,8 +1,8 @@
 {
   "gitSyncId": "68edbca07f897134d9d213fe_78bedddb-4507-4799-b133-ff8d1119ef34",
-  "id": "BadgeList_DataTransformer",
+  "id": "BadgeList_PageLogic",
   "unpublishedCollection": {
-    "name": "DataTransformer",
+    "name": "PageLogic",
     "pageId": "BadgeList",
     "pluginId": "js-plugin",
     "pluginType": "JS",

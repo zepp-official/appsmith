@@ -1,9 +1,9 @@
 export default {
 	// data source of the table
 	rewardList: [],
-	
+
 	// next: 0,
-	
+
 	// 1. Store your type mapping here
 	badgeType: [
 		{ "name": "Lifetime", "code": "0" },
@@ -11,7 +11,7 @@ export default {
 		{ "name": "PB", "code": "2" },
 		{ "name": "Seasonal", "code": "3" }
 	],
-	
+
 	// --- Badge Status Mapping ---
 	badgeStatus: [
 		{ "name": "Active", "code": "0" },
@@ -41,7 +41,7 @@ export default {
 		// This helps identify if there is missing data in the map.
 		return code;
 	},
-	
+
 	/**
 	 * Helper function: Finds the name for a given status code.
 	 * @param {number | string} code - The status code from the API (e.g., 0)
@@ -50,7 +50,7 @@ export default {
 	getStatusName(code) {
 		const stringCode = String(code);
 		const statusObject = this.badgeStatus.find(s => s.code === stringCode);
-		
+
 		if (statusObject) {
 			return statusObject.name;
 		}
@@ -60,9 +60,9 @@ export default {
 	async transformRewards() {
 
 		await EnvSetup.setEnvironment();
-		
+
 		const queryResult = await queryRewardsApi.run();
-		
+
 		const items = queryResult.data?.items;
 
 		// If items is not an array (e.g., API hasn't run or returned an error), return an empty array
@@ -72,9 +72,9 @@ export default {
 		}
 
 		// this.next = queryResult.data.next;
-		
+
 		// Use .map() to transform the array into the desired structure
-		const tempRewardList = items.map(item => {
+		this.rewardList = items.map(item => {
 			// The data we need is nested inside the 'badge' object
 			const badge = item.badge;
 
@@ -89,8 +89,52 @@ export default {
 				updatedTime: badge.updatedTime
 			};
 		});
-		
-		this.rewardList = tempRewardList;
+
 		return;
+	},
+
+	async launchReward(id) {
+		const params = {
+			"rewards": {
+				"rewardType": 1,
+				"badge": {
+					"id": id,
+					"status": 1
+				}
+			}
+		}
+		
+		try {
+			await launchRewardApi.run({ body: params });
+			showAlert('Record launched successfully!! ID: ' + id, 'success');
+			await this.transformRewards();
+			return;
+		} catch (error) {
+			console.error("API call failed:", error);
+			showAlert('Failed to launch record! ID: ' + id, 'error');
+		}
+	},
+
+	async deleteReward(id) {
+		const params = {
+			"rewards": {
+				"rewardType": 1,
+				"badge": {
+					"id": id,
+					"isDelete": 0
+				}
+			}
+		}
+		
+		try {
+			await deleteRewardApi.run({ body: params });
+			showAlert('Record deleted successfully!! ID: ' + id, 'success');
+			await this.transformRewards();
+			return;
+		} catch (error) {
+			console.error("API call failed:", error);
+			showAlert('Failed to delete record! ID: ' + id, 'error');
+		}
 	}
+
 }

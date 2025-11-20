@@ -143,6 +143,9 @@
     },
     {
       "key": "onPageChange"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItem2csgoq1gya.onClick"
     }
   ],
   "enableClientSideSearch": false,
@@ -167,8 +170,8 @@
   "mobileRightColumn": 30,
   "mobileTopRow": 21,
   "needsErrorInfo": false,
-  "onPageChange": "{{DataTransformer.transformRewards()}}",
-  "onSearchTextChanged": "{{DataTransformer.transformRewards();}}",
+  "onPageChange": "{{PageLogic.transformRewards()}}",
+  "onSearchTextChanged": "{{PageLogic.transformRewards();}}",
   "parentColumnSpace": 17.9375,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -252,7 +255,7 @@
           "isDisabled": false,
           "isVisible": "{{(() => { const tableData = rewardTable.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow.status === \"Draft\")) : currentRow.status === \"Draft\" })()}}",
           "label": "Launch",
-          "onClick": "{{}}",
+          "onClick": "{{PageLogic.launchReward(rewardTable.triggeredRow.id)}}",
           "widgetId": "fb9wcl60j7"
         },
         "menuItemgbwuk0gmv8": {
@@ -261,7 +264,7 @@
           "isDisabled": false,
           "isVisible": "{{(() => { const tableData = rewardTable.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow.status === \"Draft\")) : currentRow.status === \"Draft\" })()}}",
           "label": "Delete",
-          "onClick": "{{\ndeleteRewardApi.run({\n  // When the API call succeeds\n  onSuccess: () => {\n    // 1. Re-run queryRewardsApi to refresh the table\n    queryRewardsApi.run();\n    // 2. (Optional) Show a success message\n    showAlert('Record deleted successfully!', 'success');\n  },\n  // When the API call fails\n  onError: () => {\n    // (Optional) Show an error message\n    showAlert('Failed to delete record.', 'error');\n  }\n})\n}}",
+          "onClick": "{{PageLogic.deleteReward(rewardTable.triggeredRow.id)}}",
           "widgetId": "azvwkpzwrf"
         },
         "menuItemp79jgaaalz": {
@@ -459,7 +462,7 @@
   "rightColumn": 52,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
-  "tableData": "{{DataTransformer.rewardList}}",
+  "tableData": "{{PageLogic.rewardList}}",
   "textSize": "0.875rem",
   "topRow": 20,
   "totalRecordsCount": "{{queryRewardsApi.data.data.total}}",
