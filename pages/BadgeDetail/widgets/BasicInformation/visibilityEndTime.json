@@ -28,12 +28,15 @@
       "key": "dateFormat"
     },
     {
-      "key": "onBlur"
+      "key": "onDateSelected"
     }
   ],
   "dynamicTriggerPathList": [
     {
       "key": "onBlur"
+    },
+    {
+      "key": "onDateSelected"
     }
   ],
   "firstDayOfWeek": 0,
@@ -58,7 +61,8 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 56,
   "needsErrorInfo": false,
-  "onBlur": "{{PageLogic.updateVisibilityEndTime()}}",
+  "onBlur": "",
+  "onDateSelected": "{{PageLogic.updateVisibilityEndTime()}}",
   "originalBottomRow": 63,
   "originalTopRow": 56,
   "parentColumnSpace": 10.0576171875,

@@ -3,7 +3,7 @@ export default {
 	// UI widgets will bind to this object.
 	currentBadge: {
 	},
-
+	
 	// This is the default structure for a new badge.
 	// We use this to reset the form in 'new' mode.
 	defaultBadge: {
@@ -29,10 +29,10 @@ export default {
 		"difficulty": 0,
 		"isRepeatable": 1,
 		"repeatPeriod": 0,
-		"visibilityStartTime": moment().format('YYYY-MM-DD HH:mm:ss'),
-		"visibilityEndTime": moment().format('YYYY-MM-DD HH:mm:ss'),
-		"availabilityStartTime": moment().format('YYYY-MM-DD HH:mm:ss'),
-		"availabilityEndTime": moment().format('YYYY-MM-DD HH:mm:ss'),
+		"visibilityStartTime": moment().startOf('day').format('YYYY-MM-DD HH:mm:ss'),
+		"visibilityEndTime": moment().startOf('day').format('YYYY-MM-DD HH:mm:ss'),
+		"availabilityStartTime": moment().startOf('day').format('YYYY-MM-DD HH:mm:ss'),
+		"availabilityEndTime": moment().startOf('day').format('YYYY-MM-DD HH:mm:ss'),
 		"unit": 1,
 		"mark": 1,
 		"showPredict": "version>10.0.0",
@@ -98,13 +98,15 @@ export default {
 
 	// Save a badge configuration
 	async saveBadge() {
-		this.currentBadge.predictExpression = ExpressionUtils.conditionsToExpression(this.currentBadge.predictDetails);
-		delete this.currentBadge.predictDetails;
+		let savingBadge = JSON.parse(JSON.stringify(this.currentBadge));
+		
+		savingBadge.predictExpression = ExpressionUtils.conditionsToExpression(savingBadge.predictDetails);
+		delete savingBadge.predictDetails;
 
 		const reward = {
 			"rewards": {
 				rewardType: 1,
-				badge: this.currentBadge
+				badge: savingBadge
 			}
 		};
 

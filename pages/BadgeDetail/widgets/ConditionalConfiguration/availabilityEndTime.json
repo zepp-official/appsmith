@@ -28,12 +28,15 @@
       "key": "defaultDate"
     },
     {
-      "key": "onBlur"
+      "key": "onDateSelected"
     }
   ],
   "dynamicTriggerPathList": [
     {
       "key": "onBlur"
+    },
+    {
+      "key": "onDateSelected"
     }
   ],
   "firstDayOfWeek": 0,
@@ -58,7 +61,8 @@
   "mobileRightColumn": 14,
   "mobileTopRow": 26,
   "needsErrorInfo": false,
-  "onBlur": "{{PageLogic.updateAvailabilityEndTime()}}",
+  "onBlur": "",
+  "onDateSelected": "{{PageLogic.updateAvailabilityEndTime()}}",
   "parentColumnSpace": 10.0576171875,
   "parentId": "1hmuhfoxt3",
   "parentRowSpace": 10,
