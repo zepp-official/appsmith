@@ -58,7 +58,7 @@
   "mobileRightColumn": 12,
   "mobileTopRow": 19,
   "needsErrorInfo": false,
-  "onBlur": "{{PageLogic.currentBadge.availabilityStartTime = availabilityStartTime.formattedDate}}",
+  "onBlur": "{{PageLogic.updateAvailabilityStartTime()}}",
   "parentColumnSpace": 10.0576171875,
   "parentId": "1hmuhfoxt3",
   "parentRowSpace": 10,

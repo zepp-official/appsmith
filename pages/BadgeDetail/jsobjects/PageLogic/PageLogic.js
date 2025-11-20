@@ -29,10 +29,10 @@ export default {
 		"difficulty": 0,
 		"isRepeatable": 1,
 		"repeatPeriod": 0,
-		"visibilityStartTime": "",
-		"visibilityEndTime": "",
-		"availabilityStartTime": "",
-		"availabilityEndTime": "",
+		"visibilityStartTime": moment().format('YYYY-MM-DD HH:mm:ss'),
+		"visibilityEndTime": moment().format('YYYY-MM-DD HH:mm:ss'),
+		"availabilityStartTime": moment().format('YYYY-MM-DD HH:mm:ss'),
+		"availabilityEndTime": moment().format('YYYY-MM-DD HH:mm:ss'),
 		"unit": 1,
 		"mark": 1,
 		"showPredict": "version>10.0.0",
@@ -206,5 +206,23 @@ export default {
 	
 	saveIcon() {
 		this.currentBadge.assets.icon = uploadFile.data.url;
+	},
+	
+	updateVisibilityStartTime() {
+		console.log("this.currentBadge.visibilityStartTime:" + this.currentBadge.visibilityStartTime);
+		console.log("visibilityStartTime.formattedDate:" + visibilityStartTime.formattedDate);
+		this.currentBadge.visibilityStartTime = visibilityStartTime.formattedDate;
+	},
+	
+	updateVisibilityEndTime() {
+		this.currentBadge.visibilityEndTime = visibilityEndTime.formattedDate;
+	},
+	
+	updateAvailabilityStartTime() {
+		this.currentBadge.availabilityStartTime = availabilityStartTime.formattedDate;
+	},
+	
+	updateAvailabilityEndTime() {
+		this.currentBadge.availabilityStartTime = availabilityStartTime.formattedDate;
 	}
 }

@@ -25,15 +25,18 @@
       "key": "dateFormat"
     },
     {
-      "key": "defaultDate"
+      "key": "onDateSelected"
     },
     {
-      "key": "onBlur"
+      "key": "defaultDate"
     }
   ],
   "dynamicTriggerPathList": [
     {
       "key": "onBlur"
+    },
+    {
+      "key": "onDateSelected"
     }
   ],
   "firstDayOfWeek": 0,
@@ -58,7 +61,8 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 62,
   "needsErrorInfo": false,
-  "onBlur": "{{\nPageLogic.currentBadge.visibilityStartTime = visibilityStartTime.formattedDate;\n}}",
+  "onBlur": "",
+  "onDateSelected": "{{\nPageLogic.updateVisibilityStartTime()\n}}",
   "originalBottomRow": 54,
   "originalTopRow": 47,
   "parentColumnSpace": 10.0576171875,
@@ -68,7 +72,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 37,
   "shortcuts": false,
-  "timePrecision": "minute",
+  "timePrecision": "second",
   "topRow": 47,
   "type": "DATE_PICKER_WIDGET2",
   "version": 2,

@@ -32,7 +32,7 @@
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{!predicateGoalType.selectedOptionValue === \"Non-metric\"}}",
+  "isVisible": "{{predicateGoalType.selectedOptionValue === \"Non-metric\"}}",
   "key": "p5tziitjpj",
   "label": "Goal Metric",
   "labelAlignment": "left",

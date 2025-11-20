@@ -84,11 +84,11 @@ export default {
 		{ "name": "Level 18", "code": "18" },
 		{ "name": "Level 19", "code": "19" },
 		{ "name": "Level 20", "code": "20" },
-		{ "name": "Level 20", "code": "21" },
-		{ "name": "Level 20", "code": "22" },
-		{ "name": "Level 20", "code": "23" },
-		{ "name": "Level 20", "code": "24" },
-		{ "name": "Level 20", "code": "25" }
+		{ "name": "Level 21", "code": "21" },
+		{ "name": "Level 22", "code": "22" },
+		{ "name": "Level 23", "code": "23" },
+		{ "name": "Level 24", "code": "24" },
+		{ "name": "Level 25", "code": "25" }
 	],
 	unitOfMeasurement:[
 		{ "name": "Meter", "code": "0" },
