@@ -36,8 +36,6 @@ export default {
 		"unit": 1,
 		"mark": 1,
 		"showPredict": "version>10.0.0",
-		"createBy": "admin@zepp.com",
-		"updateBy": "admin@zepp.com",
 		"createdTime": "",
 		"updatedTime": "",
 		"isDelete": 1
@@ -47,9 +45,13 @@ export default {
 	// It must be 'async' because it waits for an API call.
 	async onPageLoad() {
 		// 1. Get the 'mode' from the URL parameter
-		const mode = appsmith.URL.queryParams.mode;
-
+		let mode = appsmith.URL.queryParams.mode;
+		if (!mode) {
+			mode = "new";
+		}
+		storeValue('pageMode', mode, true);		
 		showAlert('current mode:' + mode, 'info');
+
 		if (mode === "edit" || mode === "copy") {
 			// --- EDIT MODE ---
 			// 2. Get the 'id' from the URL
@@ -69,7 +71,6 @@ export default {
 				// 4. Store the API response in our variable
 				// IMPORTANT: Adjust 'badgeData' based on your API's actual response structure.
 				// For example, if your data is at badgeData.data, use:
-				// this.currentBadge = badgeData.data;
 				this.currentBadge = badgeData.data.items[0].badge;
 				this.currentBadge.predictDetails = ExpressionUtils.expressionToConditions(this.currentBadge.predictExpression);
 
@@ -108,7 +109,8 @@ export default {
 		};
 
 		try {
-			if (appsmith.URL.queryParams.mode === "new" || appsmith.URL.queryParams.mode === "copy") {
+			const mode = appsmith.store.pageMode;
+			if (mode === "new" || mode === "copy") {
 				delete reward.rewards.badge.id;
 				await addBadge.run({ body: reward });
 				showAlert('Badge created successfully!', 'success');
