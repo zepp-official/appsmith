@@ -35,7 +35,7 @@ export default {
 		"availabilityEndTime": moment().startOf('day').format('YYYY-MM-DD HH:mm:ss'),
 		"unit": 1,
 		"mark": 1,
-		"showPredict": "version>10.0.0",
+		"showPredict": "",
 		"createdTime": "",
 		"updatedTime": "",
 		"isDelete": 1

@@ -102,6 +102,10 @@ export default {
 	],
 	repeatPeriod: [
 		{
+			"name": "No End Date",
+			"code": "0"
+		},
+		{
 			"name": "Day",
 			"code": "1"
 		},

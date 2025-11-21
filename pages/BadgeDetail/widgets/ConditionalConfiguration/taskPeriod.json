@@ -43,7 +43,7 @@
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{repeatable.selectedOptionValue === \"1\"}}",
+  "isVisible": "{{repeatable.selectedOptionValue === \"0\"}}",
   "key": "0uwh2zdk3l",
   "labelAlignment": "left",
   "labelPosition": "Left",
