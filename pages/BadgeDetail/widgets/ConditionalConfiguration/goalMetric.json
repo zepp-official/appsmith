@@ -43,7 +43,7 @@
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{goalType.selectedOptionValue === \"Metric\"}}",
+  "isVisible": "{{PageLogic.currentBadge.type !== 3 && goalType.selectedOptionValue === \"Metric\"}}",
   "key": "0uwh2zdk3l",
   "labelAlignment": "left",
   "labelPosition": "Left",

@@ -17,6 +17,9 @@
     },
     {
       "key": "defaultOptionValue"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -26,6 +29,9 @@
     },
     {
       "key": "onDropdownClose"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -37,7 +43,7 @@
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
+  "isVisible": "{{PageLogic.currentBadge.type !== 3}}",
   "key": "0uwh2zdk3l",
   "labelAlignment": "left",
   "labelPosition": "Left",

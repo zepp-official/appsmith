@@ -11,12 +11,18 @@
     },
     {
       "key": "defaultOptionValue"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
     {
       "key": "onSelectionChange"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -29,7 +35,7 @@
   "isInline": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
+  "isVisible": "{{PageLogic.currentBadge.type !== 3}}",
   "key": "6baxn5yd28",
   "label": "Goal",
   "labelAlignment": "left",

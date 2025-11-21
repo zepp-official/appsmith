@@ -83,11 +83,17 @@
     },
     {
       "key": "primaryKeys"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "primaryKeys"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [],
@@ -97,7 +103,7 @@
   "hasMetaWidgets": true,
   "isCanvas": true,
   "isLoading": false,
-  "isVisible": true,
+  "isVisible": "{{PageLogic.currentBadge.type !== 3}}",
   "itemBackgroundColor": "#FFFFFF",
   "itemSpacing": 8,
   "key": "8azcimu9o9",

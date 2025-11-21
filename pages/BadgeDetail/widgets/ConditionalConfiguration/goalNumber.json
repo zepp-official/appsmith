@@ -39,7 +39,7 @@
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{goalType.selectedOptionValue === \"Non-metric\"}}",
+  "isVisible": "{{PageLogic.currentBadge.type !== 3 && goalType.selectedOptionValue === \"Non-metric\"}}",
   "key": "0poeow8p2p",
   "label": "Input number for goal",
   "labelAlignment": "left",
