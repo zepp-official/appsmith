@@ -118,6 +118,7 @@ export default {
 			const mode = appsmith.store.pageMode;
 			if (mode === "new" || mode === "copy") {
 				delete reward.rewards.badge.id;
+				delete reward.rewards.badge.status;
 				await addBadge.run({ body: reward });
 				showAlert('Badge created successfully!', 'success');
 			} else {
@@ -216,8 +217,6 @@ export default {
 	},
 	
 	updateVisibilityStartTime() {
-		console.log("this.currentBadge.visibilityStartTime:" + this.currentBadge.visibilityStartTime);
-		console.log("visibilityStartTime.formattedDate:" + visibilityStartTime.formattedDate);
 		this.currentBadge.visibilityStartTime = visibilityStartTime.formattedDate;
 	},
 	
