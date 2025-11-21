@@ -230,5 +230,12 @@ export default {
 	
 	updateAvailabilityEndTime() {
 		this.currentBadge.availabilityStartTime = availabilityStartTime.formattedDate;
+	},
+	
+	isStrictNumber(str) {
+    if (typeof str !== 'string' || str.trim() === '') {
+        return false;
+    }
+    return !isNaN(Number(str));
 	}
 }

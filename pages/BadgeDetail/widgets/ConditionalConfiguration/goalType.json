@@ -4,10 +4,13 @@
   "animateLoading": true,
   "bottomRow": 66,
   "boxShadow": "none",
-  "defaultOptionValue": "Metric",
+  "defaultOptionValue": "{{PageLogic.isStrictNumber(PageLogic.currentBadge.goalExpression) ? \"Non-metric\" : \"Metric\"}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
