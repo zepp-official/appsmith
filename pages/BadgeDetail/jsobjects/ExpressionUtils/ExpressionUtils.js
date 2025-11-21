@@ -1,7 +1,7 @@
 export default {
 	// Usage:
 	// JSObject.conditionsToExpression(conditionsArray)
-	// JSObject.expressionToConditions("a >= 1 && b < c")
+	// JSObject.expressionToConditions("a >= 1 AND b < c")
 	
   // Helpers (kept internal)
   _isNumericLiteral: function(s) {
@@ -21,7 +21,7 @@ export default {
     return s;
   },
 
-  // Split top-level by joiner (&& or ||) while ignoring joiner inside parentheses or quotes
+  // Split top-level by joiner (AND or OR) while ignoring joiner inside parentheses or quotes
   _splitTopLevel: function(str, joiner) {
     var parts = [];
     var buff = '';
@@ -63,7 +63,7 @@ export default {
   /**
    * Convert Type1 (array of condition objects) -> Type2 (expression string)
    * - conditions: array of { source, operator, goal, isMetric }
-   * - Always joins with '&&'
+   * - Always joins with 'AND'
    */
   conditionsToExpression: function(conditions) {
     if (!Array.isArray(conditions)) {
@@ -95,13 +95,13 @@ export default {
       return left + ' ' + op + ' ' + rightStr;
     }.bind(this));
 
-    return parts.join(' && ');
+    return parts.join(' AND ');
   },
 
   /**
    * Convert Type2 (expression string) -> Type1 (array of condition objects)
    * Returns array of condition objects
-   * - handles flat expressions joined by top-level && (respects parentheses/quotes while splitting)
+   * - handles flat expressions joined by top-level AND (respects parentheses/quotes while splitting)
    */
   expressionToConditions: function(expression) {
     if (typeof expression !== 'string') {
@@ -111,9 +111,9 @@ export default {
     var trimmed = expression.trim();
     var parts = null;
 
-    // Only '&&' joiner is supported
-    if (trimmed.indexOf('&&') !== -1) {
-      parts = this._splitTopLevel(trimmed, '&&');
+    // Only 'AND' joiner is supported
+    if (trimmed.indexOf('AND') !== -1) {
+      parts = this._splitTopLevel(trimmed, 'AND');
     } else {
       parts = [trimmed];
     }
