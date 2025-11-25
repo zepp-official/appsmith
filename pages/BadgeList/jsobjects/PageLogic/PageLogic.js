@@ -7,7 +7,7 @@ export default {
 	// 1. Store your type mapping here
 	badgeType: [
 		{ "name": "Lifetime", "code": "0" },
-		{ "name": "Seasonal", "code": "1" },
+		{ "name": "Achivements", "code": "1" },
 		{ "name": "PB", "code": "2" },
 		{ "name": "Seasonal", "code": "3" }
 	],

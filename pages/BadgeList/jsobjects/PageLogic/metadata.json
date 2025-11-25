@@ -13,7 +13,7 @@
       },
       {
         "name": "badgeType",
-        "value": "[{\n  \"name\": \"Lifetime\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"Seasonal\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"PB\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Seasonal\",\n  \"code\": \"3\"\n}]"
+        "value": "[{\n  \"name\": \"Lifetime\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"Achivements\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"PB\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Seasonal\",\n  \"code\": \"3\"\n}]"
       },
       {
         "name": "badgeStatus",

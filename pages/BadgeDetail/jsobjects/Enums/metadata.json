@@ -21,7 +21,7 @@
       },
       {
         "name": "badgeType",
-        "value": "[{\n  \"name\": \"Lifetime\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"Seasonal\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"PB\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Seasonal\",\n  \"code\": \"3\"\n}]"
+        "value": "[{\n  \"name\": \"Lifetime\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"Achivements\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"PB\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Seasonal\",\n  \"code\": \"3\"\n}]"
       },
       {
         "name": "actionType",
@@ -38,6 +38,10 @@
       {
         "name": "repeatPeriod",
         "value": "[{\n  \"name\": \"No End Date\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"Day\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"Week\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Month\",\n  \"code\": \"3\"\n}]"
+      },
+      {
+        "name": "labelTypes",
+        "value": "[{\n  \"code\": \"Repetitive\"\n}, {\n  \"code\": \"Challenge\"\n}]"
       },
       {
         "name": "metricList",

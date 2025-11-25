@@ -1,55 +1,62 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
-  "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 12,
+  "bottomRow": 10,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultOptionValue": "GREEN",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
   "dynamicTriggerPathList": [],
-  "iconAlign": "left",
-  "inputType": "TEXT",
   "isDisabled": false,
+  "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "pmtcuvyb2x",
-  "label": "Add New Label",
+  "key": "istd6cr4z9",
   "labelAlignment": "left",
   "labelPosition": "Left",
-  "labelStyle": "",
+  "labelText": "Select Label",
   "labelTextSize": "0.875rem",
   "labelWidth": "15",
-  "leftColumn": 1,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
   "mobileBottomRow": 12,
-  "mobileLeftColumn": 1,
-  "mobileRightColumn": 21,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 20,
   "mobileTopRow": 5,
   "needsErrorInfo": false,
+  "optionLabel": "code",
+  "optionValue": "code",
   "parentColumnSpace": 7.1223907470703125,
   "parentId": "cx9qbpifpl",
   "parentRowSpace": 10,
-  "placeholderText": "Enter label name...",
+  "placeholderText": "Select option",
   "renderMode": "CANVAS",
-  "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 47,
-  "showStepArrows": false,
+  "rightColumn": 42,
+  "serverSideFiltering": false,
+  "sourceData": "{{Enums.labelTypes}}",
   "topRow": 5,
-  "type": "INPUT_WIDGET_V2",
-  "version": 2,
-  "widgetId": "n616o8jqhq",
-  "widgetName": "tagInput_Widget"
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "q4rb6rjvzt",
+  "widgetName": "tagSelect_Widget"
 }

@@ -47,7 +47,7 @@ export default {
 	],
 	badgeType: [
 		{ "name": "Lifetime", "code": "0" },
-		{ "name": "Seasonal", "code": "1" },
+		{ "name": "Achivements", "code": "1" },
 		{ "name": "PB", "code": "2" },
 		{ "name": "Seasonal", "code": "3" }
 	],
@@ -144,6 +144,15 @@ export default {
 	// "field_desc": "distance goal"
 	// }
 	// ],
+	
+	labelTypes: [
+		{
+			"code": "Repetitive"
+		},
+		{
+			"code": "Challenge"
+		}
+	],
 
 	metricList:[
 		{

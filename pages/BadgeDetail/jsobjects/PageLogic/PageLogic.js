@@ -136,9 +136,9 @@ export default {
 
 	// Add a new tag
 	addTag () {
-		const tagInput = tagInput_Widget.text;
+		const tagInput = tagSelect_Widget.selectedOptionValue;
 		if (!tagInput || tagInput.trim() === "") {
-			showAlert("Please enter a tag", "warning");
+			showAlert("Please select a tag", "warning");
 			return;
 		}
 
