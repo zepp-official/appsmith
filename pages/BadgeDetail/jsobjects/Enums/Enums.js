@@ -97,7 +97,7 @@ export default {
 		{ "name": "Inch", "code": "3" },
 		{ "name": "Mile", "code": "4" },
 		{ "name": "Number", "code": "5" },
-		{ "name": "Count", "code": "6" },
+		{ "name": "Jump Rope Count", "code": "6" },
 		{ "name": "Second", "code": "7" }
 	],
 	repeatPeriod: [

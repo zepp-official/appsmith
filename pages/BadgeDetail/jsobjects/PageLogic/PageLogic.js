@@ -126,7 +126,7 @@ export default {
 				showAlert('Badge created successfully!', 'success');
 			}
 
-			// navigateTo("BadgeList")
+			navigateTo("BadgeList");
 			return;
 		} catch (error) {
 			console.error("API call failed:", error);
@@ -179,16 +179,14 @@ export default {
 		if (this.tempPredicate.isMetric) {
 			this.tempPredicate.goal = predicateGoalMetric.selectedOptionValue;
 		} else {
-			this.tempPredicate.goal = parseInt(predicateGoalNumber.text);
+			this.tempPredicate.goal = predicateGoalNumber.text;
 		}
 		
 		console.log(this.newPredicateModalmode);
 		console.log(this.currentPredicateIndex)
 		if (this.newPredicateModalmode === "new") {
-			// this.tempPredicate.id = crypto.randomUUID();
 			this.currentBadge.predictDetails.unshift(this.tempPredicate);
 		} else {
-			// const index = this.currentBadge.predictDetails.findIndex((element) => element.id == this.tempPredicate.id);
 			this.currentBadge.predictDetails[this.currentPredicateIndex] = this.tempPredicate;
 		}
 
@@ -199,7 +197,6 @@ export default {
 		resetWidget(predicateGoalNumber)
 	},
 	async deleteCondition (index) {
-		//	write code here
 		this.currentBadge.predictDetails.splice(index, 1);
 	},
 	

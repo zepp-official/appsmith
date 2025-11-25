@@ -33,7 +33,7 @@
       },
       {
         "name": "unitOfMeasurement",
-        "value": "[{\n  \"name\": \"Meter\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"KM\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"Yard\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Inch\",\n  \"code\": \"3\"\n}, {\n  \"name\": \"Mile\",\n  \"code\": \"4\"\n}, {\n  \"name\": \"Number\",\n  \"code\": \"5\"\n}, {\n  \"name\": \"Count\",\n  \"code\": \"6\"\n}, {\n  \"name\": \"Second\",\n  \"code\": \"7\"\n}]"
+        "value": "[{\n  \"name\": \"Meter\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"KM\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"Yard\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Inch\",\n  \"code\": \"3\"\n}, {\n  \"name\": \"Mile\",\n  \"code\": \"4\"\n}, {\n  \"name\": \"Number\",\n  \"code\": \"5\"\n}, {\n  \"name\": \"Jump Rope Count\",\n  \"code\": \"6\"\n}, {\n  \"name\": \"Second\",\n  \"code\": \"7\"\n}]"
       },
       {
         "name": "repeatPeriod",
