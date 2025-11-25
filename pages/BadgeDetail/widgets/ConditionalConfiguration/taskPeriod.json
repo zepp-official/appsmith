@@ -13,9 +13,6 @@
       "key": "borderRadius"
     },
     {
-      "key": "isVisible"
-    },
-    {
       "key": "sourceData"
     },
     {
@@ -26,9 +23,6 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
-    },
-    {
-      "key": "isVisible"
     },
     {
       "key": "onDropdownClose"
@@ -43,7 +37,7 @@
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{repeatable.selectedOptionValue === \"0\"}}",
+  "isVisible": false,
   "key": "0uwh2zdk3l",
   "labelAlignment": "left",
   "labelPosition": "Left",
