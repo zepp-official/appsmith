@@ -145,14 +145,15 @@ export default {
 	// }
 	// ],
 	
-	labelTypes: [
-		{
-			"code": "Repetitive"
-		},
-		{
-			"code": "Challenge"
-		}
-	],
+	// labelTypes: [
+		// {
+			// "code": "Repetitive"
+		// },
+		// {
+			// "code": "Challenge"
+		// }
+	// ],
+	labelTypes: JSON.parse(getLabelTypes.data.data[0].content),
 
 	metricList:[
 		{

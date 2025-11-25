@@ -103,7 +103,7 @@ export default {
 				}
 			}
 		}
-		
+
 		try {
 			await launchRewardApi.run({ body: params });
 			showAlert('Record launched successfully!! ID: ' + id, 'success');
@@ -125,7 +125,7 @@ export default {
 				}
 			}
 		}
-		
+
 		try {
 			await deleteRewardApi.run({ body: params });
 			showAlert('Record deleted successfully!! ID: ' + id, 'success');
@@ -135,6 +135,15 @@ export default {
 			console.error("API call failed:", error);
 			showAlert('Failed to delete record! ID: ' + id, 'error');
 		}
+	},
+
+	async exportContent() {
+		const content = await exportContentApi.run();
+		download(
+			JSON.stringify(content, null, 2), // Convert object to string with indentation
+			"content.json",                            // File name
+			"application/json"                         // File type
+		);
 	}
 
 }

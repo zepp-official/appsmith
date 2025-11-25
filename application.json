@@ -35,14 +35,6 @@
       "isDefault": false
     },
     {
-      "id": "RewardList",
-      "isDefault": false
-    },
-    {
-      "id": "RewardDetail",
-      "isDefault": false
-    },
-    {
       "id": "ChallengeList",
       "isDefault": false
     },

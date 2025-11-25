@@ -22,7 +22,7 @@ export default {
 
         // Store the environment globally, accessible on all pages
         await storeValue('CURRENT_ENV', env);
-        await storeValue('API_BASE_URL', (env === 'PROD') ? 'https://api-admin-cn3.zepp.com' : 'http://api-admin-staging-us.huami.com');
-				// await storeValue('API_BASE_URL', (env === 'PROD') ? 'https://api-admin-cn3.zepp.com' : 'https://api-admin-cn3.zepp.com');
+        // await storeValue('API_BASE_URL', (env === 'PROD') ? 'https://api-admin-cn3.zepp.com' : 'http://api-admin-staging-us.huami.com');
+				await storeValue('API_BASE_URL', (env === 'PROD') ? 'https://api-admin-cn3.zepp.com' : 'https://api-admin-cn3.zepp.com');
     }
 }

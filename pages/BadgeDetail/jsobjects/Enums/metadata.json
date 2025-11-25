@@ -41,7 +41,7 @@
       },
       {
         "name": "labelTypes",
-        "value": "[{\n  \"code\": \"Repetitive\"\n}, {\n  \"code\": \"Challenge\"\n}]"
+        "value": "JSON.parse(getLabelTypes.data.data[0].content)"
       },
       {
         "name": "metricList",
