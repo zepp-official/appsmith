@@ -226,7 +226,7 @@ export default {
 	},
 	
 	updateAvailabilityEndTime() {
-		this.currentBadge.availabilityStartTime = availabilityStartTime.formattedDate;
+		this.currentBadge.availabilityEndTime = availabilityEndTime.formattedDate;
 	},
 	
 	isStrictNumber(str) {
