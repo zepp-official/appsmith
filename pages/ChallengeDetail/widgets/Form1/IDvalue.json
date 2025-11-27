@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 38,
   "shouldTruncate": false,
-  "text": "{{JSObject1.challenge.id}}",
+  "text": "{{PageLogic.currentChallenge.id}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 0,

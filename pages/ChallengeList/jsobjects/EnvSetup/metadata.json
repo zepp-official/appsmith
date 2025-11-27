@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "68edbca07f897134d9d213fe_7d2adbc0-2580-4108-b6a2-6d76d8301d7b",
+  "id": "ChallengeList_EnvSetup",
+  "unpublishedCollection": {
+    "name": "EnvSetup",
+    "pageId": "ChallengeList",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

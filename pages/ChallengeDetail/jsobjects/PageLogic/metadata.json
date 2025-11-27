@@ -1,0 +1,36 @@
+{
+  "gitSyncId": "68edbca07f897134d9d213fe_eb6fe9bd-d223-42e8-9bb6-cb2f53d4246e",
+  "id": "ChallengeDetail_PageLogic",
+  "unpublishedCollection": {
+    "name": "PageLogic",
+    "pageId": "ChallengeDetail",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "currentChallenge",
+        "value": "{}"
+      },
+      {
+        "name": "defaultChallenge",
+        "value": "{\n  \"id\": \"\",\n  \"sportType\": 1,\n  \"appname\": \"com.huami.midong\",\n  \"contents\": {\n    \"challenge_title\": \"NEW YEAR TEST\",\n    \"challenge_description\": \"Ring in the new year with steps towards a better you! Join the \\\"New Year New You\\\" badge challenge—accumulate 20,000 walking steps within 2 months to unlock your exclusive honor badge and kickstart your fresh self with every stride!\",\n    \"challenge_condition\": \"20,000 walking steps\"\n  },\n  \"assets\": {\n    \"challenge_cover_icon\": \"https://img-cdn.zepp.com/Aura/20251120/b55f05fe42a7e3ba33ea6f80ea2ff64b.png\",\n    \"challenge_accept_icon\": \"https://img-cdn.zepp.com/Aura/20251120/687a0899049cb63feb091e40ff7bcc39.png\"\n  },\n  \"rules\": [{\n    \"id\": 47,\n    \"expression\": {\n      \"predictExpression\": \"total_steps >=2000\",\n      \"goalExpression\": \"2000\",\n      \"progressExpression\": \"total_steps\",\n      \"valueExpression\": \"total_steps\"\n    },\n    \"rewardConfig\": {\n      \"rewardtype\": 1,\n      \"rewardId\": 14\n    }\n  }, {\n    \"id\": 48,\n    \"expression\": {\n      \"predictExpression\": \"total_steps >=10000\",\n      \"goalExpression\": \"10000\",\n      \"progressExpression\": \"\",\n      \"valueExpression\": \"total_steps\"\n    },\n    \"rewardConfig\": {\n      \"rewardtype\": 1,\n      \"rewardId\": 15\n    }\n  }, {\n    \"id\": 49,\n    \"expression\": {\n      \"predictExpression\": \"total_steps >=20000\",\n      \"goalExpression\": \"20000\",\n      \"progressExpression\": \"\",\n      \"valueExpression\": \"total_steps\"\n    },\n    \"rewardConfig\": {\n      \"rewardtype\": 1,\n      \"rewardId\": 16\n    }\n  }],\n  \"unit\": 5,\n  \"startTime\": moment().startOf('day').format('YYYY-MM-DD HH:mm:ss'),\n  \"endTime\": moment().startOf('day').format('YYYY-MM-DD HH:mm:ss'),\n  \"challengeStatus\": 2,\n  \"isTop\": 0,\n  \"isDelete\": 1\n}"
+      },
+      {
+        "name": "newPredicateModalmode",
+        "value": "\"new\""
+      },
+      {
+        "name": "defaultPredicate",
+        "value": "{\n  \"source\": \"\",\n  \"operator\": \"\",\n  \"goal\": \"\",\n  \"isMetric\": true\n}"
+      },
+      {
+        "name": "tempPredicate",
+        "value": "{}"
+      },
+      {
+        "name": "currentPredicateIndex",
+        "value": "0"
+      }
+    ]
+  }
+}

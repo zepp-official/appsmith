@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "68edbca07f897134d9d213fe_53947b15-f0c9-401b-b4c0-5327491f9989",
+  "id": "ChallengeList_PageLogic",
+  "unpublishedCollection": {
+    "name": "PageLogic",
+    "pageId": "ChallengeList",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "challenges",
+        "value": "[]"
+      },
+      {
+        "name": "challengeStatus",
+        "value": "[{\n  \"name\": \"Active\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"Pending\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"Expired\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Draft\",\n  \"code\": \"3\"\n}]"
+      }
+    ]
+  }
+}

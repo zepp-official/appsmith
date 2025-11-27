@@ -118,32 +118,6 @@ export default {
 			"code": "3"
 		}
 	],
-	// metricList: [
-	// {
-	// "field_name": "workouts_over_10min_current_week",
-	// "field_desc": "workouts over 10min current week"
-	// },
-	// {
-	// "field_name": "calories_burned_today_previous",
-	// "field_desc": "calories burned today previous"
-	// },
-	// {
-	// "field_name": "calories_goal",
-	// "field_desc": "calories goal"
-	// },
-	// {
-	// "field_name": "currentTotalCyclingDistance",
-	// "field_desc": "calories goal"
-	// },
-	// {
-	// "field_name": "totalCyclingDistance",
-	// "field_desc": "calories goal"
-	// },
-	// {
-	// "field_name": "distance",
-	// "field_desc": "distance goal"
-	// }
-	// ],
 	
 	// labelTypes: [
 		// {
