@@ -1,13 +1,11 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
+  "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 41,
+  "bottomRow": 20,
   "boxShadow": "none",
-  "closeOnSelection": true,
-  "dateFormat": "YYYY-MM-DD HH:mm:ss",
-  "datePickerType": "DATE_PICKER",
-  "defaultDate": "{{PageLogic.currentChallenge.endTime}}",
+  "defaultText": "{{PageLogic.currentChallenge.engineVersion}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -16,60 +14,54 @@
       "key": "borderRadius"
     },
     {
-      "key": "defaultDate"
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
-      "key": "defaultDate"
-    },
-    {
-      "key": "dateFormat"
-    },
-    {
-      "key": "onDateSelected"
+      "key": "onBlur"
     }
   ],
   "dynamicTriggerPathList": [
     {
-      "key": "onDateSelected"
+      "key": "onBlur"
     }
   ],
-  "firstDayOfWeek": 0,
+  "iconAlign": "left",
+  "inputType": "TEXT",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "eufm7h8awr",
-  "label": "End Time",
+  "key": "mwfr4hxvwn",
+  "label": "Engine Version",
   "labelAlignment": "left",
   "labelPosition": "Left",
+  "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": "15",
   "leftColumn": 6,
-  "maxDate": "2121-12-31T18:29:00.000Z",
   "maxDynamicHeight": 9000,
-  "minDate": "1920-12-31T18:30:00.000Z",
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 41,
-  "mobileLeftColumn": 8,
-  "mobileRightColumn": 28,
-  "mobileTopRow": 34,
+  "mobileBottomRow": 13,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 19,
+  "mobileTopRow": 6,
   "needsErrorInfo": false,
-  "onDateSelected": "{{PageLogic.updateEndTime()}}",
+  "onBlur": "{{PageLogic.currentChallenge.engineVersion = engineVersion.text}}",
   "parentColumnSpace": 12.2998046875,
   "parentId": "q88xl221v5",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
+  "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 39,
-  "shortcuts": false,
-  "timePrecision": "minute",
-  "topRow": 34,
-  "type": "DATE_PICKER_WIDGET2",
+  "showStepArrows": false,
+  "topRow": 16,
+  "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "wx3j50vt5o",
-  "widgetName": "endTime"
+  "widgetId": "3feyw1md6u",
+  "widgetName": "engineVersion"
 }

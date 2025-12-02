@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 15,
+  "bottomRow": 96,
   "boxShadow": "none",
-  "defaultText": "{{PageLogic.currentChallenge.groupId}}",
+  "defaultText": "{{PageLogic.currentBadge.engineVersion}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -15,12 +15,18 @@
     },
     {
       "key": "defaultText"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "onBlur"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -33,35 +39,39 @@
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
-  "key": "mwfr4hxvwn",
-  "label": "Group ID",
+  "isVisible": "{{PageLogic.currentBadge.type !== 3}}",
+  "key": "0poeow8p2p",
+  "label": "Engine Version",
   "labelAlignment": "left",
   "labelPosition": "Left",
   "labelStyle": "",
+  "labelTextColor": "#231f20",
   "labelTextSize": "0.875rem",
   "labelWidth": "15",
-  "leftColumn": 6,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 13,
+  "mobileBottomRow": 71,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 19,
-  "mobileTopRow": 6,
+  "mobileRightColumn": 13,
+  "mobileTopRow": 64,
   "needsErrorInfo": false,
-  "onBlur": "{{PageLogic.currentChallenge.groupId = groupId.text}}",
-  "parentColumnSpace": 12.2998046875,
-  "parentId": "q88xl221v5",
+  "onBlur": "{{PageLogic.currentBadge.engineVersion = engineVersion.text}}",
+  "originalBottomRow": 78,
+  "originalTopRow": 71,
+  "parentColumnSpace": 12.8603515625,
+  "parentId": "1hmuhfoxt3",
   "parentRowSpace": 10,
+  "regex": "^[1-9]\\d*$",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 39,
+  "rightColumn": 37,
   "showStepArrows": false,
-  "topRow": 11,
+  "topRow": 89,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "xudm1qivhk",
-  "widgetName": "groupId"
+  "widgetId": "53dht9j6zy",
+  "widgetName": "engineVersion"
 }

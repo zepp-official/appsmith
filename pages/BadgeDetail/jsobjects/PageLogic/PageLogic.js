@@ -19,7 +19,7 @@ export default {
 			"icon": ""
 		},
 		"type": 0,
-		"actionType": 2,
+		"actionType": 0,
 		"predictExpression": "",
 		"predictDetails": [],
 		"goalExpression": "",
@@ -38,7 +38,8 @@ export default {
 		"showPredict": "",
 		"createdTime": "",
 		"updatedTime": "",
-		"isDelete": 1
+		"isDelete": 1,
+		"engineVersion": 0
 	},
 
 	// This function will run when the page loads.

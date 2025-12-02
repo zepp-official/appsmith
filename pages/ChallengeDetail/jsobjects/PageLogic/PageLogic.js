@@ -26,7 +26,8 @@ export default {
 		"endTime": moment().startOf('day').format('YYYY-MM-DD HH:mm:ss'),
 		"isTop": 0,
 		"groupId": "",
-		"isDelete": 1
+		"isDelete": 1,
+		"engineVersion": 0
 	},
 
 	// This function will run when the page loads.
@@ -121,7 +122,7 @@ export default {
 				showAlert('Badge created successfully!', 'success');
 			}
 
-			// navigateTo("ChallengeList");
+			navigateTo("ChallengeList");
 			return;
 		} catch (error) {
 			console.error("API call failed:", error);
