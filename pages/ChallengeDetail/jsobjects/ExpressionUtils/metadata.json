@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "68edbca07f897134d9d213fe_035c5d37-eee0-4ef8-aa34-63c090739a29",
+  "id": "ChallengeDetail_ExpressionUtils",
+  "unpublishedCollection": {
+    "name": "ExpressionUtils",
+    "pageId": "ChallengeDetail",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "_COMPARISON_RE",
+        "value": "/^([A-Za-z0-9_.]+)\\s*(>=|<=|===|!==|==|!=|>|<)\\s*([A-Za-z0-9_.]+|\".*?\"|'.*?'|-?\\d+(\\.\\d+)?)$/"
+      }
+    ]
+  }
+}

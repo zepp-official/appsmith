@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "68edbca07f897134d9d213fe_6c3cf36f-8fe6-4304-9d55-f804ead2f4f2",
-  "id": "ChallengeDetail_PageLogic.onPageLoad",
+  "gitSyncId": "68edbca07f897134d9d213fe_867de95f-7cf7-449a-84a0-46bf3c01bb7d",
+  "id": "ChallengeDetail_PageLogic.saveChallenge",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "fullyQualifiedName": "PageLogic.onPageLoad",
-    "name": "onPageLoad",
+    "fullyQualifiedName": "PageLogic.saveChallenge",
+    "name": "saveChallenge",
     "pageId": "ChallengeDetail",
-    "runBehaviour": "ON_PAGE_LOAD",
-    "userSetOnLoad": true
+    "runBehaviour": "MANUAL",
+    "userSetOnLoad": false
   }
 }

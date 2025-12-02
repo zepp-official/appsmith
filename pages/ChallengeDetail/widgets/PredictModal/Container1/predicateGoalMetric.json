@@ -1,0 +1,73 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 19,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( \nPageLogic.tempPredicate.isMetric ? PageLogic.tempPredicate.goal : \"\"))(predicateGoalMetric.options, predicateGoalMetric.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "{{predicateGoalType.selectedOptionValue === \"Metric\"}}",
+  "key": "n7hrn5r409",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelText": "Goal Metric",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "15",
+  "leftColumn": 11,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 25,
+  "mobileLeftColumn": 11,
+  "mobileRightColumn": 31,
+  "mobileTopRow": 18,
+  "needsErrorInfo": false,
+  "optionLabel": "field_name",
+  "optionValue": "field_name",
+  "originalBottomRow": 21,
+  "originalTopRow": 16,
+  "parentColumnSpace": 7.04443359375,
+  "parentId": "478a7siezi",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 53,
+  "serverSideFiltering": false,
+  "sourceData": "{{Enums.metricList}}",
+  "topRow": 14,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "euwcpxjquh",
+  "widgetName": "predicateGoalMetric"
+}

@@ -1,0 +1,73 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 26,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( currentItem.rewardConfig.rewardId))(badgeSelect.options, badgeSelect.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "onDropdownClose"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onDropdownClose"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "fjk1bvnfz6",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelText": "Badge",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "15",
+  "leftColumn": 3,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 29,
+  "mobileLeftColumn": 19,
+  "mobileRightColumn": 39,
+  "mobileTopRow": 22,
+  "needsErrorInfo": false,
+  "onDropdownClose": "{{PageLogic.updateRule(Rule_List.triggeredItem.id)}}",
+  "optionLabel": "title",
+  "optionValue": "id",
+  "parentColumnSpace": 8.524779558181763,
+  "parentId": "ada3i40gqi",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 53,
+  "serverSideFiltering": false,
+  "sourceData": "{{PageLogic.badgeList}}",
+  "topRow": 22,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "2ll1q3y6oo",
+  "widgetName": "badgeSelect"
+}

@@ -1,0 +1,56 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignment": "left",
+  "animateLoading": true,
+  "bottomRow": 14,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{PageLogic.tempPredict.isMetric ? \"Metric\" : \"Non-metric\"}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "options"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isDisabled": false,
+  "isInline": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "085vfrqqey",
+  "label": "Goal Type",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "15",
+  "leftColumn": 11,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 16,
+  "mobileLeftColumn": 11,
+  "mobileRightColumn": 31,
+  "mobileTopRow": 10,
+  "needsErrorInfo": false,
+  "options": "[\n  {\n    \"label\": \"Metric\",\n    \"value\": \"Metric\"\n  },\n  {\n    \"label\": \"Non-metric\",\n    \"value\": \"Non-metric\"\n  }\n]",
+  "originalBottomRow": 16,
+  "originalTopRow": 10,
+  "parentColumnSpace": 7.04443359375,
+  "parentId": "478a7siezi",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 58,
+  "topRow": 10,
+  "type": "RADIO_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "h0i6gae059",
+  "widgetName": "predicateGoalType"
+}

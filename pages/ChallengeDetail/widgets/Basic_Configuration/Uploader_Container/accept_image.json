@@ -1,0 +1,42 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 49,
+  "boxShadow": "none",
+  "defaultImage": "{{PageLogic.currentChallenge.assets.challenge_accept_icon}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultImage"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "z8sozbh5cj",
+  "leftColumn": 23,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 47,
+  "mobileLeftColumn": 23,
+  "mobileRightColumn": 35,
+  "mobileTopRow": 35,
+  "needsErrorInfo": false,
+  "objectFit": "cover",
+  "parentColumnSpace": 7.9514312744140625,
+  "parentId": "tq3ko51mnr",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 41,
+  "topRow": 37,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "wsft56avjz",
+  "widgetName": "accept_image"
+}

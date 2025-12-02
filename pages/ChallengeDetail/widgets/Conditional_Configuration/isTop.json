@@ -1,0 +1,61 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "LEFT",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 10,
+  "defaultCheckedState": "{{PageLogic.currentChallenge.isTop === 1 ? true : false}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultCheckedState"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "defaultCheckedState"
+    },
+    {
+      "key": "onCheckChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onCheckChange"
+    }
+  ],
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "f54vcevth2",
+  "label": "Pin",
+  "labelPosition": "Left",
+  "leftColumn": 6,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 35,
+  "mobileLeftColumn": 6,
+  "mobileRightColumn": 18,
+  "mobileTopRow": 31,
+  "needsErrorInfo": false,
+  "onCheckChange": "{{PageLogic.currentChallenge.isTop = isTop.isChecked ? 1 : 0}}",
+  "parentColumnSpace": 12.2998046875,
+  "parentId": "q88xl221v5",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 18,
+  "topRow": 6,
+  "type": "CHECKBOX_WIDGET",
+  "version": 1,
+  "widgetId": "faw9kfxoi8",
+  "widgetName": "isTop"
+}

@@ -1,0 +1,51 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 22,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "SECONDARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "edit",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "d4umuymug4",
+  "leftColumn": 48,
+  "minWidth": 50,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 55,
+  "mobileRightColumn": 59,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "onClick": "{{\nPageLogic.openPredictModal(Rule_List.triggeredItem.id)\n}}",
+  "parentColumnSpace": 8.524779558181763,
+  "parentId": "ada3i40gqi",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 52,
+  "topRow": 18,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "yzns13n80x",
+  "widgetName": "predictEdit"
+}

@@ -1,0 +1,42 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 21,
+  "boxShadow": "none",
+  "defaultImage": "{{PageLogic.currentChallenge.assets.challenge_cover_icon}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultImage"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "z8sozbh5cj",
+  "leftColumn": 23,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 21,
+  "mobileLeftColumn": 23,
+  "mobileRightColumn": 35,
+  "mobileTopRow": 9,
+  "needsErrorInfo": false,
+  "objectFit": "cover",
+  "parentColumnSpace": 7.9514312744140625,
+  "parentId": "tq3ko51mnr",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 40,
+  "topRow": 9,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "ci24cpeum0",
+  "widgetName": "cover_image"
+}

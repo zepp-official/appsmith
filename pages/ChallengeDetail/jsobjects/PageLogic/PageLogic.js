@@ -3,25 +3,25 @@ export default {
 	// UI widgets will bind to this object.
 	currentChallenge: {
 	},
+	badgeList: [],
 
 	// This is the default structure for a new challenge.
 	// We use this to reset the form in 'new' mode.
 	defaultChallenge: {
-		"id": "",
 		"sportType": 1,
 		"appname": "com.huami.midong",
 		"contents": {
-			"challenge_title": "NEW YEAR TEST",
-			"challenge_description": "Ring in the new year with steps towards a better you! Join the \"New Year New You\" badge challenge—accumulate 20,000 walking steps within 2 months to unlock your exclusive honor badge and kickstart your fresh self with every stride!",
-			"challenge_condition": "20,000 walking steps"
+			"challenge_title": "",
+			"challenge_description": "",
+			"challenge_condition": ""
 		},
 		"assets": {
-			"challenge_cover_icon": "https://img-cdn.zepp.com/Aura/20251120/b55f05fe42a7e3ba33ea6f80ea2ff64b.png",
-			"challenge_accept_icon": "https://img-cdn.zepp.com/Aura/20251120/687a0899049cb63feb091e40ff7bcc39.png"
+			"challenge_cover_icon": "",
+			"challenge_accept_icon": ""
 		},
 		"rules": [
 			{
-				"id": 47,
+				"id": -1,
 				"expression": {
 					"predictExpression": "total_steps >=2000",
 					"goalExpression": "2000",
@@ -32,45 +32,33 @@ export default {
 					"rewardtype": 1,
 					"rewardId": 14
 				}
-			},
-			{
-				"id": 48,
-				"expression": {
-					"predictExpression": "total_steps >=10000",
-					"goalExpression": "10000",
-					"progressExpression": "",
-					"valueExpression": "total_steps"
-				},
-				"rewardConfig": {
-					"rewardtype": 1,
-					"rewardId": 15
-				}
-			},
-			{
-				"id": 49,
-				"expression": {
-					"predictExpression": "total_steps >=20000",
-					"goalExpression": "20000",
-					"progressExpression": "",
-					"valueExpression": "total_steps"
-				},
-				"rewardConfig": {
-					"rewardtype": 1,
-					"rewardId": 16
-				}
 			}
 		],
 		"unit": 5,
 		"startTime": moment().startOf('day').format('YYYY-MM-DD HH:mm:ss'),
 		"endTime": moment().startOf('day').format('YYYY-MM-DD HH:mm:ss'),
-		"challengeStatus": 2,
 		"isTop": 0,
+		"groupId": "",
 		"isDelete": 1
 	},
 
 	// This function will run when the page loads.
 	// It must be 'async' because it waits for an API call.
 	async onPageLoad() {
+		const queryResult = await queryRewardsApi.run();
+		const items = queryResult.data?.items;
+		// Use .map() to transform the array into the desired structure
+		this.badgeList = items.filter(item => {
+			// The data we need is nested inside the 'badge' object
+			return item.badge.type === 3;
+		}).map(item => {
+			return {
+				id: item.badge.id,
+				title: item.badge.contents.badge_title,
+			};
+		});
+
+
 		// 1. Get the 'mode' from the URL parameter
 		let mode = appsmith.URL.queryParams.mode;
 		if (!mode) {
@@ -101,165 +89,157 @@ export default {
 				this.currentChallenge = challengeData.data.items[0];
 				// this.currentChallenge.predictDetails = ExpressionUtils.expressionToConditions(this.currentBadge.predictExpression);
 
-				showAlert('Badge data loaded.', 'success');
+				showAlert('Challenge data loaded.', 'success');
 			} catch (error) {
 				// Handle any errors during the API call
-				showAlert('Failed to load badge data.', 'error');
+				showAlert('Failed to load challenge data.', 'error');
 				console.error(error);
-				this.currentBadge = this.defaultBadge; // Reset on failure
+				this.currentChallenge = this.defaultChallenge; // Reset on failure
 			}
 
 		} else if (mode === "new") {
 			// --- NEW MODE ---
 			// 5. Initialize 'currentBadge' with the default empty structure
-			this.currentBadge = this.defaultBadge;
-			showAlert('Ready to create a new badge.', 'info');
+			this.currentChallenge = this.defaultChallenge;
+			showAlert('Ready to create a new challenge.', 'info');
 		} else {
 			// --- (Optional) Handle unknown modes ---
 			showAlert('Page mode is not set. Defaulting to new.', 'warning');
-			this.currentBadge = this.defaultBadge;
+			this.currentChallenge = this.defaultChallenge;
 		}
 
-		this.tempPredicate = this.defaultPredicate;
+		//this.tempPredicate = this.defaultPredicate;
 	},
 
-	// Save a badge configuration
-	async saveBadge() {
-		let savingBadge = JSON.parse(JSON.stringify(this.currentBadge));
+	// Save a challenge configuration
+	async saveChallenge() {
+		let savingChallenge = JSON.parse(JSON.stringify(this.currentChallenge));
 
-		if (savingBadge.predictDetails.length === 0){
-			showAlert('Predicate expression is requied.', 'error');
+		if(savingChallenge.rules.length < 3) {
+			showAlert('There must be three rules!', 'warning');
 			return;
 		}
-		savingBadge.predictExpression = ExpressionUtils.conditionsToExpression(savingBadge.predictDetails);
-		delete savingBadge.predictDetails;
-
-		const reward = {
-			"rewards": {
-				rewardType: 1,
-				badge: savingBadge
+		for (let rule of savingChallenge.rules) {
+			if (rule.id < 0) {
+				delete rule.id;
 			}
-		};
-
+		}
+		
 		try {
 			const mode = appsmith.store.pageMode;
 			if (mode === "new" || mode === "copy") {
-				delete reward.rewards.badge.id;
-				delete reward.rewards.badge.status;
-				await addBadge.run({ body: reward });
-				showAlert('Badge created successfully!', 'success');
+				delete savingChallenge.id;
+				await addChallenge.run({ body: savingChallenge });
+				showAlert('Challenge created successfully!', 'success');
 			} else {
-				await updateBadge.run({ body: reward });
+				await updateChallenge.run({ body: savingChallenge });
 				showAlert('Badge created successfully!', 'success');
 			}
 
-			navigateTo("BadgeList");
+			navigateTo("ChallengeList");
 			return;
 		} catch (error) {
 			console.error("API call failed:", error);
-			showAlert('Failed to create badge template: ' + error.message, 'error');
+			showAlert('Failed to create challenge template: ' + error.message, 'error');
 		}
 	},
 
-	// Add a new tag
-	addTag () {
-		const tagInput = tagSelect_Widget.selectedOptionValue;
-		if (!tagInput || tagInput.trim() === "") {
-			showAlert("Please select a tag", "warning");
-			return;
-		}
 
-		// Check for duplicates
-		if (this.currentBadge.contents.badge_tags.includes(tagInput.trim())) {
-			showAlert("Tag already exists", "warning");
-			return;
-		}
-
-		// Add tag to array
-		this.currentBadge.contents.badge_tags.push(tagInput.trim());
-
-		// Clear input
-		resetWidget("tagInput_Widget");
-		showAlert("Tag added successfully", "success");
+	newPredictModalmode: "new",
+	defaultPredict: {
+		source: "",
+		operator: "",
+		goal: "",
+		isMetric: false
 	},
-
-	// Delete a tag by index
-	deleteTag (index) {
-		this.currentBadge.contents.badge_tags.splice(index, 1);
-		showAlert("Tag deleted", "success");
-	},
-
-	newPredicateModalmode: "new",
-	defaultPredicate: {			
-		"source": "",
-		"operator": "",
-		"goal": "",
-		"isMetric": true
-	},
-	tempPredicate: {
-	},
-	currentPredicateIndex: 0,
-	async saveCondition () {
-		this.tempPredicate.source = predicateSourceMetric.selectedOptionValue;
-		this.tempPredicate.operator = predicateOperator.selectedOptionValue;
-		this.tempPredicate.isMetric = predicateGoalType.selectedOptionValue === "Metric" ? true : false;
-		if (this.tempPredicate.isMetric) {
-			this.tempPredicate.goal = predicateGoalMetric.selectedOptionValue;
+	tempPredict: {},
+	currentRuleId: 0,
+	openPredictModal(id) {
+		console.log("begin openPredictModal");
+		let currentRule = this.currentChallenge.rules.find((item) => item.id === id);
+		let currentPredictExpression = ExpressionUtils.expressionToConditions(currentRule.expression.predictExpression);
+		if (currentPredictExpression.length > 0) {
+			this.tempPredict = JSON.parse(JSON.stringify(currentPredictExpression[0]));
 		} else {
-			this.tempPredicate.goal = predicateGoalNumber.text;
+			this.tempPredict = JSON.parse(JSON.stringify(this.defaultPredict));
 		}
 
-		console.log(this.newPredicateModalmode);
-		console.log(this.currentPredicateIndex)
-		if (this.newPredicateModalmode === "new") {
-			this.currentBadge.predictDetails.unshift(this.tempPredicate);
+		this.newPredictModalmode = "new";
+		this.currentRuleId = id;
+		console.log("begin openPredictModal showModal");
+		showModal(PredictModal.name);
+	},
+	async savePredict () {
+		this.tempPredict.source = predicateSourceMetric.selectedOptionValue;
+		this.tempPredict.operator = predicateOperator.selectedOptionValue;
+		this.tempPredict.isMetric = predicateGoalType.selectedOptionValue === "Metric" ? true : false;
+
+		if (this.tempPredict.isMetric) {
+			this.tempPredict.goal = predicateGoalMetric.selectedOptionValue;
 		} else {
-			this.currentBadge.predictDetails[this.currentPredicateIndex] = this.tempPredicate;
+			this.tempPredict.goal = predicateGoalNumber.text;
 		}
 
-		resetWidget(predicateSourceMetric);
-		resetWidget(predicateOperator);
-		resetWidget(predicateGoalType)
-		resetWidget(predicateGoalMetric)
-		resetWidget(predicateGoalNumber)
-	},
-	async deleteCondition (index) {
-		this.currentBadge.predictDetails.splice(index, 1);
-	},
+		const predictExpression = ExpressionUtils.conditionsToExpression([this.tempPredict]);
 
-	updateGoalExpression() {
-		if (goalType.selectedOptionValue === "Metric") {
-			this.currentBadge.goalExpression = goalMetric.selectedOptionValue;
-		} else {
-			this.currentBadge.goalExpression = goalNumber.text;
+		let currentRule = this.currentChallenge.rules.find((item) => item.id === this.currentRuleId);
+		currentRule.expression.predictExpression = predictExpression;
+	},
+	//async deleteCondition (index) {
+	// this.currentBadge.predictDetails.splice(index, 1);
+	// },
+
+
+	addRule() {
+		const templateRule = {
+			"id": MathUtils.randomNegativeInteger(-10000, -1),
+			"expression": {
+				"predictExpression": "",
+				"goalExpression": "",
+				"progressExpression": "",
+				"valueExpression": ""
+			},
+			"rewardConfig": {
+				"rewardtype": 1,
+				"rewardId": 0
+			}
 		}
+		this.currentChallenge.rules.push(templateRule);
+	},
+	updateRule(id) {
+		let currentRule = this.currentChallenge.rules.find((item) => item.id === id);
+		currentRule.expression.progressExpression = progressSelect.selectedOptionValue;
+		currentRule.expression.valueExpression = valueSelect.selectedOptionValue;
+		currentRule.expression.goalExpression = goalInput.text;
+		currentRule.rewardConfig.rewardId = badgeSelect.selectedOptionValue;
+	},
+	deleteRule (index) {
+		this.currentChallenge.rules.splice(index, 1);
+		showAlert('Rule delete successfully!', 'success');
 	},
 
-	saveIcon() {
-		showAlert("Saved icon url:" + uploadFile.data.url, 'success')
-		this.currentBadge.assets.icon = uploadFile.data.url;
+	updateStartTime() {
+		this.currentChallenge.startTime = startTime.formattedDate;
+	},
+	updateEndTime() {
+		this.currentChallenge.endTime = endTime.formattedDate;
 	},
 
-	updateVisibilityStartTime() {
-		this.currentBadge.visibilityStartTime = visibilityStartTime.formattedDate;
+	// 
+	// isStrictNumber(str) {
+	// if (typeof str !== 'string' || str.trim() === '') {
+	// return false;
+	// }
+	// return !isNaN(Number(str));
+	// }
+
+	saveCoverIcon() {
+		showAlert("Saved icon url:" + cover_uploader.data.url, 'success')
+		this.currentChallenge.assets.challenge_cover_icon = cover_uploader.data.url;
+	},
+	saveAcceptIcon() {
+		showAlert("Saved icon url:" + accept_uploader.data.url, 'success')
+		this.currentChallenge.assets.challenge_accept_icon = accept_uploader.data.url;
 	},
 
-	updateVisibilityEndTime() {
-		this.currentBadge.visibilityEndTime = visibilityEndTime.formattedDate;
-	},
-
-	updateAvailabilityStartTime() {
-		this.currentBadge.availabilityStartTime = availabilityStartTime.formattedDate;
-	},
-
-	updateAvailabilityEndTime() {
-		this.currentBadge.availabilityEndTime = availabilityEndTime.formattedDate;
-	},
-
-	isStrictNumber(str) {
-		if (typeof str !== 'string' || str.trim() === '') {
-			return false;
-		}
-		return !isNaN(Number(str));
-	}
 }

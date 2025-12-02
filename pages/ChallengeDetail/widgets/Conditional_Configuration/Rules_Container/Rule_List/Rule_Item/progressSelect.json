@@ -1,0 +1,73 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 9,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( currentItem.expression.progressExpression))(progressSelect.options, progressSelect.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "onDropdownClose"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onDropdownClose"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "h5f4r3w91w",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelText": "Progress",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "15",
+  "leftColumn": 3,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 35,
+  "mobileLeftColumn": 17,
+  "mobileRightColumn": 37,
+  "mobileTopRow": 28,
+  "needsErrorInfo": false,
+  "onDropdownClose": "{{PageLogic.updateRule(Rule_List.triggeredItem.id)}}",
+  "optionLabel": "field_name",
+  "optionValue": "field_name",
+  "parentColumnSpace": 8.524779558181763,
+  "parentId": "ada3i40gqi",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 53,
+  "serverSideFiltering": false,
+  "sourceData": "{{Enums.metricList}}",
+  "topRow": 4,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "fyzdts7ddx",
+  "widgetName": "progressSelect"
+}

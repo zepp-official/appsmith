@@ -1,0 +1,51 @@
+{
+  "allowedFileTypes": [],
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 8,
+  "boxShadow": "none",
+  "buttonColor": "#e0dede",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onFilesSelected"
+    }
+  ],
+  "dynamicTyping": true,
+  "fileDataType": "Base64",
+  "files": [],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "m96n39xhcc",
+  "label": "Select Challenge Cover",
+  "leftColumn": 23,
+  "maxFileSize": 5,
+  "maxNumFiles": 1,
+  "minWidth": 120,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 24,
+  "mobileRightColumn": 40,
+  "mobileTopRow": 4,
+  "needsErrorInfo": false,
+  "onFilesSelected": "{{uploadCoverImage.run().then(() => {\n  PageLogic.saveCoverIcon();\n});}}",
+  "parentColumnSpace": 7.9514312744140625,
+  "parentId": "tq3ko51mnr",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 47,
+  "selectedFiles": [],
+  "topRow": 4,
+  "type": "FILE_PICKER_WIDGET_V2",
+  "version": 1,
+  "widgetId": "qk2jvsvut4",
+  "widgetName": "cover_uploader"
+}
