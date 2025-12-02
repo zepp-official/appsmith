@@ -20,21 +20,8 @@ export default {
 			"challenge_accept_icon": ""
 		},
 		"rules": [
-			{
-				"id": -1,
-				"expression": {
-					"predictExpression": "total_steps >=2000",
-					"goalExpression": "2000",
-					"progressExpression": "total_steps",
-					"valueExpression": "total_steps"
-				},
-				"rewardConfig": {
-					"rewardtype": 1,
-					"rewardId": 14
-				}
-			}
 		],
-		"unit": 5,
+		"unit": 0,
 		"startTime": moment().startOf('day').format('YYYY-MM-DD HH:mm:ss'),
 		"endTime": moment().startOf('day').format('YYYY-MM-DD HH:mm:ss'),
 		"isTop": 0,

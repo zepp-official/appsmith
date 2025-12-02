@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 22,
   "shouldTruncate": false,
-  "text": "{{appsmith.store.pageMode === \"new\" ? \"New Challenge\" : \"Edit Challenge\"}}",
+  "text": "{{appsmith.store.pageMode === \"edit\" ? \"Edit Challenge\" : \" New Challenge\"}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 11,

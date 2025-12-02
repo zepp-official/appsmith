@@ -42,7 +42,9 @@
     "customColumn1"
   ],
   "columnUpdatedAt": 1764232452640,
-  "columnWidthMap": {},
+  "columnWidthMap": {
+    "id": 67
+  },
   "customIsLoading": false,
   "customIsLoadingValue": "",
   "defaultPageSize": 0,

@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 22,
   "shouldTruncate": false,
-  "text": "{{appsmith.store.pageMode === \"new\" ? \"New Badge\" : \"Edit Badge\"}}",
+  "text": "{{appsmith.store.pageMode === \"edit\" ? \"Edit Badge\" : \"New Badge\"}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 10,
