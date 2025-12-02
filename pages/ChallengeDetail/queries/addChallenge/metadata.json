@@ -21,7 +21,7 @@
       "httpMethod": "POST",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "{{appsmith.store.API_BASE_URL}}/admin/challenge/add",
+      "path": "{{appsmith.store.API_BASE_URL}}/admin/challenge/templates",
       "pluginSpecifiedTemplates": [
         {
           "value": true

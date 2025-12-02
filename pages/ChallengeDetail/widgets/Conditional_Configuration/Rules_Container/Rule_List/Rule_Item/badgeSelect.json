@@ -53,7 +53,7 @@
   "mobileRightColumn": 39,
   "mobileTopRow": 22,
   "needsErrorInfo": false,
-  "onDropdownClose": "{{PageLogic.updateRule(Rule_List.triggeredItem.id)}}",
+  "onDropdownClose": "{{PageLogic.updateBadge(currentIndex, badgeSelect.selectedOptionValue)}}",
   "optionLabel": "title",
   "optionValue": "id",
   "parentColumnSpace": 8.524779558181763,

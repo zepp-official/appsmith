@@ -107,8 +107,6 @@ export default {
 			showAlert('Page mode is not set. Defaulting to new.', 'warning');
 			this.currentChallenge = this.defaultChallenge;
 		}
-
-		//this.tempPredicate = this.defaultPredicate;
 	},
 
 	// Save a challenge configuration
@@ -136,7 +134,7 @@ export default {
 				showAlert('Badge created successfully!', 'success');
 			}
 
-			navigateTo("ChallengeList");
+			// navigateTo("ChallengeList");
 			return;
 		} catch (error) {
 			console.error("API call failed:", error);
@@ -185,10 +183,6 @@ export default {
 		let currentRule = this.currentChallenge.rules.find((item) => item.id === this.currentRuleId);
 		currentRule.expression.predictExpression = predictExpression;
 	},
-	//async deleteCondition (index) {
-	// this.currentBadge.predictDetails.splice(index, 1);
-	// },
-
 
 	addRule() {
 		const templateRule = {
@@ -206,12 +200,21 @@ export default {
 		}
 		this.currentChallenge.rules.push(templateRule);
 	},
-	updateRule(id) {
-		let currentRule = this.currentChallenge.rules.find((item) => item.id === id);
-		currentRule.expression.progressExpression = progressSelect.selectedOptionValue;
-		currentRule.expression.valueExpression = valueSelect.selectedOptionValue;
-		currentRule.expression.goalExpression = goalInput.text;
-		currentRule.rewardConfig.rewardId = badgeSelect.selectedOptionValue;
+	updateProgress(index, newValue) {
+		let currentRule = this.currentChallenge.rules[index];
+		currentRule.expression.progressExpression = newValue;
+	},
+	updateValue(index, newValue) {
+		let currentRule = this.currentChallenge.rules[index];
+		currentRule.expression.valueExpression = newValue;
+	},
+	updateGoal(index, newValue) {
+		let currentRule = this.currentChallenge.rules[index];
+		currentRule.expression.goalExpression = newValue;
+	},
+	updateBadge(index, newValue) {
+		let currentRule = this.currentChallenge.rules[index];
+		currentRule.rewardConfig.rewardId = newValue;
 	},
 	deleteRule (index) {
 		this.currentChallenge.rules.splice(index, 1);
@@ -234,12 +237,12 @@ export default {
 	// }
 
 	saveCoverIcon() {
-		showAlert("Saved icon url:" + cover_uploader.data.url, 'success')
-		this.currentChallenge.assets.challenge_cover_icon = cover_uploader.data.url;
+		showAlert("Saved icon url:" + uploadCoverImage.data.url, 'success')
+		this.currentChallenge.assets.challenge_cover_icon = uploadCoverImage.data.url;
 	},
 	saveAcceptIcon() {
-		showAlert("Saved icon url:" + accept_uploader.data.url, 'success')
-		this.currentChallenge.assets.challenge_accept_icon = accept_uploader.data.url;
+		showAlert("Saved icon url:" + uploadAcceptImage.data.url, 'success')
+		this.currentChallenge.assets.challenge_accept_icon = uploadAcceptImage.data.url;
 	},
 
 }

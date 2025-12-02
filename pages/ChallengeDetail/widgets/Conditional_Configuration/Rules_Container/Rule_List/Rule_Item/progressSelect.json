@@ -53,7 +53,7 @@
   "mobileRightColumn": 37,
   "mobileTopRow": 28,
   "needsErrorInfo": false,
-  "onDropdownClose": "{{PageLogic.updateRule(Rule_List.triggeredItem.id)}}",
+  "onDropdownClose": "{{PageLogic.updateProgress(currentIndex, progressSelect.selectedOptionValue)}}",
   "optionLabel": "field_name",
   "optionValue": "field_name",
   "parentColumnSpace": 8.524779558181763,

@@ -50,7 +50,7 @@
   "mobileRightColumn": 31,
   "mobileTopRow": 13,
   "needsErrorInfo": false,
-  "onBlur": "{{PageLogic.updateRule(Rule_List.triggeredItem.id)}}",
+  "onBlur": "{{PageLogic.updateGoal(currentIndex, goalInput.text)}}",
   "parentColumnSpace": 8.524779558181763,
   "parentId": "ada3i40gqi",
   "parentRowSpace": 10,

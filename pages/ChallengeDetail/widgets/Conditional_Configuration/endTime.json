@@ -7,7 +7,7 @@
   "closeOnSelection": true,
   "dateFormat": "YYYY-MM-DD HH:mm:ss",
   "datePickerType": "DATE_PICKER",
-  "defaultDate": "{{PageLogic.currentChallenge.startTime}}",
+  "defaultDate": "{{PageLogic.currentChallenge.endTime}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
