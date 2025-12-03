@@ -1,11 +1,10 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
-  "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 15,
+  "bottomRow": 25,
   "boxShadow": "none",
-  "defaultText": "{{PageLogic.currentChallenge.groupId}}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( PageLogic.currentChallenge.groupId))(groupId.options, groupId.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,54 +13,61 @@
       "key": "borderRadius"
     },
     {
-      "key": "defaultText"
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
-      "key": "onBlur"
+      "key": "sourceData"
+    },
+    {
+      "key": "onDropdownClose"
     }
   ],
   "dynamicTriggerPathList": [
     {
-      "key": "onBlur"
+      "key": "onDropdownClose"
     }
   ],
-  "iconAlign": "left",
-  "inputType": "TEXT",
   "isDisabled": false,
+  "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "mwfr4hxvwn",
-  "label": "Group ID",
+  "key": "tufmaiq8h7",
   "labelAlignment": "left",
   "labelPosition": "Left",
-  "labelStyle": "",
+  "labelText": "Assignee Group",
   "labelTextSize": "0.875rem",
   "labelWidth": "15",
   "leftColumn": 6,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 13,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 19,
-  "mobileTopRow": 6,
+  "mobileBottomRow": 20,
+  "mobileLeftColumn": 6,
+  "mobileRightColumn": 26,
+  "mobileTopRow": 13,
   "needsErrorInfo": false,
-  "onBlur": "{{PageLogic.currentChallenge.groupId = groupId.text}}",
+  "onDropdownClose": "{{PageLogic.currentChallenge.groupId = groupId.selectedOptionValue)}}",
+  "optionLabel": "title",
+  "optionValue": "id",
   "parentColumnSpace": 12.2998046875,
   "parentId": "q88xl221v5",
   "parentRowSpace": 10,
+  "placeholderText": "Select option",
   "renderMode": "CANVAS",
-  "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 39,
-  "showStepArrows": false,
-  "topRow": 11,
-  "type": "INPUT_WIDGET_V2",
-  "version": 2,
-  "widgetId": "xudm1qivhk",
+  "serverSideFiltering": false,
+  "sourceData": "{{PageLogic.sectionList}}",
+  "topRow": 20,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "24bjxa9jyf",
   "widgetName": "groupId"
 }

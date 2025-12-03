@@ -16,6 +16,10 @@
         "value": "[]"
       },
       {
+        "name": "sectionList",
+        "value": "[]"
+      },
+      {
         "name": "defaultChallenge",
         "value": "{\n  \"sportType\": 1,\n  \"appname\": \"com.huami.midong\",\n  \"contents\": {\n    \"challenge_title\": \"\",\n    \"challenge_description\": \"\",\n    \"challenge_condition\": \"\"\n  },\n  \"assets\": {\n    \"challenge_cover_icon\": \"\",\n    \"challenge_accept_icon\": \"\"\n  },\n  \"rules\": [],\n  \"unit\": 0,\n  \"startTime\": moment().startOf('day').format('YYYY-MM-DD HH:mm:ss'),\n  \"endTime\": moment().startOf('day').format('YYYY-MM-DD HH:mm:ss'),\n  \"isTop\": 0,\n  \"groupId\": \"\",\n  \"isDelete\": 1,\n  \"engineVersion\": 1,\n  \"status\": 0\n}"
       },

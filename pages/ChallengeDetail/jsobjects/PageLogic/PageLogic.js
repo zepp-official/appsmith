@@ -4,6 +4,7 @@ export default {
 	currentChallenge: {
 	},
 	badgeList: [],
+	sectionList: [],
 
 	// This is the default structure for a new challenge.
 	// We use this to reset the form in 'new' mode.
@@ -34,6 +35,14 @@ export default {
 	// This function will run when the page loads.
 	// It must be 'async' because it waits for an API call.
 	async onPageLoad() {
+		const sectionResult = await querySectionsApi.run();
+		this.sectionList = sectionResult.sections.map(item => {
+			return {
+				id: item.group_id.toString(),
+				title: item.group_id.toString() + " " + item.name,
+			};
+		});
+		
 		const queryResult = await queryRewardsApi.run();
 		const items = queryResult.data?.items;
 		// Use .map() to transform the array into the desired structure
