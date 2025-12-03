@@ -53,7 +53,7 @@
   "mobileRightColumn": 26,
   "mobileTopRow": 13,
   "needsErrorInfo": false,
-  "onDropdownClose": "{{PageLogic.currentChallenge.groupId = groupId.selectedOptionValue)}}",
+  "onDropdownClose": "{{PageLogic.currentChallenge.groupId = groupId.selectedOptionValue}}",
   "optionLabel": "title",
   "optionValue": "id",
   "parentColumnSpace": 12.2998046875,
