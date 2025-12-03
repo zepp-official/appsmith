@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 64,
+  "bottomRow": 60,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "cachedTableData": {},
   "canFreezeColumn": true,
@@ -92,6 +92,9 @@
     },
     {
       "key": "primaryColumns.updatedTime.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItemf4vlhyyak0.isVisible"
     }
   ],
   "dynamicPropertyPathList": [
@@ -109,6 +112,12 @@
     },
     {
       "key": "primaryColumns.customColumn1.menuItems.menuItemux8b0yqepa.isVisible"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItemf4vlhyyak0.isVisible"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItemf4vlhyyak0.onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -126,6 +135,9 @@
     },
     {
       "key": "primaryColumns.customColumn1.menuItems.menuItemux8b0yqepa.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItemf4vlhyyak0.onClick"
     }
   ],
   "enableClientSideSearch": true,
@@ -225,11 +237,20 @@
           "onClick": "{{navigateTo('ChallengeDetail', {\n  \"id\": challengeTable.triggeredRow.id,\n  \"mode\": \"edit\"\n}, 'SAME_WINDOW');}}",
           "widgetId": "5d09rsv7vh"
         },
+        "menuItemf4vlhyyak0": {
+          "id": "menuItemf4vlhyyak0",
+          "index": 4,
+          "isDisabled": false,
+          "isVisible": "{{(() => { const tableData = challengeTable.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow.status === \"Launched (Pending)\" || currentRow.status === \"Launched (Active)\" || currentRow.status === \"Launched (Expired)\")) : currentRow.status === \"Launched (Pending)\" || currentRow.status === \"Launched (Active)\" || currentRow.status === \"Launched (Expired)\" })()}}",
+          "label": "Offline",
+          "onClick": "{{PageLogic.offlineChallenge(challengeTable.triggeredRow.id)}}",
+          "widgetId": "un2xgogzm0"
+        },
         "menuItemq3pdq90dq0": {
           "id": "menuItemq3pdq90dq0",
           "index": 0,
           "isDisabled": false,
-          "isVisible": "{{(() => { const tableData = challengeTable.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow.status === \"Draft\")) : currentRow.status === \"Draft\" })()}}",
+          "isVisible": "{{(() => { const tableData = challengeTable.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow.status === \"Pending Launch\")) : currentRow.status === \"Pending Launch\" })()}}",
           "label": "Launch",
           "onClick": "{{PageLogic.launchChallenge(challengeTable.triggeredRow.id)}}",
           "widgetId": "tzstj1phhy"
@@ -238,7 +259,7 @@
           "id": "menuItemux8b0yqepa",
           "index": 3,
           "isDisabled": false,
-          "isVisible": "{{(() => { const tableData = challengeTable.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow.status === \"Draft\")) : currentRow.status === \"Draft\" })()}}",
+          "isVisible": "{{(() => { const tableData = challengeTable.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow.status === \"Pending Launch\")) : currentRow.status === \"Pending Launch\" })()}}",
           "label": "Delete",
           "onClick": "{{PageLogic.deleteChallenge(challengeTable.triggeredRow.id)}}",
           "widgetId": "in1kyv54xg"

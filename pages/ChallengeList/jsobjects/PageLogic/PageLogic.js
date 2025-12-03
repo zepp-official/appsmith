@@ -71,6 +71,23 @@ export default {
 			showAlert('Failed to launch record! ID: ' + id, 'error');
 		}
 	},
+	
+	async offlineChallenge(id) {
+		const params = {
+			"id": id,
+			"status": 0
+		}
+
+		try {
+			await launchChallengeApi.run({ body: params });
+			showAlert('Record offline successfully!! ID: ' + id, 'success');
+			await this.transformChallenges();
+			return;
+		} catch (error) {
+			console.error("API call failed:", error);
+			showAlert('Failed to launch record! ID: ' + id, 'error');
+		}
+	},
 
 	async deleteChallenge(id) {
 		const params = {

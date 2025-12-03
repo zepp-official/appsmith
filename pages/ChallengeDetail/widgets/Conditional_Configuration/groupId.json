@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 15,
   "boxShadow": "none",
-  "defaultText": "{{PageLogic.currentChallenge.groupId.toString()}}",
+  "defaultText": "{{PageLogic.currentChallenge.groupId}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -50,7 +50,7 @@
   "mobileRightColumn": 19,
   "mobileTopRow": 6,
   "needsErrorInfo": false,
-  "onBlur": "{{PageLogic.currentChallenge.groupId = parseInt(groupId.text)}}",
+  "onBlur": "{{PageLogic.currentChallenge.groupId = groupId.text}}",
   "parentColumnSpace": 12.2998046875,
   "parentId": "q88xl221v5",
   "parentRowSpace": 10,
