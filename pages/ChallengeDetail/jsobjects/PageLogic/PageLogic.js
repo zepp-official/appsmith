@@ -27,7 +27,8 @@ export default {
 		"isTop": 0,
 		"groupId": "",
 		"isDelete": 1,
-		"engineVersion": 0
+		"engineVersion": 1,
+		"status": 0,
 	},
 
 	// This function will run when the page loads.
@@ -76,6 +77,9 @@ export default {
 				// For example, if your data is at badgeData.data, use:
 				this.currentChallenge = challengeData.data.items[0];
 				// this.currentChallenge.predictDetails = ExpressionUtils.expressionToConditions(this.currentBadge.predictExpression);
+				if (!this.currentChallenge.hasOwnProperty("engineVersion")) {
+  					this.currentChallenge["engineVersion"] = 1;
+				}
 
 				showAlert('Challenge data loaded.', 'success');
 			} catch (error) {

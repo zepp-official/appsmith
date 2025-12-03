@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 20,
   "boxShadow": "none",
-  "defaultText": "{{PageLogic.currentChallenge.engineVersion}}",
+  "defaultText": "{{PageLogic.currentChallenge.engineVersion.toString()}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -32,7 +32,7 @@
   "inputType": "TEXT",
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": false,
+  "isRequired": true,
   "isVisible": true,
   "key": "mwfr4hxvwn",
   "label": "Engine Version",
@@ -50,10 +50,11 @@
   "mobileRightColumn": 19,
   "mobileTopRow": 6,
   "needsErrorInfo": false,
-  "onBlur": "{{PageLogic.currentChallenge.engineVersion = engineVersion.text}}",
+  "onBlur": "{{PageLogic.currentChallenge.engineVersion = parseInt(engineVersion.text)}}",
   "parentColumnSpace": 12.2998046875,
   "parentId": "q88xl221v5",
   "parentRowSpace": 10,
+  "regex": "^(0|[1-9][0-9]*)$",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",

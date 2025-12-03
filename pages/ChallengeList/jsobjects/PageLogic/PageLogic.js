@@ -4,10 +4,10 @@ export default {
 
 	// --- Challenge Status Mapping ---
 	challengeStatus: [
-		{ "name": "Active", "code": "0" },
-		{ "name": "Pending", "code": "1" },
-		{ "name": "Expired", "code": "2" },
-		{ "name": "Draft", "code": "3" }
+		{ "name": "Pending Launch", "code": "0" },
+		{ "name": "Launched (Pending)", "code": "1" },
+		{ "name": "Launched (Active)", "code": "2" },
+		{ "name": "Launched (Expired)", "code": "3" }
 	],
 
 	/**

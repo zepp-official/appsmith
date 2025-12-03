@@ -13,7 +13,7 @@
       },
       {
         "name": "challengeStatus",
-        "value": "[{\n  \"name\": \"Active\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"Pending\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"Expired\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Draft\",\n  \"code\": \"3\"\n}]"
+        "value": "[{\n  \"name\": \"Pending Launch\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"Launched (Pending)\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"Launched (Active)\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Launched (Expired)\",\n  \"code\": \"3\"\n}]"
       }
     ]
   }
