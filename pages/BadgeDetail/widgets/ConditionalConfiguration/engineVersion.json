@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 96,
   "boxShadow": "none",
-  "defaultText": "{{PageLogic.currentBadge.engineVersion}}",
+  "defaultText": "{{PageLogic.currentBadge.engineVersion.toString()}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -57,7 +57,7 @@
   "mobileRightColumn": 13,
   "mobileTopRow": 64,
   "needsErrorInfo": false,
-  "onBlur": "{{PageLogic.currentBadge.engineVersion = engineVersion.text}}",
+  "onBlur": "{{PageLogic.currentBadge.engineVersion = parseInt(engineVersion.text)}}",
   "originalBottomRow": 78,
   "originalTopRow": 71,
   "parentColumnSpace": 12.8603515625,

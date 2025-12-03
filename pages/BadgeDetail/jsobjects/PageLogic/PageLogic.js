@@ -39,7 +39,7 @@ export default {
 		"createdTime": "",
 		"updatedTime": "",
 		"isDelete": 1,
-		"engineVersion": 0
+		"engineVersion": 1
 	},
 
 	// This function will run when the page loads.
@@ -74,6 +74,9 @@ export default {
 				// For example, if your data is at badgeData.data, use:
 				this.currentBadge = badgeData.data.items[0].badge;
 				this.currentBadge.predictDetails = ExpressionUtils.expressionToConditions(this.currentBadge.predictExpression);
+				if (!this.currentBadge.hasOwnProperty("engineVersion")) {
+  					this.currentBadge["engineVersion"] = 1;
+				}
 
 				showAlert('Badge data loaded.', 'success');
 			} catch (error) {
