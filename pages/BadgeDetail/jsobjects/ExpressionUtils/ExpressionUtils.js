@@ -12,6 +12,23 @@ export default {
     return (/^".*"$/.test(s) || /^'.*'$/.test(s));
   },
 
+  _isArithmeticExpression: function(s) {
+    // Check if string contains arithmetic operators: +, -, *, /, %, **
+    return /[\+\-\*\/%]/.test(String(s));
+  },
+
+  _isNumericArithmeticExpression: function(s) {
+    // Check if it's an arithmetic expression containing only numbers and operators
+    // Examples: "1000*2", "10+5.5", "100/2-3"
+    var str = String(s).trim();
+    // Must contain at least one operator
+    if (!this._isArithmeticExpression(str)) return false;
+    // Remove all numbers, operators, dots, and whitespace
+    // If anything remains, it contains variables/identifiers
+    var cleaned = str.replace(/[\d\.\+\-\*\/%\(\)\s]/g, '');
+    return cleaned.length === 0;
+  },
+
   _unwrapParens: function(s) {
     s = s.trim();
     if (s.startsWith('(') && s.endsWith(')')) {
@@ -58,7 +75,8 @@ export default {
 
   // Regex for simple comparisons: left op right
   // groups: 1 = left, 2 = operator, 3 = right
-  _COMPARISON_RE: /^([A-Za-z0-9_.]+)\s*(>=|<=|===|!==|==|!=|>|<)\s*([A-Za-z0-9_.]+|".*?"|'.*?'|-?\d+(\.\d+)?)$/,
+  // Right side can be: variable, quoted string, number, or arithmetic expression
+  _COMPARISON_RE: /^([A-Za-z0-9_.]+)\s*(>=|<=|===|!==|==|!=|>|<)\s*(.+)$/,
 
   /**
    * Convert Type1 (array of condition objects) -> Type2 (expression string)
@@ -130,19 +148,31 @@ export default {
 
       var left = m[1];
       var op = m[2];
-      var rightRaw = m[3];
+      var rightRaw = m[3].trim();
 
       var goal, isMetric;
 
       if (this._isNumericLiteral(rightRaw)) {
-        goal = Number(rightRaw);
+        // Simple numeric literal: 123 or 45.67
+        // Keep as string, don't convert to Number
+        goal = rightRaw;
         isMetric = false;
       } else if (this._isQuotedString(rightRaw)) {
-        // strip quotes (handle " or ')
+        // Quoted string: "hello" or 'world'
         goal = rightRaw.slice(1, -1).replace(/\\"/g, '"');
         isMetric = false;
+      } else if (this._isNumericArithmeticExpression(rightRaw)) {
+        // Numeric arithmetic expression: 1000000*1.609344
+        // Store as string for runtime evaluation, but mark as non-metric (pure calculation)
+        goal = rightRaw;
+        isMetric = false;
+      } else if (this._isArithmeticExpression(rightRaw)) {
+        // Arithmetic expression with variables: max_distance*2
+        // Store as string, mark as metric (references other metrics)
+        goal = rightRaw;
+        isMetric = true;
       } else {
-        // unquoted identifier -> metric reference
+        // Unquoted identifier -> metric reference
         goal = rightRaw;
         isMetric = true;
       }

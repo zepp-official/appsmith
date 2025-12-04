@@ -43,7 +43,8 @@
   ],
   "columnUpdatedAt": 1764232452640,
   "columnWidthMap": {
-    "id": 67
+    "id": 67,
+    "title": 240
   },
   "customIsLoading": false,
   "customIsLoadingValue": "",
