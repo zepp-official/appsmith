@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "68edbca07f897134d9d213fe_1b372aab-333c-4eb3-ba18-dbaf43f7dc8c",
-  "id": "BadgeDetail_PageLogic.isStrictNumber",
+  "gitSyncId": "68edbca07f897134d9d213fe_a5a232d2-7660-4235-9847-30077c0c7cef",
+  "id": "BadgeDetail_PageLogic.isMetric",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -26,8 +26,8 @@
         "key": "body"
       }
     ],
-    "fullyQualifiedName": "PageLogic.isStrictNumber",
-    "name": "isStrictNumber",
+    "fullyQualifiedName": "PageLogic.isMetric",
+    "name": "isMetric",
     "pageId": "BadgeDetail",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

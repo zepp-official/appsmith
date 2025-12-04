@@ -4,7 +4,7 @@
   "animateLoading": true,
   "bottomRow": 66,
   "boxShadow": "none",
-  "defaultOptionValue": "{{PageLogic.isStrictNumber(PageLogic.currentBadge.goalExpression) ? \"Non-metric\" : \"Metric\"}}",
+  "defaultOptionValue": "{{PageLogic.isMetric(PageLogic.currentBadge.goalExpression) ? \"Metric\" : \"Non-metric\"}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

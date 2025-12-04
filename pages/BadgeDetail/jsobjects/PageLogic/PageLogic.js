@@ -233,10 +233,20 @@ export default {
 		this.currentBadge.availabilityEndTime = availabilityEndTime.formattedDate;
 	},
 	
-	isStrictNumber(str) {
-    if (typeof str !== 'string' || str.trim() === '') {
-        return false;
-    }
-    return !isNaN(Number(str));
+	// isStrictNumber(str) {
+    // if (typeof str !== 'string' || str.trim() === '') {
+        // return false;
+    // }
+    // return !isNaN(Number(str));
+	// },
+	
+	isMetric(str) {
+		const index = Enums.metricList.findIndex((item) => item.field_name === str);
+		if (index < 0) {
+			return false;
+		} else {
+			return true;
+		}
 	}
+	
 }
