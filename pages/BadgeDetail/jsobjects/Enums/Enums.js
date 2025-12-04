@@ -61,7 +61,10 @@ export default {
 		{ "name": "Swimming", "code": "6" },
 		{ "name": "Jump Roap", "code": "7" },
 		{ "name": "Free Diving", "code": "8" },
-		{ "name": "Hiking", "code": "9" }
+		{ "name": "Hiking", "code": "9" },
+		{ "name": "Diving", "code": "10" },
+		{ "name": "Calorie Goal", "code": "11" },
+		{ "name": "Step Goal", "code": "12" }
 	],
 	badgeLevel: [
 		{ "name": "Level 1", "code": "1" },
