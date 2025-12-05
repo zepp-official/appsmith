@@ -32,7 +32,7 @@
   "mobileRightColumn": 27,
   "mobileTopRow": 270,
   "needsErrorInfo": false,
-  "onClick": "{{navigateTo(\"\", {}, 'SAME_WINDOW')}}",
+  "onClick": "{{navigateTo('BadgeList', {}, 'SAME_WINDOW');}}",
   "originalBottomRow": 292,
   "originalTopRow": 288,
   "parentColumnSpace": 17.9375,
