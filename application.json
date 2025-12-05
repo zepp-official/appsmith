@@ -27,14 +27,6 @@
   "icon": "bag",
   "pages": [
     {
-      "id": "UCHList",
-      "isDefault": false
-    },
-    {
-      "id": "UCHDetail",
-      "isDefault": false
-    },
-    {
       "id": "ChallengeList",
       "isDefault": false
     },
