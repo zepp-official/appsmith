@@ -138,7 +138,7 @@ export default {
 				showAlert('Badge created successfully!', 'success');
 			}
 
-			// navigateTo("BadgeList");
+			navigateTo("BadgeList");
 			return;
 		} catch (error) {
 			console.error("API call failed:", error);
