@@ -29,6 +29,7 @@ export default {
 		"groupId": "",
 		"isDelete": 1,
 		"engineVersion": 1,
+		"showPredict": "",
 		"status": 0,
 	},
 

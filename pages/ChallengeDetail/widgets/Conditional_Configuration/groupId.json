@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 25,
+  "bottomRow": 30,
   "boxShadow": "none",
   "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( PageLogic.currentChallenge.groupId))(groupId.options, groupId.serverSideFiltering) }}",
   "dynamicBindingPathList": [
@@ -65,7 +65,7 @@
   "rightColumn": 39,
   "serverSideFiltering": false,
   "sourceData": "{{PageLogic.sectionList}}",
-  "topRow": 20,
+  "topRow": 25,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "24bjxa9jyf",
