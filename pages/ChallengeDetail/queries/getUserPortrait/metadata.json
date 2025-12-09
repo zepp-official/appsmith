@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "68edbca07f897134d9d213fe_1effe1ae-2c3c-4d17-9f8f-7ad2b5d3a9ad",
-  "id": "BadgeDetail_getUserPortrait",
+  "gitSyncId": "68edbca07f897134d9d213fe_c7e6d417-eafb-4c4b-8a1a-d9011f7121b3",
+  "id": "ChallengeDetail_getUserPortrait",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -71,7 +71,7 @@
       }
     ],
     "name": "getUserPortrait",
-    "pageId": "BadgeDetail",
+    "pageId": "ChallengeDetail",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }

@@ -36,6 +36,14 @@ export default {
 	// This function will run when the page loads.
 	// It must be 'async' because it waits for an API call.
 	async onPageLoad() {
+		const portraitResult = await getUserPortrait.run();
+		Enums.metricList = portraitResult.data.map(item => {
+			return {
+				field_name: item.field_name,
+				field_desc: item.field_desc,
+			};
+		});
+		
 		const sectionResult = await querySectionsApi.run();
 		this.sectionList = sectionResult.sections.map(item => {
 			return {

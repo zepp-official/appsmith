@@ -33,7 +33,7 @@ export default {
 		"visibilityEndTime": moment().startOf('day').format('YYYY-MM-DD HH:mm:ss'),
 		"availabilityStartTime": moment().startOf('day').format('YYYY-MM-DD HH:mm:ss'),
 		"availabilityEndTime": moment().startOf('day').format('YYYY-MM-DD HH:mm:ss'),
-		"unit": 1,
+		"unit": 0,
 		"mark": 1,
 		"showPredict": "",
 		"createdTime": "",
@@ -45,6 +45,14 @@ export default {
 	// This function will run when the page loads.
 	// It must be 'async' because it waits for an API call.
 	async onPageLoad() {
+		const portraitResult = await getUserPortrait.run();
+		Enums.metricList = portraitResult.data.map(item => {
+			return {
+				field_name: item.field_name,
+				field_desc: item.field_desc,
+			};
+		});
+		
 		// 1. Get the 'mode' from the URL parameter
 		let mode = appsmith.URL.queryParams.mode;
 		if (!mode) {
@@ -130,7 +138,7 @@ export default {
 				showAlert('Badge created successfully!', 'success');
 			}
 
-			navigateTo("BadgeList");
+			// navigateTo("BadgeList");
 			return;
 		} catch (error) {
 			console.error("API call failed:", error);
