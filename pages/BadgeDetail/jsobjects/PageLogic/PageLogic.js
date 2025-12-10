@@ -134,8 +134,10 @@ export default {
 				await addBadge.run({ body: reward });
 				showAlert('Badge created successfully!', 'success');
 			} else {
+				delete reward.rewards.updatedTime;
+				delete reward.rewards.updateBy;
 				await updateBadge.run({ body: reward });
-				showAlert('Badge created successfully!', 'success');
+				showAlert('Badge updated successfully!', 'success');
 			}
 
 			navigateTo("BadgeList");

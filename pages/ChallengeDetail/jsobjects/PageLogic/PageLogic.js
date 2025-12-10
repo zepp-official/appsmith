@@ -140,8 +140,10 @@ export default {
 				await addChallenge.run({ body: savingChallenge });
 				showAlert('Challenge created successfully!', 'success');
 			} else {
+				delete savingChallenge.updatedTime;
+				delete savingChallenge.updateBy;
 				await updateChallenge.run({ body: savingChallenge });
-				showAlert('Badge created successfully!', 'success');
+				showAlert('Challenge updated successfully!', 'success');
 			}
 
 			navigateTo("ChallengeList");
