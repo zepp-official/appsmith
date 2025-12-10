@@ -25,7 +25,7 @@
       },
       {
         "name": "actionType",
-        "value": "[{\n  \"name\": \"General Workout\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"Steps\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"Running\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Cycling\",\n  \"code\": \"3\"\n}, {\n  \"name\": \"Sleep\",\n  \"code\": \"4\"\n}, {\n  \"name\": \"Food\",\n  \"code\": \"5\"\n}, {\n  \"name\": \"Swimming\",\n  \"code\": \"6\"\n}, {\n  \"name\": \"Jump Roap\",\n  \"code\": \"7\"\n}, {\n  \"name\": \"Free Diving\",\n  \"code\": \"8\"\n}, {\n  \"name\": \"Hiking\",\n  \"code\": \"9\"\n}, {\n  \"name\": \"Diving\",\n  \"code\": \"10\"\n}, {\n  \"name\": \"Calorie Goal\",\n  \"code\": \"11\"\n}, {\n  \"name\": \"Step Goal\",\n  \"code\": \"12\"\n}]"
+        "value": "[{\n  \"name\": \"General Workout\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"Steps\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"Running\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Cycling\",\n  \"code\": \"3\"\n}, {\n  \"name\": \"Sleep\",\n  \"code\": \"4\"\n}, {\n  \"name\": \"Food\",\n  \"code\": \"5\"\n}, {\n  \"name\": \"Swimming\",\n  \"code\": \"6\"\n}, {\n  \"name\": \"Jump Roap\",\n  \"code\": \"7\"\n}, {\n  \"name\": \"Free Diving\",\n  \"code\": \"8\"\n}, {\n  \"name\": \"Hiking\",\n  \"code\": \"9\"\n}, {\n  \"name\": \"Diving\",\n  \"code\": \"10\"\n}, {\n  \"name\": \"Calorie Goal\",\n  \"code\": \"11\"\n}, {\n  \"name\": \"Step Goal\",\n  \"code\": \"12\"\n}, {\n  \"name\": \"Exercise time\",\n  \"code\": \"13\"\n}]"
       },
       {
         "name": "badgeLevel",

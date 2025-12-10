@@ -64,7 +64,8 @@ export default {
 		{ "name": "Hiking", "code": "9" },
 		{ "name": "Diving", "code": "10" },
 		{ "name": "Calorie Goal", "code": "11" },
-		{ "name": "Step Goal", "code": "12" }
+		{ "name": "Step Goal", "code": "12" },
+		{ "name": "Exercise time", "code": "13" }
 	],
 	badgeLevel: [
 		{ "name": "Level 1", "code": "1" },
