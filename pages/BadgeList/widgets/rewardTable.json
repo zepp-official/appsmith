@@ -106,6 +106,9 @@
     },
     {
       "key": "totalRecordsCount"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItem8miebnjkcg.isVisible"
     }
   ],
   "dynamicPropertyPathList": [
@@ -126,6 +129,12 @@
     },
     {
       "key": "primaryColumns.customColumn1.menuItems.menuItem2csgoq1gya.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItem8miebnjkcg.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItem8miebnjkcg.isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -146,6 +155,9 @@
     },
     {
       "key": "primaryColumns.customColumn1.menuItems.menuItem2csgoq1gya.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItem8miebnjkcg.onClick"
     }
   ],
   "enableClientSideSearch": false,
@@ -257,6 +269,15 @@
           "label": "Launch",
           "onClick": "{{PageLogic.launchReward(rewardTable.triggeredRow.id)}}",
           "widgetId": "fb9wcl60j7"
+        },
+        "menuItem8miebnjkcg": {
+          "id": "menuItem8miebnjkcg",
+          "index": 4,
+          "isDisabled": false,
+          "isVisible": "{{(() => { const tableData = rewardTable.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow.status !== \"Draft\")) : currentRow.status !== \"Draft\" })()}}",
+          "label": "Offline",
+          "onClick": "{{PageLogic.offlineReward(rewardTable.triggeredRow.id)}}",
+          "widgetId": "bdkwzfkezy"
         },
         "menuItemgbwuk0gmv8": {
           "id": "menuItemgbwuk0gmv8",

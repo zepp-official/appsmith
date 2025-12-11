@@ -115,6 +115,28 @@ export default {
 		}
 	},
 
+	async offlineReward(id) {
+		const params = {
+			"rewards": {
+				"rewardType": 1,
+				"badge": {
+					"id": id,
+					"status": 0
+				}
+			}
+		}
+
+		try {
+			await launchRewardApi.run({ body: params });
+			showAlert('Record offline successfully!! ID: ' + id, 'success');
+			await this.transformRewards();
+			return;
+		} catch (error) {
+			console.error("API call failed:", error);
+			showAlert('Failed to offline record! ID: ' + id, 'error');
+		}
+	},
+
 	async deleteReward(id) {
 		const params = {
 			"rewards": {
