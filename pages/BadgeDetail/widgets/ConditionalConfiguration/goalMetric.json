@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 73,
+  "bottomRow": 78,
   "boxShadow": "none",
   "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( PageLogic.currentBadge.goalExpression))(goalMetric.options, goalMetric.serverSideFiltering) }}",
   "dynamicBindingPathList": [
@@ -73,7 +73,7 @@
   "rightColumn": 37,
   "serverSideFiltering": false,
   "sourceData": "{{Enums.metricList}}",
-  "topRow": 66,
+  "topRow": 71,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "5yvujlrcei",

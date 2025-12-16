@@ -3,6 +3,7 @@ export default {
 	// UI widgets will bind to this object.
 	currentBadge: {
 	},
+	sectionList: [],
 	
 	// This is the default structure for a new badge.
 	// We use this to reset the form in 'new' mode.
@@ -39,7 +40,8 @@ export default {
 		"createdTime": "",
 		"updatedTime": "",
 		"isDelete": 1,
-		"engineVersion": 1
+		"engineVersion": 1,
+		"groupId": ""
 	},
 
 	// This function will run when the page loads.
@@ -50,6 +52,14 @@ export default {
 			return {
 				field_name: item.field_name,
 				field_desc: item.field_desc,
+			};
+		});
+		
+		const sectionResult = await querySectionsApi.run();
+		this.sectionList = sectionResult.sections.map(item => {
+			return {
+				id: item.group_id.toString(),
+				title: item.group_id.toString() + " " + item.name,
 			};
 		});
 		

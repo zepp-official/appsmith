@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 80,
+  "bottomRow": 85,
   "boxShadow": "none",
   "defaultText": "{{PageLogic.currentBadge.goalExpression}}",
   "dynamicBindingPathList": [
@@ -68,7 +68,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 37,
   "showStepArrows": false,
-  "topRow": 73,
+  "topRow": 78,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "1f5dazp2m7",

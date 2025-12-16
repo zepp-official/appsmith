@@ -12,8 +12,12 @@
         "value": "{}"
       },
       {
+        "name": "sectionList",
+        "value": "[]"
+      },
+      {
         "name": "defaultBadge",
-        "value": "{\n  \"id\": \"\",\n  \"appname\": \"com.huami.midong\",\n  \"contents\": {\n    \"badge_title\": \"\",\n    \"badge_description\": \"\",\n    \"badge_tags\": []\n  },\n  \"assets\": {\n    \"icon\": \"\"\n  },\n  \"type\": 0,\n  \"actionType\": 0,\n  \"predictExpression\": \"\",\n  \"predictDetails\": [],\n  \"goalExpression\": \"\",\n  \"progressExpression\": \"\",\n  \"valueExpression\": \"\",\n  \"level\": 1,\n  \"difficulty\": 0,\n  \"isRepeatable\": 1,\n  \"repeatPeriod\": 0,\n  \"visibilityStartTime\": moment().startOf('day').format('YYYY-MM-DD HH:mm:ss'),\n  \"visibilityEndTime\": moment().startOf('day').format('YYYY-MM-DD HH:mm:ss'),\n  \"availabilityStartTime\": moment().startOf('day').format('YYYY-MM-DD HH:mm:ss'),\n  \"availabilityEndTime\": moment().startOf('day').format('YYYY-MM-DD HH:mm:ss'),\n  \"unit\": 0,\n  \"mark\": 1,\n  \"showPredict\": \"\",\n  \"createdTime\": \"\",\n  \"updatedTime\": \"\",\n  \"isDelete\": 1,\n  \"engineVersion\": 1\n}"
+        "value": "{\n  \"id\": \"\",\n  \"appname\": \"com.huami.midong\",\n  \"contents\": {\n    \"badge_title\": \"\",\n    \"badge_description\": \"\",\n    \"badge_tags\": []\n  },\n  \"assets\": {\n    \"icon\": \"\"\n  },\n  \"type\": 0,\n  \"actionType\": 0,\n  \"predictExpression\": \"\",\n  \"predictDetails\": [],\n  \"goalExpression\": \"\",\n  \"progressExpression\": \"\",\n  \"valueExpression\": \"\",\n  \"level\": 1,\n  \"difficulty\": 0,\n  \"isRepeatable\": 1,\n  \"repeatPeriod\": 0,\n  \"visibilityStartTime\": moment().startOf('day').format('YYYY-MM-DD HH:mm:ss'),\n  \"visibilityEndTime\": moment().startOf('day').format('YYYY-MM-DD HH:mm:ss'),\n  \"availabilityStartTime\": moment().startOf('day').format('YYYY-MM-DD HH:mm:ss'),\n  \"availabilityEndTime\": moment().startOf('day').format('YYYY-MM-DD HH:mm:ss'),\n  \"unit\": 0,\n  \"mark\": 1,\n  \"showPredict\": \"\",\n  \"createdTime\": \"\",\n  \"updatedTime\": \"\",\n  \"isDelete\": 1,\n  \"engineVersion\": 1,\n  \"groupId\": \"\"\n}"
       },
       {
         "name": "newPredicateModalmode",

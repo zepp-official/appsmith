@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 46,
+  "bottomRow": 53,
   "boxShadow": "none",
   "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( \nMaskUtils.intMaskToArray(PageLogic.currentBadge.mark)\n))(Mask.options, Mask.serverSideFiltering) }}",
   "dynamicBindingPathList": [
@@ -65,7 +65,7 @@
   "rightColumn": 37,
   "serverSideFiltering": false,
   "sourceData": "{{MaskUtils.MASK_ARRAY}}",
-  "topRow": 39,
+  "topRow": 46,
   "type": "MULTI_SELECT_WIDGET_V2",
   "version": 1,
   "widgetId": "hyzzgv1h1f",

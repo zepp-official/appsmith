@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 67,
+  "bottomRow": 13,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( PageLogic.currentBadge.valueExpression))(valueExpression.options, valueExpression.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( PageLogic.currentBadge.groupId))(groupId.options, groupId.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -17,9 +17,6 @@
     },
     {
       "key": "defaultOptionValue"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -29,9 +26,6 @@
     },
     {
       "key": "onDropdownClose"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -42,27 +36,27 @@
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
-  "isRequired": false,
-  "isVisible": "{{PageLogic.currentBadge.type !== 3}}",
+  "isRequired": true,
+  "isVisible": true,
   "key": "0uwh2zdk3l",
   "labelAlignment": "left",
   "labelPosition": "Left",
-  "labelText": "Value",
+  "labelText": "Assignee Group",
   "labelTextSize": "0.875rem",
   "labelWidth": "15",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 53,
+  "mobileBottomRow": 12,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 17,
-  "mobileTopRow": 46,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 5,
   "needsErrorInfo": false,
-  "onDropdownClose": "{{PageLogic.currentBadge.valueExpression = valueExpression.selectedOptionValue}}",
-  "optionLabel": "field_name",
-  "optionValue": "field_name",
-  "parentColumnSpace": 12.8603515625,
+  "onDropdownClose": "{{PageLogic.currentBadge.groupId = groupId.selectedOptionValue}}",
+  "optionLabel": "title",
+  "optionValue": "id",
+  "parentColumnSpace": 10.0576171875,
   "parentId": "1hmuhfoxt3",
   "parentRowSpace": 10,
   "placeholderText": "Select option",
@@ -70,10 +64,10 @@
   "responsiveBehavior": "fill",
   "rightColumn": 37,
   "serverSideFiltering": false,
-  "sourceData": "{{Enums.metricList}}",
-  "topRow": 60,
+  "sourceData": "{{PageLogic.sectionList}}",
+  "topRow": 9,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "umhaz564la",
-  "widgetName": "valueExpression"
+  "widgetId": "jyrl5t9125",
+  "widgetName": "groupId"
 }

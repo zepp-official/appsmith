@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "alignment": "left",
   "animateLoading": true,
-  "bottomRow": 24,
+  "bottomRow": 31,
   "boxShadow": "none",
   "defaultOptionValue": "{{PageLogic.currentBadge.isRepeatable.toString()}}",
   "dynamicBindingPathList": [
@@ -56,7 +56,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 37,
-  "topRow": 20,
+  "topRow": 27,
   "type": "RADIO_GROUP_WIDGET",
   "version": 1,
   "widgetId": "m5xekwjj5u",
