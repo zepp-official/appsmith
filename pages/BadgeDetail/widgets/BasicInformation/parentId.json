@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 126,
+  "bottomRow": 32,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( PageLogic.currentBadge.level.toString()))(badgeLevel.options, badgeLevel.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( PageLogic.currentBadge.parentId.toString()))(parentId.options, parentId.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -17,6 +17,9 @@
     },
     {
       "key": "defaultOptionValue"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -26,6 +29,9 @@
     },
     {
       "key": "onDropdownClose"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -36,28 +42,28 @@
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
-  "isRequired": false,
-  "isVisible": true,
+  "isRequired": true,
+  "isVisible": "{{ PageLogic.currentBadge.type === 0 || PageLogic.currentBadge.type === 1}}",
   "key": "0uwh2zdk3l",
   "labelAlignment": "left",
   "labelPosition": "Left",
-  "labelText": "Badge Level",
+  "labelText": "Parent ID",
   "labelTextSize": "0.875rem",
   "labelWidth": "15",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 87,
+  "mobileBottomRow": 32,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 19,
-  "mobileTopRow": 80,
+  "mobileTopRow": 25,
   "needsErrorInfo": false,
-  "onDropdownClose": "{{PageLogic.currentBadge.level = parseInt(badgeLevel.selectedOptionValue)}}",
-  "optionLabel": "name",
-  "optionValue": "code",
-  "originalBottomRow": 126,
-  "originalTopRow": 119,
+  "onDropdownClose": "{{PageLogic.currentBadge.parentId = parseInt(parentId.selectedOptionValue)}}",
+  "optionLabel": "title",
+  "optionValue": "id",
+  "originalBottomRow": 26,
+  "originalTopRow": 21,
   "parentColumnSpace": 10.0576171875,
   "parentId": "u2pm09m2lj",
   "parentRowSpace": 10,
@@ -66,10 +72,10 @@
   "responsiveBehavior": "fill",
   "rightColumn": 37,
   "serverSideFiltering": false,
-  "sourceData": "{{Enums.badgeLevel}}",
-  "topRow": 119,
+  "sourceData": "{{PageLogic.badgeList}}",
+  "topRow": 27,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "pm3xnaemmy",
-  "widgetName": "badgeLevel"
+  "widgetId": "7vlqltkor0",
+  "widgetName": "parentId"
 }

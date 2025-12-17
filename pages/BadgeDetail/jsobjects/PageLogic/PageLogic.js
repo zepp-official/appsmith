@@ -4,6 +4,7 @@ export default {
 	currentBadge: {
 	},
 	sectionList: [],
+	badgeList: [],
 	
 	// This is the default structure for a new badge.
 	// We use this to reset the form in 'new' mode.
@@ -41,12 +42,29 @@ export default {
 		"updatedTime": "",
 		"isDelete": 1,
 		"engineVersion": 1,
-		"groupId": ""
+		"groupId": "",
+		"parentId": 0
 	},
 
 	// This function will run when the page loads.
 	// It must be 'async' because it waits for an API call.
 	async onPageLoad() {
+		const badgeResult = await queryRewardsApi.run();
+
+		const items = badgeResult.data?.items;
+
+		// Use .map() to transform the array into the desired structure
+		this.badgeList = items
+			.filter(item => item.badge.type === 0 || item.badge.type === 1)
+			.map(item => {
+			// The data we need is nested inside the 'badge' object
+			const badge = item.badge;
+			return {
+				id: badge.id,
+				title: badge.id + " " + badge.contents.badge_title,
+			};
+		});
+		
 		const portraitResult = await getUserPortrait.run();
 		Enums.metricList = portraitResult.data.map(item => {
 			return {
@@ -128,6 +146,9 @@ export default {
 		}
 		savingBadge.predictExpression = ExpressionUtils.conditionsToExpression(savingBadge.predictDetails);
 		delete savingBadge.predictDetails;
+		if (savingBadge.parentId === 0) {
+			delete savingBadge.parentId;
+		}
 
 		const reward = {
 			"rewards": {
