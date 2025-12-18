@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 32,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( PageLogic.currentBadge.parentId.toString()))(parentId.options, parentId.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( PageLogic.currentBadge.parentId))(parentId.options, parentId.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -59,7 +59,7 @@
   "mobileRightColumn": 19,
   "mobileTopRow": 25,
   "needsErrorInfo": false,
-  "onDropdownClose": "{{PageLogic.currentBadge.parentId = parseInt(parentId.selectedOptionValue)}}",
+  "onDropdownClose": "{{PageLogic.currentBadge.parentId = parentId.selectedOptionValue}}",
   "optionLabel": "title",
   "optionValue": "id",
   "originalBottomRow": 26,
