@@ -146,7 +146,7 @@ export default {
 		}
 		savingBadge.predictExpression = ExpressionUtils.conditionsToExpression(savingBadge.predictDetails);
 		delete savingBadge.predictDetails;
-		if (savingBadge.parentId === 0) {
+		if (savingBadge.parentId == null && savingBadge.parentId === 0) {
 			delete savingBadge.parentId;
 		}
 
