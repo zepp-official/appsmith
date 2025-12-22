@@ -37,7 +37,7 @@
       },
       {
         "name": "repeatPeriod",
-        "value": "[{\n  \"name\": \"No End Date\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"Day\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"Week\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Month\",\n  \"code\": \"3\"\n}]"
+        "value": "[{\n  \"name\": \"No End Date\",\n  \"code\": \"0\"\n}, {\n  \"name\": \"Day\",\n  \"code\": \"1\"\n}, {\n  \"name\": \"Week\",\n  \"code\": \"2\"\n}, {\n  \"name\": \"Month\",\n  \"code\": \"3\"\n}, {\n  \"name\": \"Daily by week\",\n  \"code\": \"4\"\n}]"
       },
       {
         "name": "labelTypes",

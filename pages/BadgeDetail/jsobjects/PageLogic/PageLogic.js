@@ -14,6 +14,7 @@ export default {
 		"contents": {
 			"badge_title": "",
 			"badge_description": "",
+			"badge_pop_up_description": "",
 			"badge_tags": [
 			]
 		},

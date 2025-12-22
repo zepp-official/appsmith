@@ -1,10 +1,11 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
+  "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 125,
+  "bottomRow": 43,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( PageLogic.currentBadge.actionType.toString()))(actionType.options, actionType.serverSideFiltering) }}",
+  "defaultText": "{{PageLogic.currentBadge.contents.badge_pop_up_description}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -13,63 +14,62 @@
       "key": "borderRadius"
     },
     {
-      "key": "sourceData"
+      "key": "defaultText"
     },
     {
-      "key": "defaultOptionValue"
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
-      "key": "sourceData"
+      "key": "onBlur"
     },
     {
-      "key": "onDropdownClose"
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
     {
-      "key": "onDropdownClose"
+      "key": "onBlur"
     }
   ],
+  "iconAlign": "left",
+  "inputType": "TEXT",
   "isDisabled": false,
-  "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
-  "key": "0uwh2zdk3l",
+  "isVisible": "{{ PageLogic.currentBadge.type === 1}}",
+  "key": "0poeow8p2p",
+  "label": "Pop-up Description",
   "labelAlignment": "left",
   "labelPosition": "Left",
-  "labelText": "Action Type",
+  "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": "15",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 95,
+  "mobileBottomRow": 39,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 19,
-  "mobileTopRow": 88,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 32,
   "needsErrorInfo": false,
-  "onDropdownClose": "{{PageLogic.currentBadge.actionType = parseInt(actionType.selectedOptionValue)}}",
-  "optionLabel": "name",
-  "optionValue": "code",
-  "originalBottomRow": 125,
-  "originalTopRow": 118,
+  "onBlur": "{{PageLogic.currentBadge.contents.badge_pop_up_description = badge_pop_up_description.text}}",
+  "originalBottomRow": 32,
+  "originalTopRow": 27,
   "parentColumnSpace": 10.0576171875,
   "parentId": "u2pm09m2lj",
   "parentRowSpace": 10,
-  "placeholderText": "Select option",
   "renderMode": "CANVAS",
+  "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 37,
-  "serverSideFiltering": false,
-  "sourceData": "{{Enums.actionType}}",
-  "topRow": 118,
-  "type": "SELECT_WIDGET",
-  "version": 1,
-  "widgetId": "7q4eviqgit",
-  "widgetName": "actionType"
+  "showStepArrows": false,
+  "topRow": 38,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "3cnaujb4gi",
+  "widgetName": "badge_pop_up_description"
 }

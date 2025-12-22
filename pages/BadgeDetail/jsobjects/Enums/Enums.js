@@ -120,6 +120,10 @@ export default {
 		{
 			"name": "Month",
 			"code": "3"
+		},
+		{
+			"name": "Daily by week",
+			"code": "4"
 		}
 	],
 	
