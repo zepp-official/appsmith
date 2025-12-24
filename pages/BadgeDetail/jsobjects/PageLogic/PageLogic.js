@@ -28,6 +28,7 @@ export default {
 		"goalExpression": "",
 		"progressExpression": "",
 		"valueExpression": "",
+		"failPredicate": "",
 		"level": 1,
 		"difficulty": 0,
 		"isRepeatable": 1,

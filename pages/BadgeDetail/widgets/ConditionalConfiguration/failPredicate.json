@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 110,
+  "bottomRow": 103,
   "boxShadow": "none",
-  "defaultText": "{{PageLogic.currentBadge.engineVersion.toString()}}",
+  "defaultText": "{{PageLogic.currentBadge.failPredicate}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -15,18 +15,12 @@
     },
     {
       "key": "defaultText"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "onBlur"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -39,9 +33,9 @@
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{PageLogic.currentBadge.type !== 3}}",
+  "isVisible": true,
   "key": "0poeow8p2p",
-  "label": "Engine Version",
+  "label": "failPredicate",
   "labelAlignment": "left",
   "labelPosition": "Left",
   "labelStyle": "",
@@ -57,21 +51,21 @@
   "mobileRightColumn": 13,
   "mobileTopRow": 64,
   "needsErrorInfo": false,
-  "onBlur": "{{PageLogic.currentBadge.engineVersion = parseInt(engineVersion.text)}}",
+  "onBlur": "{{PageLogic.currentBadge.failPredicate = failPredicate.text}}",
   "originalBottomRow": 78,
   "originalTopRow": 71,
   "parentColumnSpace": 12.8603515625,
   "parentId": "1hmuhfoxt3",
   "parentRowSpace": 10,
-  "regex": "^[1-9]\\d*$",
+  "regex": "",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 37,
   "showStepArrows": false,
-  "topRow": 103,
+  "topRow": 96,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "53dht9j6zy",
-  "widgetName": "engineVersion"
+  "widgetId": "ky5lavh4l5",
+  "widgetName": "failPredicate"
 }
